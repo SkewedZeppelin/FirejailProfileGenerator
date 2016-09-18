@@ -1,0 +1,743 @@
+<applications>
+
+	<application>
+		<name>default</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<genoptions>nodevel</genoptions>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>generic-5</name>
+		<aliases>audacious # clementine # corebird</aliases>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+	</application>
+
+	<application>
+		<name>server</name>
+		<mode>blacklist</mode>
+		<options>private # private-dev # nosound # private-tmp # seccomp</options>
+		<genoptions>nodevel</genoptions>
+		<noblacklistexplicit>/sbin # /usr/sbin</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>snap</name>
+		<mode>blacklist</mode>
+		<options>caps.keep chown,sys_admin</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${HOME}/snap # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>generic-13</name>
+		<aliases>less # strings</aliases>
+		<mode>blacklist</mode>
+		<options>quiet # tracelog # net none # shell none # private-dev # private-tmp # nosound # caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+	</application>
+
+	<application>
+		<name>generic-compression</name>
+		<aliases>tar # gtar # unrar # gzip # unzip # xz # xzdec</aliases>
+		<mode>blacklist</mode>
+		<options>quiet # tracelog # net none # shell none # private-bin sh,tar,gtar,compress,gzip,lzma,xz,bzip2,lbzip2,lzip,lzop,unrar,unzip,xzdec # private-dev # private-etc passwd,group,localtime # hostname tar # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
+		<noblacklistexplicit>/sbin # /usr/sbin</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>0ad</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-dev # private-tmp</options>
+		<paths>${HOME}/.cache/0ad # ${HOME}/.config/0ad # ${HOME}/.local/share/0ad</paths>
+	</application>
+
+	<application>
+		<name>atril</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin atril, atril-previewer, atril-thumbnailer # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/atril # ${HOME}/.local/share</paths>
+	</application>
+
+	<application>
+		<name>audacity</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix # seccomp # shell none # tracelog # private-bin audacity # private-dev # private-tmp</options>
+		<paths>${HOME}/.audacity-data</paths>
+	</application>
+
+	<application>
+		<name>aweather</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin aweather # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/aweather</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>bitlbee</name>
+		<mode>blacklist</mode>
+		<options>netfilter # nonewprivs # private # private-dev # protocol unix,inet,inet6 # seccomp # nosound # read-write /var/lib/bitlbee</options>
+		<noblacklistexplicit>/sbin # /usr/sbin</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>brave</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp</options>
+		<paths>${HOME}/.config/brave # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>cherrytree</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # seccomp # protocol unix,inet,inet6,netlink # tracelog</options>
+		<noblacklistexplicit>/usr/bin/python2* # /usr/bin/python3*</noblacklistexplicit>
+		<paths>${HOME}/cherrytree # ${HOME}/.config/cherrytree # ${HOME}/.local/share/</paths>
+	</application>
+
+	<application>
+		<name>chromium</name>
+		<aliases>chromium-browser</aliases>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${DOWNLOADS} # ${HOME}/.config/chromium # ${HOME}/.cache/chromium # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>chromium-dev</name>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${DOWNLOADS} # ${HOME}/.config/chromium-dev # ${HOME}/.cache/chromium-dev # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>cmus</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # private-bin cmus # private-etc group # shell none</options>
+		<paths>${HOME}/.config/cmus</paths>
+	</application>
+
+	<application>
+		<name>deadbeef</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/deadbeef</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>deluge</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin deluge,sh,python,uname # private-dev # nosound</options>
+		<genoptions>nodevel</genoptions>
+	</application>
+
+	<application>
+		<name>dillo</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # tracelog</options>
+		<paths>${HOME}/.dillo # ${HOME}/.fltk # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>dnscrypt-proxy</name>
+		<mode>blacklist</mode>
+		<options>private # private-dev # nosound # seccomp.drop mount,umount2,ptrace,kexec_load,kexec_file_load,open_by_handle_at,init_module,finit_module,delete_module,iopl,ioperm,swapon,swapoff,syslog,process_vm_readv,process_vm_writev,sysfs,_sysctl,adjtimex,clock_adjtime,lookup_dcookie,perf_event_open,fanotify_init,kcmp,add_key,request_key,keyctl,uselib,acct,modify_ldt,pivot_root,io_setup,io_destroy,io_getevents,io_submit,io_cancel,remap_file_pages,mbind,get_mempolicy,set_mempolicy,migrate_pages,move_pages,vmsplice,perf_event_open</options>
+		<noblacklistexplicit>/sbin # /usr/sbin</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>mumble</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/Mumble # ${HOME}/.local/share/data/Mumble # ${HOME}/.local/share/Mumble</paths>
+	</application>
+
+	<application>
+		<name>multimc5</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6</options>
+		<paths>${HOME}/.multimc5 # ${HOME}/.local/share/multimc5</paths>
+	</application>
+
+	<application>
+		<name>eog</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # noroot # netfilter # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/eog</paths>
+	</application>
+
+	<application>
+		<name>atom</name>
+		<aliases>atom-beta</aliases>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # nosound # protocol unix,inet,inet6,netlink # seccomp # shell none # private-dev # private-tmp</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${HOME}/.atom # ${HOME}/.config/Atom</paths>
+	</application>
+
+	<application>
+		<name>libreoffice</name>
+		<aliases>localc # lodraw # loffice # lofromtemplate # loimpress # lomath # loweb # lowriter # soffice</aliases>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog # private-dev</options>
+		<paths>${HOME}/.config/libreoffice</paths>
+	</application>
+
+	<application>
+		<name>dnsmasq</name>
+		<mode>blacklist</mode>
+		<options>caps # netfilter # nonewprivs # private # private-dev # nosound # protocol unix,inet,inet6,netlink # seccomp</options>
+		<noblacklistexplicit>/sbin # /usr/sbin</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>dosbox</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin dosbox # private-dev # private-tmp</options>
+		<paths>${HOME}/.dosbox</paths>
+	</application>
+
+	<application>
+		<name>dropbox</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/autostart # ${HOME}/Dropbox # ${HOME}/.dropbox-dist # ${HOME}/.config/autostart/dropbox.desktop</paths>
+	</application>
+
+	<application>
+		<name>eom</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin eom # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/mate/eom</paths>
+	</application>
+
+	<application>
+		<name>epiphany</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/epiphany # ${HOME}/.cache/epiphany # ${HOME}/.local/share/epiphany # ${DOWNLOADS}</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>evince</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # private-bin evince,evince-previewer,evince-thumbnailer # private-dev</options>
+	</application>
+
+	<application>
+		<name>fbreader</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin fbreader,FBReader # private-dev # nosound</options>
+		<paths>${HOME}/.FBReader</paths>
+	</application>
+
+	<application>
+		<name>file</name>
+		<mode>blacklist</mode>
+		<options>quiet # tracelog # net none # shell none # private-bin file # private-dev # private-etc magic.mgc,magic,localtime # hostname file # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
+	</application>
+
+	<application>
+		<name>filezilla</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin filezilla,uname,sh,python,lsb_release,fzputtygen,fzsftp # private-dev # nosound</options>
+		<paths>${HOME}/.filezilla # ${HOME}/.config/filezilla</paths>
+	</application>
+
+	<!--This might need to be seperated in the future-->
+	<application>
+		<name>firefox</name>
+		<aliases>firefox-esr # iceweasel # icecat # icecat-bin # seamonkey # seamonkey-bin # abrowser # cyberfox # Cyberfox # palemoon # conkeror</aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki # ${HOME}/.8pecxstudios # ${HOME}/.cache/8pecxstudios # ${HOME}/.moonchild productions # ${HOME}/.cache/moonchild productions # ${HOME}/.conkeror.mozdev.org </paths>
+	</application>
+
+	<application>
+		<name>thunderbird</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki # ${HOME}/.gnupg # ${HOME}/.thunderbird # ${HOME}/.cache/thunderbird</paths>
+	</application>
+
+	<application>
+		<name>icedove</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki # ${HOME}/.gnupg # ${HOME}/.icedove # ${HOME}/.cache/icedove</paths>
+	</application>
+
+	<application>
+		<name>slimjet</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${DOWNLOADS} # ${HOME}/.config/slimjet # ${HOME}/.cache/slimjet # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>franz</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # seccomp # protocol unix,inet,inet6,netlink # netfilter # #tracelog # nonewprivs # noroot</options>
+		<paths>${HOME}/.config/Franz # ${HOME}/.cache/Franz # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>gitter</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6,netlink # seccomp # shell none # private-bin gitter # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/Gitter</paths>
+	</application>
+
+	<application>
+		<name>gnome-chess</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin fairymax,gnome-chess,hoichess # private-dev # private-etc fonts,gnome-chess # private-tmp</options>
+		<paths>${HOME}/.local/share/gnome-chess</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>gnome-mplayer</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-bin gnome-mplayer # private-dev # private-tmp</options>
+	</application>
+
+	<application>
+		<name>google-chrome</name>
+		<aliases>google-chrome-stable</aliases>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${DOWNLOADS} # ${HOME}/.config/google-chrome # ${HOME}/.cache/google-chrome # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>google-chrome-beta</name>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${DOWNLOADS} # ${HOME}/.config/google-chrome-beta # ${HOME}/.cache/google-chrome-beta # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>google-chrome-unstable</name>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${DOWNLOADS} # ${HOME}/.config/google-chrome-unstable # ${HOME}/.cache/google-chrome-unstable # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>google-play-music-desktop-player</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # nonewprivs # noroot # netfilter # protocol unix,inet,inet6,netlink # seccomp</options>
+		<paths>${HOME}/.config/Google Play Music Desktop Player</paths>
+	</application>
+
+	<application>
+		<name>gpredict</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin gpredict # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/Gpredict</paths>
+	</application>
+
+	<application>
+		<name>gthumb</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin gthumb # private-dev</options>
+		<paths>${HOME}/.config/gthumb</paths>
+	</application>
+
+	<application>
+		<name>gwenview</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # noroot # nogroups # private-dev # protocol unix # seccomp # nosound</options>
+		<paths>${HOME}/.kde/share/apps/gwenview # ${HOME}/.kde/share/config/gwenviewrc</paths>
+	</application>
+
+	<application>
+		<name>hedgewars</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # seccomp # tracelog # private-dev # private-tmp</options>
+		<paths>${HOME}/.hedgewars</paths>
+	</application>
+
+	<application>
+		<name>hexchat</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin hexchat # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/hexchat</paths>
+	</application>
+
+	<application>
+		<name>gajim</name>
+		<mode>whitelist</mode>
+		<options>read-only ${HOME}/.local/lib/python2.7/site-packages # caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-dev</options>
+		<paths>${HOME}/.cache/gajim # ${HOME}/.local/share/gajim # ${HOME}/.config/gajim # ${DOWNLOADS} # ${HOME}/.local/lib/python2.7/site-packages</paths>
+	</application>
+
+	<application>
+		<name>inox</name>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${DOWNLOADS} # ${HOME}/.config/inox # ${HOME}/.cache/inox # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>jitsi</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # nogroups # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-tmp</options>
+		<paths>${HOME}/.jitsi</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>kmail</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog # private-dev # private-tmp</options>
+		<paths>${HOME}/.gnupg</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>konversation</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nogroups # noroot # seccomp # protocol unix,inet,inet6 # private-tmp</options>
+	</application>
+
+	<application>
+		<name>lxterminal</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # protocol unix,inet,inet6 # seccomp</options>
+		<genoptions>nodevel</genoptions>
+	</application>
+
+	<application>
+		<name>Mathematica</name>
+		<aliases>mathematica</aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # nonewprivs # noroot # seccomp</options>
+		<paths>${HOME}/.Mathematica # ${HOME}/.Wolfram Research # ${HOME}/Documents/Wolfram Mathematica</paths>
+	</application>
+
+	<application>
+		<name>mcabber</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol inet,inet6 # seccomp # private-bin mcabber # private-etc null # private-dev # shell none # nosound</options>
+		<paths>${HOME}/.mcabber # ${HOME}/.mcabberrc</paths>
+	</application>
+
+	<application>
+		<name>midori</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
+		<paths>{HOME}/.config/midori # {HOME}/.cache/midori # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>mpv</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-bin mpv,youtube-dl,python2.7</options>
+		<paths>${HOME}/.config/mpv</paths>
+	</application>
+
+	<application>
+		<name>mupen64plus</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # net none # nonewprivs # noroot # seccomp</options>
+		<paths>${HOME}/.config/mupen64plus # ${HOME}/.local/share/mupen64plus</paths>
+	</application>
+
+	<application>
+		<name>netsurf</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${HOME}/.config/netsurf # ${HOME}/.cache/netsurf # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>okular</name>
+		<mode>blacklist</mode>
+		<options>read-only ${HOME}/.kde/share/config/kdeglobals # caps.drop all # nonewprivs # nogroups # noroot # private-dev # protocol unix # seccomp # nosound</options>
+		<paths>${HOME}/.kde/share/apps/okular # ${HOME}/.kde/share/config/okularrc # ${HOME}/.kde/share/config/okularpartrc</paths>
+	</application>
+
+	<application>
+		<name>opera</name>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<paths>${HOME}/.opera # ${HOME}/.cache/opera # ${HOME}/.config/opera # ${DOWNLOADS} # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>opera-beta</name>
+		<mode>whitelist</mode>
+		<options>netfilter</options>
+		<paths>${HOME}/.opera-beta # ${HOME}/.cache/opera-beta # ${HOME}/.config/opera-beta # ${DOWNLOADS} # ${HOME}/.pki</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>parole</name>
+		<mode>blacklist</mode>
+		<options>private-etc passwd,group,fonts # private-bin parole,dbus-launch # caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none</options>
+	</application>
+
+	<application>
+		<name>pidgin</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin pidgin # private-dev # private-tmp</options>
+		<paths>${HOME}/.purple</paths>
+	</application>
+
+	<application>
+		<name>pix</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin pix # private-dev</options>
+		<paths>${HOME}/.config/pix # ${HOME}/.local/share/pix</paths>
+	</application>
+
+	<application>
+		<name>empathy</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${DOWNLOADS} # ${HOME}/.local/share/Empathy # ${HOME}/.local/share/telepathy # ${HOME}/.local/share/TpLogger # ${HOME}/.config/telepathy-account-widgets # ${HOME}/.cache/telepathy # ${HOME}/.purple</paths>
+	</application>
+
+	<application>
+		<name>polari</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${DOWNLOADS} # ${HOME}/.local/share/Empathy # ${HOME}/.local/share/telepathy # ${HOME}/.local/share/TpLogger # ${HOME}/.config/telepathy-account-widgets # ${HOME}/.cache/telepathy # ${HOME}/.purple</paths>
+	</application>
+
+	<application>
+		<name>psi-plus</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${DOWNLOADS} # ${HOME}/.config/psi+ # ${HOME}/.local/share/psi+</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>qbittorrent</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # private-dev # nosound</options>
+	</application>
+
+	<application>
+		<name>qtox</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin qtox # private-tmp</options>
+		<paths>${HOME}/.config/tox # ${DOWNLOADS}</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>quassel</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # noroot # netfilter # protocol unix,inet,inet6 # seccomp</options>
+	</application>
+
+	<application>
+		<name>quiterss</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # private-bin quiterss # private-dev # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog</options>
+		<paths>${HOME}/quiterssfeeds.opml # ${HOME}/.config/QuiteRss # ${HOME}/.config/QuiteRssrc # ${HOME}/.cache/QuiteRss # ${HOME}/.local/share/QuiteRss</paths>
+	</application>
+
+	<application>
+		<name>qutebrowser</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${HOME}/.config/qutebrowser # ${HOME}/.cache/qutebrowser # ${DOWNLOADS}</paths>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>rhythmbox</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin rhythmbox # private-dev # private-tmp</options>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>rtorrent</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin rtorrent # private-dev # nosound</options>
+	</application>
+
+	<application>
+		<name>skype</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.Skype</paths>
+	</application>
+
+	<application>
+		<name>skypeforlinux</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # noroot # seccomp # protocol unix,inet,inet6,netlink</options>
+		<genoptions>nodevel</genoptions>
+		<paths>${HOME}/.config/skypeforlinux</paths>
+	</application>
+
+	<application>
+		<name>slack</name>
+		<mode>whitelist</mode>
+		<options>protocol unix,inet,inet6,netlink # private-dev # private-tmp # private-etc fonts,resolv.conf,ld.so.conf,ld.so.cache,localtime # name slack # blacklist /var # caps.drop all # seccomp # netfilter # nonewprivs # nogroups # noroot # shell none # private-bin slack</options>
+		<paths>${HOME}/.config/Slack # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>spotify</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # shell none # private-dev</options>
+		<paths>${HOME}/.config/spotify # ${HOME}/.cache/spotify # ${HOME}/.local/share/spotify</paths>
+	</application>
+
+	<application>
+		<name>ssh</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.ssh # /tmp/ssh-*</paths>
+	</application>
+
+	<!-- TODO ADD MORE GAMES AND CONVERT TO WHITELIST -->
+	<application>
+		<name>steam</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp</options>
+		<paths>${HOME}/.steampath # ${HOME}/.steampid # ${HOME}/.steam # ${HOME}/.local/share/Steam # ${HOME}/.local/share/steam # ${HOME}/My Games # ${HOME}/.killingfloor # ${HOME}/.local/share/aspyr-media # ${HOME}/.local/share/feral-interactive # ${HOME}/.local/share/SuperHexagon # ${HOME}/.local/share/vulkan # ${HOME}/.local/share/vpltd # ${HOME}/.nv # ${HOME}/.local/share/Terraria</paths>
+	</application>
+
+	<application>
+		<name>stellarium</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6,netlink # seccomp # shell none # tracelog # private-bin stellarium # private-dev # private-tmp</options>
+		<paths>${HOME}/.stellarium # ${HOME}/.config/stellarium</paths>
+	</application>
+
+	<application>
+		<name>telegram</name>
+		<aliases>Telegram</aliases>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.TelegramDesktop</paths>
+	</application>
+
+	<application>
+		<name>totem</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nonewprivs # noroot # netfilter # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/totem # ${HOME}/.local/share/totem</paths>
+	</application>
+
+	<application>
+		<name>transmission-cli</name>
+		<aliases>transmission-qt # transmission-gtk</aliases>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin transmission-gtk transmission-qt transmission-cli # private-dev</options>
+		<paths>${HOME}/.config/transmission # ${HOME}/.cache/transmission</paths>
+	</application>
+
+	<application>
+		<name>uget-gtk</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-bin uget-gtk # private-dev # nosound</options>
+		<paths>${HOME}/.config/uGet # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>unbound</name>
+		<mode>blacklist</mode>
+		<options>private # private-dev # nosound # seccomp.drop mount,umount2,ptrace,kexec_load,kexec_file_load,open_by_handle_at,init_module,finit_module,delete_module,iopl,ioperm,swapon,swapoff,syslog,process_vm_readv,process_vm_writev,sysfs,_sysctl,adjtimex,clock_adjtime,lookup_dcookie,perf_event_open,fanotify_init,kcmp,add_key,request_key,keyctl,uselib,acct,modify_ldt,pivot_root,io_setup,io_destroy,io_getevents,io_submit,io_cancel,remap_file_pages,mbind,get_mempolicy,set_mempolicy,migrate_pages,move_pages,vmsplice,perf_event_open</options>
+		<noblacklistexplicit>/sbin # /usr/sbin</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>vivaldi</name>
+		<aliases>vivaldi-beta</aliases>
+		<mode>whitelist</mode>
+		<options>netfilter nonewprivs</options>
+		<paths>${DOWNLOADS} # ${HOME}/.config/vivaldi # ${HOME}/.cache/vivaldi # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>vlc</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin vlc,cvlc,nvlc,rvlc,qvlc,svlc # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/vlc</paths>
+	</application>
+
+	<application>
+		<name>warzone2100</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # shell none # tracelog # private-bin warzone2100 # private-dev # private-tmp</options>
+		<paths>${HOME}/.warzone2100-3.1</paths>
+	</application>
+
+	<application>
+		<name>weechat</name>
+		<aliases>weechat-curses</aliases>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.weechat</paths>
+	</application>
+
+	<application>
+		<name>wesnoth</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # private-dev</options>
+		<paths>${HOME}/.config/wesnoth # ${HOME}/.cache/wesnoth # ${HOME}/.local/share/wesnoth</paths>
+	</application>
+
+	<application>
+		<name>wine</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # seccomp</options>
+		<paths>${HOME}/.wine</paths>
+	</application>
+
+	<application>
+		<name>xchat</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/xchat # ${DOWNLOADS}</paths>
+	</application>
+
+	<application>
+		<name>xplayer</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin xplayer,xplayer-audio-preview,xplayer-video-thumbnailer # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/xplayer # ${HOME}/.local/share/xplayer</paths>
+	</application>
+
+	<application>
+		<name>xreader</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin xreader, xreader-previewer, xreader-thumbnailer # private-dev # private-tmp</options>
+		<paths>${HOME}/.config/xreader # ${HOME}/.cache/xreader # ${HOME}/.local/share/xreader</paths>
+	</application>
+
+	<application>
+		<name>xviewer</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-dev # private-bin xviewer # private-tmp</options>
+		<paths>${HOME}/.config/xviewer</paths>
+	</application>
+
+	<application>
+		<name>uudeview</name>
+		<mode>blacklist</mode>
+		<options>quiet # tracelog # net none # shell none # private-bin uudeview # private-dev # private-tmp # private-etc nonexisting_fakefile_for_empty_etc # hostname uudeview # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
+	</application>
+</applications>
