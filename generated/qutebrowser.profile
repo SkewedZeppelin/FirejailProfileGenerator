@@ -14,8 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/qutebrowser
 whitelist ${HOME}/.config/qutebrowser
+mkdir ${HOME}/.cache/qutebrowser
 whitelist ${HOME}/.cache/qutebrowser
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

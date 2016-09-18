@@ -14,8 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/wesnoth
 whitelist ${HOME}/.config/wesnoth
+mkdir ${HOME}/.cache/wesnoth
 whitelist ${HOME}/.cache/wesnoth
+mkdir ${HOME}/.local/share/wesnoth
 whitelist ${HOME}/.local/share/wesnoth
 include /etc/firejail/whitelist-common.inc
 

@@ -14,8 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/spotify
 whitelist ${HOME}/.config/spotify
+mkdir ${HOME}/.cache/spotify
 whitelist ${HOME}/.cache/spotify
+mkdir ${HOME}/.local/share/spotify
 whitelist ${HOME}/.local/share/spotify
 include /etc/firejail/whitelist-common.inc
 

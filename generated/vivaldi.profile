@@ -15,9 +15,13 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/vivaldi
 whitelist ${HOME}/.config/vivaldi
+mkdir ${HOME}/.cache/vivaldi
 whitelist ${HOME}/.cache/vivaldi
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 

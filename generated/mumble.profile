@@ -14,8 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/Mumble
 whitelist ${HOME}/.config/Mumble
+mkdir ${HOME}/.local/share/data/Mumble
 whitelist ${HOME}/.local/share/data/Mumble
+mkdir ${HOME}/.local/share/Mumble
 whitelist ${HOME}/.local/share/Mumble
 include /etc/firejail/whitelist-common.inc
 

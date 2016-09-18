@@ -14,9 +14,13 @@ include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/google-chrome-beta
 whitelist ${HOME}/.config/google-chrome-beta
+mkdir ${HOME}/.cache/google-chrome-beta
 whitelist ${HOME}/.cache/google-chrome-beta
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 

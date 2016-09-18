@@ -15,9 +15,13 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/epiphany
 whitelist ${HOME}/.config/epiphany
+mkdir ${HOME}/.cache/epiphany
 whitelist ${HOME}/.cache/epiphany
+mkdir ${HOME}/.local/share/epiphany
 whitelist ${HOME}/.local/share/epiphany
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

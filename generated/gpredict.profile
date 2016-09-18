@@ -12,6 +12,7 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/Gpredict
 whitelist ${HOME}/.config/Gpredict
 include /etc/firejail/whitelist-common.inc
 

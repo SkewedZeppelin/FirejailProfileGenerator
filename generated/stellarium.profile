@@ -13,7 +13,9 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.stellarium
 whitelist ${HOME}/.stellarium
+mkdir ${HOME}/.config/stellarium
 whitelist ${HOME}/.config/stellarium
 include /etc/firejail/whitelist-common.inc
 

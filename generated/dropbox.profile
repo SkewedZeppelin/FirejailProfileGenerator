@@ -15,9 +15,13 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/autostart
 whitelist ${HOME}/.config/autostart
+mkdir ${HOME}/Dropbox
 whitelist ${HOME}/Dropbox
+mkdir ${HOME}/.dropbox-dist
 whitelist ${HOME}/.dropbox-dist
+mkfile ${HOME}/.config/autostart/dropbox.desktop
 whitelist ${HOME}/.config/autostart/dropbox.desktop
 include /etc/firejail/whitelist-common.inc
 

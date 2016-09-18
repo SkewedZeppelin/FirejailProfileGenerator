@@ -11,6 +11,7 @@ public class Application {
   private ArrayList<String> genOptions;
   private ArrayList<String> noBlacklistExplicit;
   private ArrayList<String> paths;
+  private ArrayList<String> files;
 
   public Application(String name) {
     this.name = name;
@@ -63,6 +64,15 @@ public class Application {
   public void setPaths(ArrayList<String> paths) {
     this.paths = paths;
   }
+  
+  public ArrayList<String> getFiles() {
+    return files;
+  }
+
+  public void setFiles(ArrayList<String> files) {
+    this.files = files;
+  }
+
 
   public String getName() {
     return name;

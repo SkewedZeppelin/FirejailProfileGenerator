@@ -14,9 +14,13 @@ include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/inox
 whitelist ${HOME}/.config/inox
+mkdir ${HOME}/.cache/inox
 whitelist ${HOME}/.cache/inox
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 

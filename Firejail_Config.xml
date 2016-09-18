@@ -206,7 +206,8 @@
 		<name>dropbox</name>
 		<mode>whitelist</mode>
 		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
-		<paths>${HOME}/.config/autostart # ${HOME}/Dropbox # ${HOME}/.dropbox-dist # ${HOME}/.config/autostart/dropbox.desktop</paths>
+		<paths>${HOME}/.config/autostart # ${HOME}/Dropbox # ${HOME}/.dropbox-dist</paths>
+		<files>${HOME}/.config/autostart/dropbox.desktop</files>
 	</application>
 
 	<application>
@@ -359,7 +360,8 @@
 		<name>gwenview</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # nonewprivs # noroot # nogroups # private-dev # protocol unix # seccomp # nosound</options>
-		<paths>${HOME}/.kde/share/apps/gwenview # ${HOME}/.kde/share/config/gwenviewrc</paths>
+		<paths>${HOME}/.kde/share/apps/gwenview</paths>
+		<files>${HOME}/.kde/share/config/gwenviewrc</files>
 	</application>
 
 	<application>
@@ -432,7 +434,8 @@
 		<name>mcabber</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol inet,inet6 # seccomp # private-bin mcabber # private-etc null # private-dev # shell none # nosound</options>
-		<paths>${HOME}/.mcabber # ${HOME}/.mcabberrc</paths>
+		<paths>${HOME}/.mcabber</paths>
+		<files>${HOME}/.mcabberrc</files>
 	</application>
 
 	<application>
@@ -467,7 +470,8 @@
 		<name>okular</name>
 		<mode>blacklist</mode>
 		<options>read-only ${HOME}/.kde/share/config/kdeglobals # caps.drop all # nonewprivs # nogroups # noroot # private-dev # protocol unix # seccomp # nosound</options>
-		<paths>${HOME}/.kde/share/apps/okular # ${HOME}/.kde/share/config/okularrc # ${HOME}/.kde/share/config/okularpartrc</paths>
+		<paths>${HOME}/.kde/share/apps/okular</paths>
+		<files>${HOME}/.kde/share/config/okularrc # ${HOME}/.kde/share/config/okularpartrc</files>
 	</application>
 
 	<application>
@@ -551,7 +555,8 @@
 		<name>quiterss</name>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # private-bin quiterss # private-dev # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog</options>
-		<paths>${HOME}/quiterssfeeds.opml # ${HOME}/.config/QuiteRss # ${HOME}/.config/QuiteRssrc # ${HOME}/.cache/QuiteRss # ${HOME}/.local/share/QuiteRss</paths>
+		<paths>${HOME}/.config/QuiteRss # ${HOME}/.config/QuiteRssrc # ${HOME}/.cache/QuiteRss # ${HOME}/.local/share/QuiteRss</paths>
+		<files>${HOME}/quiterssfeeds.opml</files>
 	</application>
 
 	<application>

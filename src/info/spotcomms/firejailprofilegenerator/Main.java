@@ -45,6 +45,9 @@ public class Main {
           if(element.getElementsByTagName("paths").item(0) != null) {
             curApplication.setPaths(convertToArray(element.getElementsByTagName("paths").item(0).getTextContent()));
           }
+          if(element.getElementsByTagName("files").item(0) != null) {
+            curApplication.setFiles(convertToArray(element.getElementsByTagName("files").item(0).getTextContent()));
+          }
           if(element.getElementsByTagName("noblacklistexplicit").item(0) != null) {
             curApplication.setNoBlacklistExplicit(convertToArray(element.getElementsByTagName("noblacklistexplicit").item(0).getTextContent()));
           }
@@ -82,6 +85,13 @@ public class Main {
           for(String path : app.getPaths()) {
             outA.println("noblacklist " + path);
           }
+        }
+        if(app.getFiles() != null) {
+          for(String file : app.getFiles()) {
+            outA.println("noblacklist " + file);
+          }
+        }
+        if(app.getPaths() != null || app.getFiles() != null) {
           outA.println();
         }
         //Blacklist Paths
@@ -94,15 +104,23 @@ public class Main {
         }
         outA.println();
         //Whitelist Paths
-        if(app.getPaths() != null) {
-          if(app.getMode()) {
+        if(app.getMode()) {
+          if(app.getPaths() != null) {
             outA.println("#Whitelist Paths");
             for(String path : app.getPaths()) {
+              outA.println("mkdir " + path);
               outA.println("whitelist " + path);
             }
-            outA.println("include /etc/firejail/whitelist-common.inc");
-            outA.println();
           }
+          //Whitelist Files
+          if(app.getFiles() != null) {
+            for(String file : app.getFiles()) {
+              outA.println("mkfile " + file);
+              outA.println("whitelist " + file);
+            }
+          }
+          outA.println("include /etc/firejail/whitelist-common.inc");
+          outA.println();
         }
         //Options
         if(app.getOptions() != null) {
@@ -139,6 +157,11 @@ public class Main {
       if(app.getPaths() != null) {
         for(String path : app.getPaths()) {
           paths.add(path);
+        }
+      }
+      if(app.getFiles() != null) {
+        for(String file : app.getFiles()) {
+          paths.add(file);
         }
       }
     }

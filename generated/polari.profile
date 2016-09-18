@@ -18,12 +18,19 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.local/share/Empathy
 whitelist ${HOME}/.local/share/Empathy
+mkdir ${HOME}/.local/share/telepathy
 whitelist ${HOME}/.local/share/telepathy
+mkdir ${HOME}/.local/share/TpLogger
 whitelist ${HOME}/.local/share/TpLogger
+mkdir ${HOME}/.config/telepathy-account-widgets
 whitelist ${HOME}/.config/telepathy-account-widgets
+mkdir ${HOME}/.cache/telepathy
 whitelist ${HOME}/.cache/telepathy
+mkdir ${HOME}/.purple
 whitelist ${HOME}/.purple
 include /etc/firejail/whitelist-common.inc
 

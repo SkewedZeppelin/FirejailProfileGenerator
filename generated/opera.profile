@@ -16,10 +16,15 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.opera
 whitelist ${HOME}/.opera
+mkdir ${HOME}/.cache/opera
 whitelist ${HOME}/.cache/opera
+mkdir ${HOME}/.config/opera
 whitelist ${HOME}/.config/opera
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 

@@ -13,7 +13,9 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/tox
 whitelist ${HOME}/.config/tox
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

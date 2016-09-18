@@ -12,6 +12,7 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.warzone2100-3.1
 whitelist ${HOME}/.warzone2100-3.1
 include /etc/firejail/whitelist-common.inc
 

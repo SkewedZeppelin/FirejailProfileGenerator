@@ -14,9 +14,13 @@ include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/chromium
 whitelist ${HOME}/.config/chromium
+mkdir ${HOME}/.cache/chromium
 whitelist ${HOME}/.cache/chromium
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 

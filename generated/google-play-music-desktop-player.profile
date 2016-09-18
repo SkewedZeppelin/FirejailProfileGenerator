@@ -12,6 +12,7 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.config/Google Play Music Desktop Player
 whitelist ${HOME}/.config/Google Play Music Desktop Player
 include /etc/firejail/whitelist-common.inc
 

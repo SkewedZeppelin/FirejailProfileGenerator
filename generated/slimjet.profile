@@ -14,9 +14,13 @@ include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/slimjet
 whitelist ${HOME}/.config/slimjet
+mkdir ${HOME}/.cache/slimjet
 whitelist ${HOME}/.cache/slimjet
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 

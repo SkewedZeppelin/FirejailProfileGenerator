@@ -18,12 +18,19 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.mozilla
 whitelist ${HOME}/.mozilla
+mkdir ${HOME}/.cache/mozilla
 whitelist ${HOME}/.cache/mozilla
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
+mkdir ${HOME}/.gnupg
 whitelist ${HOME}/.gnupg
+mkdir ${HOME}/.thunderbird
 whitelist ${HOME}/.thunderbird
+mkdir ${HOME}/.cache/thunderbird
 whitelist ${HOME}/.cache/thunderbird
 include /etc/firejail/whitelist-common.inc
 

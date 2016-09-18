@@ -20,14 +20,23 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.mozilla
 whitelist ${HOME}/.mozilla
+mkdir ${HOME}/.cache/mozilla
 whitelist ${HOME}/.cache/mozilla
+mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
+mkdir ${HOME}/.8pecxstudios
 whitelist ${HOME}/.8pecxstudios
+mkdir ${HOME}/.cache/8pecxstudios
 whitelist ${HOME}/.cache/8pecxstudios
+mkdir ${HOME}/.moonchild productions
 whitelist ${HOME}/.moonchild productions
+mkdir ${HOME}/.cache/moonchild productions
 whitelist ${HOME}/.cache/moonchild productions
+mkdir ${HOME}/.conkeror.mozdev.org 
 whitelist ${HOME}/.conkeror.mozdev.org 
 include /etc/firejail/whitelist-common.inc
 

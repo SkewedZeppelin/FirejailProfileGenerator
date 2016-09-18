@@ -14,8 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.cache/0ad
 whitelist ${HOME}/.cache/0ad
+mkdir ${HOME}/.config/0ad
 whitelist ${HOME}/.config/0ad
+mkdir ${HOME}/.local/share/0ad
 whitelist ${HOME}/.local/share/0ad
 include /etc/firejail/whitelist-common.inc
 
