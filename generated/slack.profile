@@ -15,7 +15,6 @@ include /etc/firejail/disable-devel.inc
 #Whitelist Paths
 mkdir ${HOME}/.config/Slack
 whitelist ${HOME}/.config/Slack
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

@@ -22,7 +22,6 @@ mkdir ${HOME}/.cache/opera
 whitelist ${HOME}/.cache/opera
 mkdir ${HOME}/.config/opera
 whitelist ${HOME}/.config/opera
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki

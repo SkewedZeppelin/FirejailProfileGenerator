@@ -18,7 +18,6 @@ mkdir ${HOME}/.config/qutebrowser
 whitelist ${HOME}/.config/qutebrowser
 mkdir ${HOME}/.cache/qutebrowser
 whitelist ${HOME}/.cache/qutebrowser
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

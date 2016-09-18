@@ -14,7 +14,6 @@ include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
 
 #Whitelist Paths
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 mkdir ${HOME}/.config/google-chrome-unstable
 whitelist ${HOME}/.config/google-chrome-unstable

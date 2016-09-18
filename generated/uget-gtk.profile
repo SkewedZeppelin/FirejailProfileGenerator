@@ -15,7 +15,6 @@ include /etc/firejail/disable-devel.inc
 #Whitelist Paths
 mkdir ${HOME}/.config/uGet
 whitelist ${HOME}/.config/uGet
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

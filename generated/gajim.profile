@@ -22,7 +22,6 @@ mkdir ${HOME}/.local/share/gajim
 whitelist ${HOME}/.local/share/gajim
 mkdir ${HOME}/.config/gajim
 whitelist ${HOME}/.config/gajim
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 mkdir ${HOME}/.local/lib/python2.7/site-packages
 whitelist ${HOME}/.local/lib/python2.7/site-packages

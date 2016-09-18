@@ -18,7 +18,6 @@ mkdir ${HOME}/.dillo
 whitelist ${HOME}/.dillo
 mkdir ${HOME}/.fltk
 whitelist ${HOME}/.fltk
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

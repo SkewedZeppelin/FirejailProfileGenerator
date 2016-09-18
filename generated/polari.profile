@@ -18,7 +18,6 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 mkdir ${HOME}/.local/share/Empathy
 whitelist ${HOME}/.local/share/Empathy

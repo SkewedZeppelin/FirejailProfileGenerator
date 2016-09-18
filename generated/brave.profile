@@ -15,7 +15,6 @@ include /etc/firejail/disable-devel.inc
 #Whitelist Paths
 mkdir ${HOME}/.config/brave
 whitelist ${HOME}/.config/brave
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

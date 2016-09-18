@@ -18,7 +18,6 @@ mkdir ${HOME}/.config/netsurf
 whitelist ${HOME}/.config/netsurf
 mkdir ${HOME}/.cache/netsurf
 whitelist ${HOME}/.cache/netsurf
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

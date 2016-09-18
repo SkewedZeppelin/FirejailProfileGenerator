@@ -15,7 +15,6 @@ include /etc/firejail/disable-devel.inc
 #Whitelist Paths
 mkdir ${HOME}/.config/xchat
 whitelist ${HOME}/.config/xchat
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

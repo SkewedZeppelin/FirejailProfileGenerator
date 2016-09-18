@@ -21,7 +21,6 @@ mkdir ${HOME}/.cache/epiphany
 whitelist ${HOME}/.cache/epiphany
 mkdir ${HOME}/.local/share/epiphany
 whitelist ${HOME}/.local/share/epiphany
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

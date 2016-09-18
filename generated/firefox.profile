@@ -20,7 +20,6 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 mkdir ${HOME}/.mozilla
 whitelist ${HOME}/.mozilla

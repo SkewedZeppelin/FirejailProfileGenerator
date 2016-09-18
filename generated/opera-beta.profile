@@ -22,7 +22,6 @@ mkdir ${HOME}/.cache/opera-beta
 whitelist ${HOME}/.cache/opera-beta
 mkdir ${HOME}/.config/opera-beta
 whitelist ${HOME}/.config/opera-beta
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki

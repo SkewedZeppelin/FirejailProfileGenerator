@@ -18,7 +18,6 @@ mkdir {HOME}/.config/midori
 whitelist {HOME}/.config/midori
 mkdir {HOME}/.cache/midori
 whitelist {HOME}/.cache/midori
-mkdir ${DOWNLOADS}
 whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 

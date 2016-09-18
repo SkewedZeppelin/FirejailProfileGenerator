@@ -108,7 +108,9 @@ public class Main {
           if(app.getPaths() != null) {
             outA.println("#Whitelist Paths");
             for(String path : app.getPaths()) {
-              outA.println("mkdir " + path);
+              if(!path.equals("${DOWNLOADS}")) {
+                outA.println("mkdir " + path);
+              }
               outA.println("whitelist " + path);
             }
           }
