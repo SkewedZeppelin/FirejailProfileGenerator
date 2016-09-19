@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -23,12 +24,12 @@ public class Main {
 
   public static void main(String[] args) {
     try {
+      //START OF XML PARSING
       File configFile = new File("Firejail_Config.xml");
       DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
       DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
       Document config = documentBuilder.parse(configFile);
       config.getDocumentElement().normalize();
-
       NodeList nodes = config.getElementsByTagName("application");
       for(int c = 0; c < nodes.getLength(); c++) {
         Node curNode = nodes.item(c);
@@ -58,14 +59,24 @@ public class Main {
           curApplication = null;
         }
       }
+      //END OF XML PARSING
 
+      //START OF disable-programs.inc GENERATION 
       PrintWriter out = new PrintWriter("generated/disable-programs.inc", "UTF-8");
+      //Dynamic
       for(String path : getAllPaths()) {
         out.println("blacklist " + path);
       }
+      //Static
+      Scanner s = new Scanner(new File("overlay/disable-programs.inc"));
+      while(s.hasNext()) {
+        out.println("blacklist " + s.nextLine());
+      }
       out.close();
       out = null;
+      //END OF disable-programs.inc GENERATION 
 
+      //START OF .profiles GENERATION
       for(Application app : applications) {
         PrintWriter outA = new PrintWriter("generated/" + app.getName() + ".profile", "UTF-8");
         //Header
@@ -132,6 +143,8 @@ public class Main {
           }
         }
         outA.close();
+        
+        //START OF ALIASES GENERATION
         if(app.getAliases() != null) {
           for(String alias : app.getAliases()) {
             PrintWriter outAa = new PrintWriter("generated/" + alias + ".profile", "UTF-8");
@@ -142,8 +155,9 @@ public class Main {
             outAa.close();
           }
         }
+        //END OF ALIASES GENERATION
       }
-
+      //END OF .profiles GENERATION
     } catch(Exception e) {
       e.printStackTrace();
     }

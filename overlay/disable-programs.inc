@@ -1,0 +1,10 @@
+blacklist ${HOME}/.*coin
+blacklist ${HOME}/.electrum*
+blacklist ${HOME}/.gitconfig
+blacklist ${HOME}/.git-credential-cache
+blacklist ${HOME}/.retroshare
+blacklist ${HOME}/.subversion
+blacklist ${HOME}/.sylpheed-2.0
+blacklist ${HOME}/.tconn
+blacklist ${HOME}/wallet.dat
+blacklist /tmp/ssh-*

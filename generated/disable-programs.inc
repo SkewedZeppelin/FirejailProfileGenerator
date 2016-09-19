@@ -4,6 +4,7 @@ blacklist ${HOME}/.FBReader
 blacklist ${HOME}/.Mathematica
 blacklist ${HOME}/.Skype
 blacklist ${HOME}/.TelegramDesktop
+blacklist ${HOME}/.VirtualBox
 blacklist ${HOME}/.Wolfram Research
 blacklist ${HOME}/.atom
 blacklist ${HOME}/.audacity-data
@@ -166,6 +167,7 @@ blacklist ${HOME}/.wine64
 blacklist ${HOME}/Documents/Wolfram Mathematica
 blacklist ${HOME}/Dropbox
 blacklist ${HOME}/My Games
+blacklist ${HOME}/VirtualBox VMs
 blacklist ${HOME}/cherrytree
 blacklist ${HOME}/quiterssfeeds.opml
 blacklist ${HOME}/snap
@@ -173,3 +175,13 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
+blacklist blacklist ${HOME}/.*coin
+blacklist blacklist ${HOME}/.electrum*
+blacklist blacklist ${HOME}/.gitconfig
+blacklist blacklist ${HOME}/.git-credential-cache
+blacklist blacklist ${HOME}/.retroshare
+blacklist blacklist ${HOME}/.subversion
+blacklist blacklist ${HOME}/.sylpheed-2.0
+blacklist blacklist ${HOME}/.tconn
+blacklist blacklist ${HOME}/wallet.dat
+blacklist blacklist /tmp/ssh-*

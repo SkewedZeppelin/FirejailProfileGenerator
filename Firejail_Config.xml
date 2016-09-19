@@ -786,7 +786,7 @@
 		<name>virtualbox</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all</options>
-		<paths>${HOME}/.config/VirtualBox # /dev/vboxdrv # /dev/vboxdrvu # /dev/vboxnetctl</paths>
+		<paths>${HOME}/.config/VirtualBox # ${HOME}/.VirtualBox # ${HOME}/VirtualBox VMs # /dev/vboxdrv # /dev/vboxdrvu # /dev/vboxnetctl</paths>
 	</application>
 
 </applications>

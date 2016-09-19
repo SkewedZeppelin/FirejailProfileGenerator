@@ -3,7 +3,9 @@
 #
 
 #No Blacklist Paths
+noblacklist ${HOME}/.VirtualBox
 noblacklist ${HOME}/.config/VirtualBox
+noblacklist ${HOME}/VirtualBox VMs
 noblacklist /dev/vboxdrv
 noblacklist /dev/vboxdrvu
 noblacklist /dev/vboxnetctl
