@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/snap
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/snap
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc

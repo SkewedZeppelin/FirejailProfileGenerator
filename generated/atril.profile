@@ -14,14 +14,14 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-nonewprivs
 nogroups
+nonewprivs
 noroot
 nosound
+private-bin atril, atril-previewer, atril-thumbnailer
+private-dev
+private-tmp
 protocol unix
 seccomp
 shell none
 tracelog
-private-bin atril, atril-previewer, atril-thumbnailer
-private-dev
-private-tmp

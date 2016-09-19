@@ -7,9 +7,9 @@ noblacklist /usr/bin/python2*
 noblacklist /usr/bin/python3*
 
 #No Blacklist Paths
-noblacklist ${HOME}/cherrytree
 noblacklist ${HOME}/.config/cherrytree
 noblacklist ${HOME}/.local/share/
+noblacklist ${HOME}/cherrytree
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -18,12 +18,12 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
-mkdir ${HOME}/cherrytree
-whitelist ${HOME}/cherrytree
 mkdir ${HOME}/.config/cherrytree
 whitelist ${HOME}/.config/cherrytree
 mkdir ${HOME}/.local/share/
 whitelist ${HOME}/.local/share/
+mkdir ${HOME}/cherrytree
+whitelist ${HOME}/cherrytree
 include /etc/firejail/whitelist-common.inc
 
 #Options
@@ -32,6 +32,6 @@ netfilter
 nonewprivs
 noroot
 nosound
-seccomp
 protocol unix,inet,inet6,netlink
+seccomp
 tracelog

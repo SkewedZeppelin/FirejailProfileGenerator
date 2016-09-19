@@ -13,9 +13,9 @@ netfilter
 nonewprivs
 noroot
 nosound
+nosound
+private-bin deluge,sh,python,uname
+private-dev
 protocol unix,inet,inet6
 seccomp
 shell none
-private-bin deluge,sh,python,uname
-private-dev
-nosound

@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.filezilla
 noblacklist ${HOME}/.config/filezilla
+noblacklist ${HOME}/.filezilla
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -18,9 +18,9 @@ netfilter
 nonewprivs
 noroot
 nosound
+nosound
+private-bin filezilla,uname,sh,python,lsb_release,fzputtygen,fzsftp
+private-dev
 protocol unix,inet,inet6
 seccomp
 shell none
-private-bin filezilla,uname,sh,python,lsb_release,fzputtygen,fzsftp
-private-dev
-nosound

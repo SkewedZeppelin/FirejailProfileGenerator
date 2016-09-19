@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/Franz
 noblacklist ${HOME}/.cache/Franz
+noblacklist ${HOME}/.config/Franz
 noblacklist ${HOME}/.pki
 
 #Blacklist Paths
@@ -14,10 +14,10 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Options
-caps.drop all
-seccomp
-protocol unix,inet,inet6,netlink
-netfilter
 #tracelog
+caps.drop all
+netfilter
 nonewprivs
 noroot
+protocol unix,inet,inet6,netlink
+seccomp

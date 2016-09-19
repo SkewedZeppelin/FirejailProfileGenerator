@@ -9,12 +9,12 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Options
-private-etc passwd,group,fonts
-private-bin parole,dbus-launch
 caps.drop all
 netfilter
 nonewprivs
 noroot
+private-bin parole,dbus-launch
+private-etc passwd,group,fonts
 protocol unix,inet,inet6
 seccomp
 shell none

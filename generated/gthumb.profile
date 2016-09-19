@@ -17,9 +17,9 @@ nogroups
 nonewprivs
 noroot
 nosound
+private-bin gthumb
+private-dev
 protocol unix
 seccomp
 shell none
 tracelog
-private-bin gthumb
-private-dev

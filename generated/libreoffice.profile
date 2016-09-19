@@ -17,7 +17,7 @@ netfilter
 nogroups
 nonewprivs
 noroot
+private-dev
 protocol unix,inet,inet6,netlink
 seccomp
 tracelog
-private-dev

@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/Slack
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.config/Slack
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -13,23 +13,23 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.config/Slack
 whitelist ${HOME}/.config/Slack
-whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 
 #Options
-protocol unix,inet,inet6,netlink
-private-dev
-private-tmp
-private-etc fonts,resolv.conf,ld.so.conf,ld.so.cache,localtime
-name slack
 blacklist /var
 caps.drop all
-seccomp
+name slack
 netfilter
-nonewprivs
 nogroups
+nonewprivs
 noroot
-shell none
 private-bin slack
+private-dev
+private-etc fonts,resolv.conf,ld.so.conf,ld.so.cache,localtime
+private-tmp
+protocol unix,inet,inet6,netlink
+seccomp
+shell none

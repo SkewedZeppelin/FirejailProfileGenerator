@@ -18,9 +18,9 @@ nogroups
 nonewprivs
 noroot
 nosound
-protocol unix,inet,inet6,netlink
-seccomp
-shell none
 private-bin gitter
 private-dev
 private-tmp
+protocol unix,inet,inet6,netlink
+seccomp
+shell none

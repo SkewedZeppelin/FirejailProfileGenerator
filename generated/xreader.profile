@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/xreader
 noblacklist ${HOME}/.cache/xreader
+noblacklist ${HOME}/.config/xreader
 noblacklist ${HOME}/.local/share/xreader
 
 #Blacklist Paths
@@ -19,10 +19,10 @@ nogroups
 nonewprivs
 noroot
 nosound
+private-bin xreader, xreader-previewer, xreader-thumbnailer
+private-dev
+private-tmp
 protocol unix
 seccomp
 shell none
 tracelog
-private-bin xreader, xreader-previewer, xreader-thumbnailer
-private-dev
-private-tmp

@@ -17,10 +17,10 @@ netfilter
 nogroups
 nonewprivs
 noroot
+private-bin dosbox
+private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-bin dosbox
-private-dev
-private-tmp

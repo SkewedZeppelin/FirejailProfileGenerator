@@ -3,9 +3,9 @@
 #
 
 #No Blacklist Paths
+noblacklist ${HOME}/.cache/QuiteRss
 noblacklist ${HOME}/.config/QuiteRss
 noblacklist ${HOME}/.config/QuiteRssrc
-noblacklist ${HOME}/.cache/QuiteRss
 noblacklist ${HOME}/.local/share/QuiteRss
 noblacklist ${HOME}/quiterssfeeds.opml
 
@@ -16,12 +16,12 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+mkdir ${HOME}/.cache/QuiteRss
+whitelist ${HOME}/.cache/QuiteRss
 mkdir ${HOME}/.config/QuiteRss
 whitelist ${HOME}/.config/QuiteRss
 mkdir ${HOME}/.config/QuiteRssrc
 whitelist ${HOME}/.config/QuiteRssrc
-mkdir ${HOME}/.cache/QuiteRss
-whitelist ${HOME}/.cache/QuiteRss
 mkdir ${HOME}/.local/share/QuiteRss
 whitelist ${HOME}/.local/share/QuiteRss
 mkfile ${HOME}/quiterssfeeds.opml
@@ -31,12 +31,12 @@ include /etc/firejail/whitelist-common.inc
 #Options
 caps.drop all
 netfilter
-nonewprivs
 nogroups
+nonewprivs
 noroot
+nosound
 private-bin quiterss
 private-dev
-nosound
 protocol unix,inet,inet6
 seccomp
 shell none

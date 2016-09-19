@@ -3,9 +3,9 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/midori
-noblacklist ${HOME}/.cache/midori
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.cache/midori
+noblacklist ${HOME}/.config/midori
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,11 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
-mkdir ${HOME}/.config/midori
-whitelist ${HOME}/.config/midori
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.cache/midori
 whitelist ${HOME}/.cache/midori
-whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/midori
+whitelist ${HOME}/.config/midori
 include /etc/firejail/whitelist-common.inc
 
 #Options

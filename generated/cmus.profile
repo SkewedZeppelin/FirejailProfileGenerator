@@ -16,8 +16,8 @@ caps.drop all
 netfilter
 nonewprivs
 noroot
-protocol unix,inet,inet6
-seccomp
 private-bin cmus
 private-etc group
+protocol unix,inet,inet6
+seccomp
 shell none

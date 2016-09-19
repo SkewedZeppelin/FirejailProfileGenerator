@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.ts3client
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.ts3client
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -13,9 +13,9 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.ts3client
 whitelist ${HOME}/.ts3client
-whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 
 #Options

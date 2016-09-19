@@ -14,10 +14,10 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
+nogroups
 nonewprivs
 noroot
-nogroups
+nosound
 private-dev
 protocol unix
 seccomp
-nosound

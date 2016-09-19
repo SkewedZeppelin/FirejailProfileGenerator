@@ -10,14 +10,14 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-nogroups
 netfilter
+nogroups
 nonewprivs
 noroot
+private-bin rhythmbox
+private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-bin rhythmbox
-private-dev
-private-tmp

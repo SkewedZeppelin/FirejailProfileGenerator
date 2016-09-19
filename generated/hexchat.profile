@@ -23,10 +23,10 @@ nogroups
 nonewprivs
 noroot
 nosound
+private-bin hexchat
+private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-bin hexchat
-private-dev
-private-tmp

@@ -10,12 +10,12 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-nonewprivs
 nogroups
+nonewprivs
 noroot
 nosound
+private-bin evince,evince-previewer,evince-thumbnailer
+private-dev
 protocol unix
 seccomp
 shell none
-private-bin evince,evince-previewer,evince-thumbnailer
-private-dev

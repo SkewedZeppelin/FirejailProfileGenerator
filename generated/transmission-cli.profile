@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/transmission
 noblacklist ${HOME}/.cache/transmission
+noblacklist ${HOME}/.config/transmission
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -18,9 +18,9 @@ netfilter
 nonewprivs
 noroot
 nosound
+private-bin transmission-gtk transmission-qt transmission-cli
+private-dev
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-bin transmission-gtk transmission-qt transmission-cli
-private-dev

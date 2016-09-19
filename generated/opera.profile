@@ -3,10 +3,10 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.opera
+noblacklist ${DOWNLOADS}
 noblacklist ${HOME}/.cache/opera
 noblacklist ${HOME}/.config/opera
-noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.opera
 noblacklist ${HOME}/.pki
 
 #Blacklist Paths
@@ -16,13 +16,13 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
-mkdir ${HOME}/.opera
-whitelist ${HOME}/.opera
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.cache/opera
 whitelist ${HOME}/.cache/opera
 mkdir ${HOME}/.config/opera
 whitelist ${HOME}/.config/opera
-whitelist ${DOWNLOADS}
+mkdir ${HOME}/.opera
+whitelist ${HOME}/.opera
 mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc

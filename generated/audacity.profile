@@ -14,13 +14,13 @@ include /etc/firejail/disable-devel.inc
 #Options
 caps.drop all
 netfilter
-nonewprivs
 nogroups
+nonewprivs
 noroot
+private-bin audacity
+private-dev
+private-tmp
 protocol unix
 seccomp
 shell none
 tracelog
-private-bin audacity
-private-dev
-private-tmp

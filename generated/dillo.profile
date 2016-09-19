@@ -3,9 +3,9 @@
 #
 
 #No Blacklist Paths
+noblacklist ${DOWNLOADS}
 noblacklist ${HOME}/.dillo
 noblacklist ${HOME}/.fltk
-noblacklist ${DOWNLOADS}
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,11 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.dillo
 whitelist ${HOME}/.dillo
 mkdir ${HOME}/.fltk
 whitelist ${HOME}/.fltk
-whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 
 #Options

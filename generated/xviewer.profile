@@ -17,10 +17,10 @@ nogroups
 nonewprivs
 noroot
 nosound
+private-bin xviewer
+private-dev
+private-tmp
 protocol unix
 seccomp
 shell none
 tracelog
-private-dev
-private-bin xviewer
-private-tmp

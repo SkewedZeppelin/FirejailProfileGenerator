@@ -150,7 +150,9 @@ public class Main {
   }
 
   private static ArrayList<String> convertToArray(String input) {
-    return new ArrayList<String>(Arrays.asList(input.split(" # ")));
+    ArrayList<String> output = new ArrayList<String>(Arrays.asList(input.split(" # ")));
+    Collections.sort(output);
+    return output;
   }
 
   private static ArrayList<String> getAllPaths() {

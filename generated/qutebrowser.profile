@@ -3,9 +3,9 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/qutebrowser
-noblacklist ${HOME}/.cache/qutebrowser
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.cache/qutebrowser
+noblacklist ${HOME}/.config/qutebrowser
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,11 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
-mkdir ${HOME}/.config/qutebrowser
-whitelist ${HOME}/.config/qutebrowser
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.cache/qutebrowser
 whitelist ${HOME}/.cache/qutebrowser
-whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/qutebrowser
+whitelist ${HOME}/.config/qutebrowser
 include /etc/firejail/whitelist-common.inc
 
 #Options

@@ -13,6 +13,6 @@ caps.drop all
 netfilter
 nogroups
 noroot
-seccomp
-protocol unix,inet,inet6
 private-tmp
+protocol unix,inet,inet6
+seccomp

@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/brave
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.config/brave
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -13,9 +13,9 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.config/brave
 whitelist ${HOME}/.config/brave
-whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 
 #Options

@@ -17,10 +17,10 @@ nogroups
 nonewprivs
 noroot
 nosound
+private-bin eom
+private-dev
+private-tmp
 protocol unix
 seccomp
 shell none
 tracelog
-private-bin eom
-private-dev
-private-tmp

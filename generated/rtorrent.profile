@@ -14,9 +14,9 @@ netfilter
 nonewprivs
 noroot
 nosound
+nosound
+private-bin rtorrent
+private-dev
 protocol unix,inet,inet6
 seccomp
 shell none
-private-bin rtorrent
-private-dev
-nosound

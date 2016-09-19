@@ -3,20 +3,20 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.steampath
-noblacklist ${HOME}/.steampid
-noblacklist ${HOME}/.steam
-noblacklist ${HOME}/.local/share/Steam
-noblacklist ${HOME}/.local/share/steam
-noblacklist ${HOME}/My Games
 noblacklist ${HOME}/.killingfloor
+noblacklist ${HOME}/.local/share/Steam
+noblacklist ${HOME}/.local/share/SuperHexagon
+noblacklist ${HOME}/.local/share/Terraria
 noblacklist ${HOME}/.local/share/aspyr-media
 noblacklist ${HOME}/.local/share/feral-interactive
-noblacklist ${HOME}/.local/share/SuperHexagon
-noblacklist ${HOME}/.local/share/vulkan
+noblacklist ${HOME}/.local/share/steam
 noblacklist ${HOME}/.local/share/vpltd
+noblacklist ${HOME}/.local/share/vulkan
 noblacklist ${HOME}/.nv
-noblacklist ${HOME}/.local/share/Terraria
+noblacklist ${HOME}/.steam
+noblacklist ${HOME}/.steampath
+noblacklist ${HOME}/.steampid
+noblacklist ${HOME}/My Games
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc

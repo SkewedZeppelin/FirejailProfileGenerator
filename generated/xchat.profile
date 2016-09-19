@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/xchat
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.config/xchat
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -13,9 +13,9 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.config/xchat
 whitelist ${HOME}/.config/xchat
-whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 
 #Options

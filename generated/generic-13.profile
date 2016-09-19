@@ -9,16 +9,16 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Options
-quiet
-tracelog
-net none
-shell none
-private-dev
-private-tmp
-nosound
 caps.drop all
+net none
 netfilter
 nonewprivs
 noroot
+nosound
+private-dev
+private-tmp
 protocol unix,inet,inet6
+quiet
 seccomp
+shell none
+tracelog

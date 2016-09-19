@@ -15,13 +15,13 @@ include /etc/firejail/disable-devel.inc
 #Options
 caps.drop all
 netfilter
-nonewprivs
 nogroups
+nonewprivs
 noroot
+private-bin xplayer,xplayer-audio-preview,xplayer-video-thumbnailer
+private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-bin xplayer,xplayer-audio-preview,xplayer-video-thumbnailer
-private-dev
-private-tmp

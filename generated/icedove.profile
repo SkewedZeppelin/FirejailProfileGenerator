@@ -4,12 +4,12 @@
 
 #No Blacklist Paths
 noblacklist ${DOWNLOADS}
-noblacklist ${HOME}/.mozilla
+noblacklist ${HOME}/.cache/icedove
 noblacklist ${HOME}/.cache/mozilla
-noblacklist ${HOME}/.pki
 noblacklist ${HOME}/.gnupg
 noblacklist ${HOME}/.icedove
-noblacklist ${HOME}/.cache/icedove
+noblacklist ${HOME}/.mozilla
+noblacklist ${HOME}/.pki
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -19,18 +19,18 @@ include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
 whitelist ${DOWNLOADS}
-mkdir ${HOME}/.mozilla
-whitelist ${HOME}/.mozilla
+mkdir ${HOME}/.cache/icedove
+whitelist ${HOME}/.cache/icedove
 mkdir ${HOME}/.cache/mozilla
 whitelist ${HOME}/.cache/mozilla
-mkdir ${HOME}/.pki
-whitelist ${HOME}/.pki
 mkdir ${HOME}/.gnupg
 whitelist ${HOME}/.gnupg
 mkdir ${HOME}/.icedove
 whitelist ${HOME}/.icedove
-mkdir ${HOME}/.cache/icedove
-whitelist ${HOME}/.cache/icedove
+mkdir ${HOME}/.mozilla
+whitelist ${HOME}/.mozilla
+mkdir ${HOME}/.pki
+whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 
 #Options

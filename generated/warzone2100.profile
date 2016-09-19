@@ -22,10 +22,10 @@ netfilter
 nogroups
 nonewprivs
 noroot
+private-bin warzone2100
+private-dev
+private-tmp
 protocol unix,inet,inet6,netlink
 seccomp
 shell none
 tracelog
-private-bin warzone2100
-private-dev
-private-tmp

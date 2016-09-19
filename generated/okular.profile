@@ -4,8 +4,8 @@
 
 #No Blacklist Paths
 noblacklist ${HOME}/.kde/share/apps/okular
-noblacklist ${HOME}/.kde/share/config/okularrc
 noblacklist ${HOME}/.kde/share/config/okularpartrc
+noblacklist ${HOME}/.kde/share/config/okularrc
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,12 +14,12 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Options
-read-only ${HOME}/.kde/share/config/kdeglobals
 caps.drop all
-nonewprivs
 nogroups
+nonewprivs
 noroot
+nosound
 private-dev
 protocol unix
+read-only ${HOME}/.kde/share/config/kdeglobals
 seccomp
-nosound

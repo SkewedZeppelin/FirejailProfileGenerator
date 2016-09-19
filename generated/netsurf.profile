@@ -3,9 +3,9 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/netsurf
-noblacklist ${HOME}/.cache/netsurf
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.cache/netsurf
+noblacklist ${HOME}/.config/netsurf
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,11 +14,11 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
-mkdir ${HOME}/.config/netsurf
-whitelist ${HOME}/.config/netsurf
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.cache/netsurf
 whitelist ${HOME}/.cache/netsurf
-whitelist ${DOWNLOADS}
+mkdir ${HOME}/.config/netsurf
+whitelist ${HOME}/.config/netsurf
 include /etc/firejail/whitelist-common.inc
 
 #Options

@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/uGet
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.config/uGet
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -13,9 +13,9 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
+whitelist ${DOWNLOADS}
 mkdir ${HOME}/.config/uGet
 whitelist ${HOME}/.config/uGet
-whitelist ${DOWNLOADS}
 include /etc/firejail/whitelist-common.inc
 
 #Options
@@ -23,9 +23,9 @@ caps.drop all
 netfilter
 nonewprivs
 noroot
+nosound
+private-bin uget-gtk
+private-dev
 protocol unix,inet,inet6
 seccomp
 shell none
-private-bin uget-gtk
-private-dev
-nosound

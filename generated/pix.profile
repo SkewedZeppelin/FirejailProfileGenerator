@@ -14,13 +14,13 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-nonewprivs
 nogroups
+nonewprivs
 noroot
 nosound
+private-bin pix
+private-dev
 protocol unix
 seccomp
 shell none
 tracelog
-private-bin pix
-private-dev

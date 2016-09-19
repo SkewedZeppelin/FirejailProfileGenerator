@@ -13,9 +13,9 @@ caps.drop all
 nogroups
 nonewprivs
 noroot
-protocol unix,inet,inet6
-seccomp
-shell none
 private-bin gnome-mplayer
 private-dev
 private-tmp
+protocol unix,inet,inet6
+seccomp
+shell none

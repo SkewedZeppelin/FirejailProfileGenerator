@@ -12,8 +12,8 @@ include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
 
 #Options
+nosound
 private
 private-dev
-nosound
 private-tmp
 seccomp

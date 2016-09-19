@@ -19,14 +19,14 @@ include /etc/firejail/whitelist-common.inc
 #Options
 caps.drop all
 netfilter
-nonewprivs
 nogroups
+nonewprivs
 noroot
 nosound
+private-bin aweather
+private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-bin aweather
-private-dev
-private-tmp

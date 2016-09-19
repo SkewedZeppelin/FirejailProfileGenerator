@@ -17,11 +17,11 @@ nogroups
 nonewprivs
 noroot
 nosound
-protocol unix
-seccomp
-shell none
-tracelog
 private-bin fairymax,gnome-chess,hoichess
 private-dev
 private-etc fonts,gnome-chess
 private-tmp
+protocol unix
+seccomp
+shell none
+tracelog

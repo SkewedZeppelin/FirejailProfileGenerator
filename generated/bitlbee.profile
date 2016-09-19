@@ -15,9 +15,9 @@ include /etc/firejail/disable-devel.inc
 #Options
 netfilter
 nonewprivs
+nosound
 private
 private-dev
 protocol unix,inet,inet6
-seccomp
-nosound
 read-write /var/lib/bitlbee
+seccomp

@@ -13,17 +13,17 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Options
-quiet
-tracelog
+caps.drop all
+hostname tar
 net none
-shell none
+netfilter
+nonewprivs
+nosound
 private-bin sh,tar,gtar,compress,gzip,lzma,xz,bzip2,lbzip2,lzip,lzop,unrar,unzip,xzdec
 private-dev
 private-etc passwd,group,localtime
-hostname tar
-nosound
-caps.drop all
-netfilter
-nonewprivs
 protocol unix,inet,inet6
+quiet
 seccomp
+shell none
+tracelog

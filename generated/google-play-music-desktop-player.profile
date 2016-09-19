@@ -18,8 +18,8 @@ include /etc/firejail/whitelist-common.inc
 
 #Options
 caps.drop all
+netfilter
 nonewprivs
 noroot
-netfilter
 protocol unix,inet,inet6,netlink
 seccomp

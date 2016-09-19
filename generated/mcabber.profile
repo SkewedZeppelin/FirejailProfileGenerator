@@ -17,10 +17,10 @@ caps.drop all
 netfilter
 nonewprivs
 noroot
+nosound
+private-bin mcabber
+private-dev
+private-etc null
 protocol inet,inet6
 seccomp
-private-bin mcabber
-private-etc null
-private-dev
 shell none
-nosound

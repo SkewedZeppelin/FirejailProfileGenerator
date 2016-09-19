@@ -16,7 +16,7 @@ caps.drop all
 netfilter
 nonewprivs
 noroot
+private-bin mpv,youtube-dl,python2.7
 protocol unix,inet,inet6
 seccomp
 shell none
-private-bin mpv,youtube-dl,python2.7

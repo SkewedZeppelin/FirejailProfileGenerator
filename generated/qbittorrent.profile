@@ -14,7 +14,7 @@ netfilter
 nonewprivs
 noroot
 nosound
+nosound
+private-dev
 protocol unix,inet,inet6
 seccomp
-private-dev
-nosound

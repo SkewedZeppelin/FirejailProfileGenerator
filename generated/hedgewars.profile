@@ -22,7 +22,7 @@ netfilter
 nogroups
 nonewprivs
 noroot
-seccomp
-tracelog
 private-dev
 private-tmp
+seccomp
+tracelog

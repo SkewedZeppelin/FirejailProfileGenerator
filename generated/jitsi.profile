@@ -13,11 +13,11 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-nonewprivs
 nogroups
+nonewprivs
 noroot
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-tmp

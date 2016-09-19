@@ -16,8 +16,8 @@ include /etc/firejail/disable-devel.inc
 caps
 netfilter
 nonewprivs
+nosound
 private
 private-dev
-nosound
 protocol unix,inet,inet6,netlink
 seccomp

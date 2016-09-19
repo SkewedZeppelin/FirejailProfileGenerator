@@ -14,13 +14,13 @@ include /etc/firejail/disable-devel.inc
 #Options
 caps.drop all
 netfilter
-nonewprivs
 nogroups
+nonewprivs
 noroot
+private-bin pidgin
+private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none
 tracelog
-private-bin pidgin
-private-dev
-private-tmp
