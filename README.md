@@ -24,7 +24,7 @@ Testing
 1. git clone https://github.com/SpotComms/FirejailProfileGenerator.git
 2. cd FirejailProfileGenerator/generated
 3. mkdir -p ~/.config/firejail
-4. cp *.profile ~/.config/firejail
+4. cp *.profile ~/.config/firejail/
 5. sudo cp disable-programs.inc /etc/firejail/disable-programs.inc
 6. sudo chmod 644 /etc/firejail/disable-programs.inc
 7. Launch and test!
