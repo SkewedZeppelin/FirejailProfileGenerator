@@ -4,6 +4,7 @@
 
 #No Blacklist Paths
 noblacklist ${HOME}/.wine
+noblacklist ${HOME}/.wine64
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc

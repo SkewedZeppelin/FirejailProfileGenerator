@@ -709,7 +709,7 @@
 		<name>wine</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # seccomp</options>
-		<paths>${HOME}/.wine</paths>
+		<paths>${HOME}/.wine # ${HOME}/.wine64</paths>
 	</application>
 
 	<application>

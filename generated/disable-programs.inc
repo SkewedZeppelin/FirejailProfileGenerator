@@ -175,5 +175,6 @@ blacklist ${HOME}/wallet.dat
 blacklist ${HOME}/.warzone2100-3.1
 blacklist ${HOME}/.weechat
 blacklist ${HOME}/.wine
+blacklist ${HOME}/.wine64
 blacklist ${HOME}/.Wolfram Research
 blacklist /tmp/ssh-*
