@@ -21,10 +21,10 @@ Credits
 Testing
 -------
 - These new profiles will need testing to prevent any potential regressions, below are steps to do so
-1. git clone https://github.com/SpotComms/FirejailProfileGenerator.git
-2. cd FirejailProfileGenerator/generated
-3. mkdir -p ~/.config/firejail
-4. cp *.profile ~/.config/firejail/
-5. sudo cp disable-programs.inc /etc/firejail/disable-programs.inc
-6. sudo chmod 644 /etc/firejail/disable-programs.inc
-7. Launch and test!
+- git clone https://github.com/SpotComms/FirejailProfileGenerator.git
+- cd FirejailProfileGenerator/generated
+- sudo cp disable-programs.inc /etc/firejail/disable-programs.inc
+- sudo rm /etc/firejail/*.profiles
+- sudo cp *.profiles /etc/firejail/
+- sudo chmod 644 /etc/firejail/disable-programs.inc /etc/firejail/*.profiles
+- Launch and test!

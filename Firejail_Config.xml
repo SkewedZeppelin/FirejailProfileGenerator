@@ -254,7 +254,7 @@
 	<!--This might need to be seperated in the future-->
 	<application>
 		<name>firefox</name>
-		<aliases>firefox-esr # iceweasel # icecat # icecat-bin # seamonkey # seamonkey-bin # abrowser # cyberfox # Cyberfox # palemoon # conkeror</aliases>
+		<aliases>firefox-esr # iceweasel # icecat # icecat-launcher # seamonkey # seamonkey-bin # abrowser # cyberfox # Cyberfox # palemoon # conkeror</aliases>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
 		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki # ${HOME}/.8pecxstudios # ${HOME}/.cache/8pecxstudios # ${HOME}/.moonchild productions # ${HOME}/.cache/moonchild productions # ${HOME}/.conkeror.mozdev.org </paths>
