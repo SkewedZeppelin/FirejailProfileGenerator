@@ -1,166 +1,166 @@
-${DOWNLOADS}
-${HOME}/.8pecxstudios
-${HOME}/.FBReader
-${HOME}/.Mathematica
-${HOME}/.Skype
-${HOME}/.TelegramDesktop
-${HOME}/.Wolfram Research
-${HOME}/.atom
-${HOME}/.audacity-data
-${HOME}/.cache/0ad
-${HOME}/.cache/8pecxstudios
-${HOME}/.cache/Franz
-${HOME}/.cache/QuiteRss
-${HOME}/.cache/chromium
-${HOME}/.cache/chromium-dev
-${HOME}/.cache/epiphany
-${HOME}/.cache/gajim
-${HOME}/.cache/google-chrome
-${HOME}/.cache/google-chrome-beta
-${HOME}/.cache/google-chrome-unstable
-${HOME}/.cache/icedove
-${HOME}/.cache/inox
-${HOME}/.cache/moonchild productions
-${HOME}/.cache/mozilla
-${HOME}/.cache/netsurf
-${HOME}/.cache/opera
-${HOME}/.cache/opera-beta
-${HOME}/.cache/qutebrowser
-${HOME}/.cache/slimjet
-${HOME}/.cache/spotify
-${HOME}/.cache/telepathy
-${HOME}/.cache/thunderbird
-${HOME}/.cache/transmission
-${HOME}/.cache/vivaldi
-${HOME}/.cache/wesnoth
-${HOME}/.cache/xreader
-${HOME}/.config/0ad
-${HOME}/.config/Atom
-${HOME}/.config/Franz
-${HOME}/.config/Gitter
-${HOME}/.config/Google Play Music Desktop Player
-${HOME}/.config/Gpredict
-${HOME}/.config/Mumble
-${HOME}/.config/QuiteRss
-${HOME}/.config/QuiteRssrc
-${HOME}/.config/Slack
-${HOME}/.config/atril
-${HOME}/.config/autostart
-${HOME}/.config/autostart/dropbox.desktop
-${HOME}/.config/aweather
-${HOME}/.config/brave
-${HOME}/.config/cherrytree
-${HOME}/.config/chromium
-${HOME}/.config/chromium-dev
-${HOME}/.config/cmus
-${HOME}/.config/deadbeef
-${HOME}/.config/eog
-${HOME}/.config/epiphany
-${HOME}/.config/filezilla
-${HOME}/.config/gajim
-${HOME}/.config/google-chrome
-${HOME}/.config/google-chrome-beta
-${HOME}/.config/google-chrome-unstable
-${HOME}/.config/gthumb
-${HOME}/.config/hexchat
-${HOME}/.config/inox
-${HOME}/.config/libreoffice
-${HOME}/.config/mate/eom
-${HOME}/.config/mpv
-${HOME}/.config/mupen64plus
-${HOME}/.config/netsurf
-${HOME}/.config/opera
-${HOME}/.config/opera-beta
-${HOME}/.config/pix
-${HOME}/.config/psi+
-${HOME}/.config/qutebrowser
-${HOME}/.config/skypeforlinux
-${HOME}/.config/slimjet
-${HOME}/.config/spotify
-${HOME}/.config/stellarium
-${HOME}/.config/telepathy-account-widgets
-${HOME}/.config/totem
-${HOME}/.config/tox
-${HOME}/.config/transmission
-${HOME}/.config/uGet
-${HOME}/.config/vivaldi
-${HOME}/.config/vlc
-${HOME}/.config/wesnoth
-${HOME}/.config/xchat
-${HOME}/.config/xplayer
-${HOME}/.config/xreader
-${HOME}/.config/xviewer
-${HOME}/.conkeror.mozdev.org 
-${HOME}/.dillo
-${HOME}/.dosbox
-${HOME}/.dropbox-dist
-${HOME}/.filezilla
-${HOME}/.fltk
-${HOME}/.gnupg
-${HOME}/.hedgewars
-${HOME}/.icedove
-${HOME}/.jitsi
-${HOME}/.kde/share/apps/gwenview
-${HOME}/.kde/share/apps/okular
-${HOME}/.kde/share/config/gwenviewrc
-${HOME}/.kde/share/config/okularpartrc
-${HOME}/.kde/share/config/okularrc
-${HOME}/.killingfloor
-${HOME}/.local/lib/python2.7/site-packages
-${HOME}/.local/share
-${HOME}/.local/share/
-${HOME}/.local/share/0ad
-${HOME}/.local/share/Empathy
-${HOME}/.local/share/Mumble
-${HOME}/.local/share/QuiteRss
-${HOME}/.local/share/Steam
-${HOME}/.local/share/SuperHexagon
-${HOME}/.local/share/Terraria
-${HOME}/.local/share/TpLogger
-${HOME}/.local/share/aspyr-media
-${HOME}/.local/share/data/Mumble
-${HOME}/.local/share/epiphany
-${HOME}/.local/share/feral-interactive
-${HOME}/.local/share/gajim
-${HOME}/.local/share/gnome-chess
-${HOME}/.local/share/multimc5
-${HOME}/.local/share/mupen64plus
-${HOME}/.local/share/pix
-${HOME}/.local/share/psi+
-${HOME}/.local/share/spotify
-${HOME}/.local/share/steam
-${HOME}/.local/share/telepathy
-${HOME}/.local/share/totem
-${HOME}/.local/share/vpltd
-${HOME}/.local/share/vulkan
-${HOME}/.local/share/wesnoth
-${HOME}/.local/share/xplayer
-${HOME}/.local/share/xreader
-${HOME}/.mcabber
-${HOME}/.mcabberrc
-${HOME}/.moonchild productions
-${HOME}/.mozilla
-${HOME}/.multimc5
-${HOME}/.nv
-${HOME}/.opera
-${HOME}/.opera-beta
-${HOME}/.pki
-${HOME}/.purple
-${HOME}/.ssh
-${HOME}/.steam
-${HOME}/.steampath
-${HOME}/.steampid
-${HOME}/.stellarium
-${HOME}/.thunderbird
-${HOME}/.warzone2100-3.1
-${HOME}/.weechat
-${HOME}/.wine
-${HOME}/Documents/Wolfram Mathematica
-${HOME}/Dropbox
-${HOME}/My Games
-${HOME}/cherrytree
-${HOME}/quiterssfeeds.opml
-${HOME}/snap
-/tmp/ssh-*
-{HOME}/.cache/midori
-{HOME}/.config/midori
+blacklist ${DOWNLOADS}
+blacklist ${HOME}/.8pecxstudios
+blacklist ${HOME}/.FBReader
+blacklist ${HOME}/.Mathematica
+blacklist ${HOME}/.Skype
+blacklist ${HOME}/.TelegramDesktop
+blacklist ${HOME}/.Wolfram Research
+blacklist ${HOME}/.atom
+blacklist ${HOME}/.audacity-data
+blacklist ${HOME}/.cache/0ad
+blacklist ${HOME}/.cache/8pecxstudios
+blacklist ${HOME}/.cache/Franz
+blacklist ${HOME}/.cache/QuiteRss
+blacklist ${HOME}/.cache/chromium
+blacklist ${HOME}/.cache/chromium-dev
+blacklist ${HOME}/.cache/epiphany
+blacklist ${HOME}/.cache/gajim
+blacklist ${HOME}/.cache/google-chrome
+blacklist ${HOME}/.cache/google-chrome-beta
+blacklist ${HOME}/.cache/google-chrome-unstable
+blacklist ${HOME}/.cache/icedove
+blacklist ${HOME}/.cache/inox
+blacklist ${HOME}/.cache/moonchild productions
+blacklist ${HOME}/.cache/mozilla
+blacklist ${HOME}/.cache/netsurf
+blacklist ${HOME}/.cache/opera
+blacklist ${HOME}/.cache/opera-beta
+blacklist ${HOME}/.cache/qutebrowser
+blacklist ${HOME}/.cache/slimjet
+blacklist ${HOME}/.cache/spotify
+blacklist ${HOME}/.cache/telepathy
+blacklist ${HOME}/.cache/thunderbird
+blacklist ${HOME}/.cache/transmission
+blacklist ${HOME}/.cache/vivaldi
+blacklist ${HOME}/.cache/wesnoth
+blacklist ${HOME}/.cache/xreader
+blacklist ${HOME}/.config/0ad
+blacklist ${HOME}/.config/Atom
+blacklist ${HOME}/.config/Franz
+blacklist ${HOME}/.config/Gitter
+blacklist ${HOME}/.config/Google Play Music Desktop Player
+blacklist ${HOME}/.config/Gpredict
+blacklist ${HOME}/.config/Mumble
+blacklist ${HOME}/.config/QuiteRss
+blacklist ${HOME}/.config/QuiteRssrc
+blacklist ${HOME}/.config/Slack
+blacklist ${HOME}/.config/atril
+blacklist ${HOME}/.config/autostart
+blacklist ${HOME}/.config/autostart/dropbox.desktop
+blacklist ${HOME}/.config/aweather
+blacklist ${HOME}/.config/brave
+blacklist ${HOME}/.config/cherrytree
+blacklist ${HOME}/.config/chromium
+blacklist ${HOME}/.config/chromium-dev
+blacklist ${HOME}/.config/cmus
+blacklist ${HOME}/.config/deadbeef
+blacklist ${HOME}/.config/eog
+blacklist ${HOME}/.config/epiphany
+blacklist ${HOME}/.config/filezilla
+blacklist ${HOME}/.config/gajim
+blacklist ${HOME}/.config/google-chrome
+blacklist ${HOME}/.config/google-chrome-beta
+blacklist ${HOME}/.config/google-chrome-unstable
+blacklist ${HOME}/.config/gthumb
+blacklist ${HOME}/.config/hexchat
+blacklist ${HOME}/.config/inox
+blacklist ${HOME}/.config/libreoffice
+blacklist ${HOME}/.config/mate/eom
+blacklist ${HOME}/.config/mpv
+blacklist ${HOME}/.config/mupen64plus
+blacklist ${HOME}/.config/netsurf
+blacklist ${HOME}/.config/opera
+blacklist ${HOME}/.config/opera-beta
+blacklist ${HOME}/.config/pix
+blacklist ${HOME}/.config/psi+
+blacklist ${HOME}/.config/qutebrowser
+blacklist ${HOME}/.config/skypeforlinux
+blacklist ${HOME}/.config/slimjet
+blacklist ${HOME}/.config/spotify
+blacklist ${HOME}/.config/stellarium
+blacklist ${HOME}/.config/telepathy-account-widgets
+blacklist ${HOME}/.config/totem
+blacklist ${HOME}/.config/tox
+blacklist ${HOME}/.config/transmission
+blacklist ${HOME}/.config/uGet
+blacklist ${HOME}/.config/vivaldi
+blacklist ${HOME}/.config/vlc
+blacklist ${HOME}/.config/wesnoth
+blacklist ${HOME}/.config/xchat
+blacklist ${HOME}/.config/xplayer
+blacklist ${HOME}/.config/xreader
+blacklist ${HOME}/.config/xviewer
+blacklist ${HOME}/.conkeror.mozdev.org 
+blacklist ${HOME}/.dillo
+blacklist ${HOME}/.dosbox
+blacklist ${HOME}/.dropbox-dist
+blacklist ${HOME}/.filezilla
+blacklist ${HOME}/.fltk
+blacklist ${HOME}/.gnupg
+blacklist ${HOME}/.hedgewars
+blacklist ${HOME}/.icedove
+blacklist ${HOME}/.jitsi
+blacklist ${HOME}/.kde/share/apps/gwenview
+blacklist ${HOME}/.kde/share/apps/okular
+blacklist ${HOME}/.kde/share/config/gwenviewrc
+blacklist ${HOME}/.kde/share/config/okularpartrc
+blacklist ${HOME}/.kde/share/config/okularrc
+blacklist ${HOME}/.killingfloor
+blacklist ${HOME}/.local/lib/python2.7/site-packages
+blacklist ${HOME}/.local/share
+blacklist ${HOME}/.local/share/
+blacklist ${HOME}/.local/share/0ad
+blacklist ${HOME}/.local/share/Empathy
+blacklist ${HOME}/.local/share/Mumble
+blacklist ${HOME}/.local/share/QuiteRss
+blacklist ${HOME}/.local/share/Steam
+blacklist ${HOME}/.local/share/SuperHexagon
+blacklist ${HOME}/.local/share/Terraria
+blacklist ${HOME}/.local/share/TpLogger
+blacklist ${HOME}/.local/share/aspyr-media
+blacklist ${HOME}/.local/share/data/Mumble
+blacklist ${HOME}/.local/share/epiphany
+blacklist ${HOME}/.local/share/feral-interactive
+blacklist ${HOME}/.local/share/gajim
+blacklist ${HOME}/.local/share/gnome-chess
+blacklist ${HOME}/.local/share/multimc5
+blacklist ${HOME}/.local/share/mupen64plus
+blacklist ${HOME}/.local/share/pix
+blacklist ${HOME}/.local/share/psi+
+blacklist ${HOME}/.local/share/spotify
+blacklist ${HOME}/.local/share/steam
+blacklist ${HOME}/.local/share/telepathy
+blacklist ${HOME}/.local/share/totem
+blacklist ${HOME}/.local/share/vpltd
+blacklist ${HOME}/.local/share/vulkan
+blacklist ${HOME}/.local/share/wesnoth
+blacklist ${HOME}/.local/share/xplayer
+blacklist ${HOME}/.local/share/xreader
+blacklist ${HOME}/.mcabber
+blacklist ${HOME}/.mcabberrc
+blacklist ${HOME}/.moonchild productions
+blacklist ${HOME}/.mozilla
+blacklist ${HOME}/.multimc5
+blacklist ${HOME}/.nv
+blacklist ${HOME}/.opera
+blacklist ${HOME}/.opera-beta
+blacklist ${HOME}/.pki
+blacklist ${HOME}/.purple
+blacklist ${HOME}/.ssh
+blacklist ${HOME}/.steam
+blacklist ${HOME}/.steampath
+blacklist ${HOME}/.steampid
+blacklist ${HOME}/.stellarium
+blacklist ${HOME}/.thunderbird
+blacklist ${HOME}/.warzone2100-3.1
+blacklist ${HOME}/.weechat
+blacklist ${HOME}/.wine
+blacklist ${HOME}/Documents/Wolfram Mathematica
+blacklist ${HOME}/Dropbox
+blacklist ${HOME}/My Games
+blacklist ${HOME}/cherrytree
+blacklist ${HOME}/quiterssfeeds.opml
+blacklist ${HOME}/snap
+blacklist /tmp/ssh-*
+blacklist {HOME}/.cache/midori
+blacklist {HOME}/.config/midori

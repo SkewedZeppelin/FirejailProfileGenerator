@@ -61,7 +61,7 @@ public class Main {
 
       PrintWriter out = new PrintWriter("generated/disable-programs.inc", "UTF-8");
       for(String path : getAllPaths()) {
-        out.println(path);
+        out.println("blacklist " + path);
       }
       out.close();
       out = null;
