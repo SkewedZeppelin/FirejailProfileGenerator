@@ -18,7 +18,6 @@ netfilter
 nonewprivs
 noroot
 nosound
-private-bin transmission-gtk transmission-qt transmission-cli
 private-dev
 protocol unix,inet,inet6
 seccomp

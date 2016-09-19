@@ -650,7 +650,7 @@
 		<name>transmission-cli</name>
 		<aliases>transmission-qt # transmission-gtk</aliases>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin transmission-gtk transmission-qt transmission-cli # private-dev</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-dev</options>
 		<paths>${HOME}/.config/transmission # ${HOME}/.cache/transmission</paths>
 	</application>
 
