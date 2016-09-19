@@ -442,7 +442,7 @@
 		<name>midori</name>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
-		<paths>{HOME}/.config/midori # {HOME}/.cache/midori # ${DOWNLOADS}</paths>
+		<paths>${HOME}/.config/midori # ${HOME}/.cache/midori # ${DOWNLOADS}</paths>
 	</application>
 
 	<application>

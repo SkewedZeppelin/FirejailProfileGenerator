@@ -20,6 +20,7 @@ blacklist ${HOME}/.cache/google-chrome-beta
 blacklist ${HOME}/.cache/google-chrome-unstable
 blacklist ${HOME}/.cache/icedove
 blacklist ${HOME}/.cache/inox
+blacklist ${HOME}/.cache/midori
 blacklist ${HOME}/.cache/moonchild productions
 blacklist ${HOME}/.cache/mozilla
 blacklist ${HOME}/.cache/netsurf
@@ -66,6 +67,7 @@ blacklist ${HOME}/.config/hexchat
 blacklist ${HOME}/.config/inox
 blacklist ${HOME}/.config/libreoffice
 blacklist ${HOME}/.config/mate/eom
+blacklist ${HOME}/.config/midori
 blacklist ${HOME}/.config/mpv
 blacklist ${HOME}/.config/mupen64plus
 blacklist ${HOME}/.config/netsurf
@@ -162,5 +164,3 @@ blacklist ${HOME}/cherrytree
 blacklist ${HOME}/quiterssfeeds.opml
 blacklist ${HOME}/snap
 blacklist /tmp/ssh-*
-blacklist {HOME}/.cache/midori
-blacklist {HOME}/.config/midori
