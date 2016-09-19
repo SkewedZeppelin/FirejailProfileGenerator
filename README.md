@@ -25,8 +25,9 @@ Testing
 - git clone https://github.com/SpotComms/FirejailProfileGenerator.git
 - cd FirejailProfileGenerator/generated
 - sudo cp disable-programs.inc /etc/firejail/disable-programs.inc
-- sudo rm /etc/firejail/*.profiles
-- sudo cp *.profiles /etc/firejail/
-- sudo chmod 644 /etc/firejail/disable-programs.inc /etc/firejail/*.profiles
+- sudo rm /etc/firejail/*.profile
+- sudo cp *.profile /etc/firejail/
+- sudo chmod 644 /etc/firejail/disable-programs.inc
+- sudo chmod 644 /etc/firejail/*.profile
 - Launch and test!
 - Report [here](https://github.com/SpotComms/FirejailProfileGenerator/issues/1)

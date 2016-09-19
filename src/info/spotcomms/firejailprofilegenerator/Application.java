@@ -64,7 +64,7 @@ public class Application {
   public void setPaths(ArrayList<String> paths) {
     this.paths = paths;
   }
-  
+
   public ArrayList<String> getFiles() {
     return files;
   }
@@ -77,5 +77,5 @@ public class Application {
   public String getName() {
     return name;
   }
-  
+
 }

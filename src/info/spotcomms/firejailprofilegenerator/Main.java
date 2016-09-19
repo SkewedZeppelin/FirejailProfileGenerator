@@ -143,7 +143,7 @@ public class Main {
           }
         }
         outA.close();
-        
+
         //START OF ALIASES GENERATION
         if(app.getAliases() != null) {
           for(String alias : app.getAliases()) {
