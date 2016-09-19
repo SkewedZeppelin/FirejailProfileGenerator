@@ -582,9 +582,9 @@
 
 	<application>
 		<name>skype</name>
-		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
-		<paths>${HOME}/.Skype</paths>
+		<mode>whitelist</mode>
+		<options>noexec ${HOME}/ # noexec /tmp/ # caps.drop all # protocol inet,inet6,unix # seccomp # noroot # private-etc resolv.conf,hosts,fonts,pulse # private-bin skype,bash # ipc-namespace</options>
+		<paths>${HOME}/.Skype # ${DOWNLOADS}</paths>
 	</application>
 
 	<application>
@@ -752,4 +752,41 @@
 		<options>caps.drop all # netfilter # noroot # protocol unix,inet,inet6 # seccomp</options>
 		<paths>${HOME}/.ts3client # ${DOWNLOADS}</paths>
 	</application>
+
+	<application>
+		<name>linphone</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # noroot # seccomp</options>
+		<paths>${DOWNLOADS}</paths>
+		<files>${HOME}/.linphonerc # ${HOME}/.linphone-history.db</files>
+	</application>
+
+	<application>
+		<name>mpd</name>
+		<mode>blacklist</mode>
+		<options>private-dev # private-bin mpd,bash # caps.drop all # noroot # seccomp</options>
+		<files>${HOME}/.mpdconf</files>
+	</application>
+
+	<application>
+		<name>openshot</name>
+		<mode>blacklist</mode>
+		<options>private-bin openshot,python,dbus-launch # private-dev # noroot # protocol unix # shell none # seccomp # caps.drop all</options>
+		<paths>${HOME}/.openshot</paths>
+	</application>
+
+	<application>
+		<name>scribus</name>
+		<mode>blacklist</mode>
+		<options>private-bin scribus,dbus-launch,gs # private-dev # noroot # protocol unix # shell none # seccomp # caps.drop all</options>
+		<paths>${HOME}/.scribus</paths>
+	</application>
+
+	<application>
+		<name>virtualbox</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all</options>
+		<paths>${HOME}/.config/VirtualBox # /dev/vboxdrv # /dev/vboxdrvu # /dev/vboxnetctl</paths>
+	</application>
+
 </applications>

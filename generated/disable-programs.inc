@@ -45,6 +45,7 @@ blacklist ${HOME}/.config/Mumble
 blacklist ${HOME}/.config/QuiteRss
 blacklist ${HOME}/.config/QuiteRssrc
 blacklist ${HOME}/.config/Slack
+blacklist ${HOME}/.config/VirtualBox
 blacklist ${HOME}/.config/atril
 blacklist ${HOME}/.config/autostart
 blacklist ${HOME}/.config/autostart/dropbox.desktop
@@ -108,6 +109,8 @@ blacklist ${HOME}/.kde/share/config/gwenviewrc
 blacklist ${HOME}/.kde/share/config/okularpartrc
 blacklist ${HOME}/.kde/share/config/okularrc
 blacklist ${HOME}/.killingfloor
+blacklist ${HOME}/.linphone-history.db
+blacklist ${HOME}/.linphonerc
 blacklist ${HOME}/.local/lib/python2.7/site-packages
 blacklist ${HOME}/.local/share/0ad
 blacklist ${HOME}/.local/share/Empathy
@@ -140,12 +143,15 @@ blacklist ${HOME}/.mcabber
 blacklist ${HOME}/.mcabberrc
 blacklist ${HOME}/.moonchild productions
 blacklist ${HOME}/.mozilla
+blacklist ${HOME}/.mpdconf
 blacklist ${HOME}/.multimc5
 blacklist ${HOME}/.nv
+blacklist ${HOME}/.openshot
 blacklist ${HOME}/.opera
 blacklist ${HOME}/.opera-beta
 blacklist ${HOME}/.pki
 blacklist ${HOME}/.purple
+blacklist ${HOME}/.scribus
 blacklist ${HOME}/.ssh
 blacklist ${HOME}/.steam
 blacklist ${HOME}/.steampath
@@ -163,4 +169,7 @@ blacklist ${HOME}/My Games
 blacklist ${HOME}/cherrytree
 blacklist ${HOME}/quiterssfeeds.opml
 blacklist ${HOME}/snap
+blacklist /dev/vboxdrv
+blacklist /dev/vboxdrvu
+blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*

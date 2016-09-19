@@ -1,10 +1,11 @@
 #
-#Profile for skype
+#Profile for linphone
 #
 
 #No Blacklist Paths
 noblacklist ${DOWNLOADS}
-noblacklist ${HOME}/.Skype
+noblacklist ${HOME}/.linphone-history.db
+noblacklist ${HOME}/.linphonerc
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,17 +15,13 @@ include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
 whitelist ${DOWNLOADS}
-mkdir ${HOME}/.Skype
-whitelist ${HOME}/.Skype
+mkfile ${HOME}/.linphone-history.db
+whitelist ${HOME}/.linphone-history.db
+mkfile ${HOME}/.linphonerc
+whitelist ${HOME}/.linphonerc
 include /etc/firejail/whitelist-common.inc
 
 #Options
 caps.drop all
-ipc-namespace
-noexec ${HOME}/
-noexec /tmp/
 noroot
-private-bin skype,bash
-private-etc resolv.conf,hosts,fonts,pulse
-protocol inet,inet6,unix
 seccomp
