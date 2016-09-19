@@ -171,6 +171,7 @@ blacklist ${HOME}/.sylpheed-2.0
 blacklist ${HOME}/.tconn
 blacklist ${HOME}/.TelegramDesktop
 blacklist ${HOME}/.thunderbird
+blacklist ${HOME}/.ts3client
 blacklist ${HOME}/wallet.dat
 blacklist ${HOME}/.warzone2100-3.1
 blacklist ${HOME}/.weechat

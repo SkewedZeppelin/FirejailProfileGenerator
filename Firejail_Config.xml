@@ -745,4 +745,11 @@
 		<mode>blacklist</mode>
 		<options>quiet # tracelog # net none # shell none # private-bin uudeview # private-dev # private-tmp # private-etc nonexisting_fakefile_for_empty_etc # hostname uudeview # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
 	</application>
+
+	<application>
+		<name>teamspeak3</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.ts3client # ${DOWNLOADS}</paths>
+	</application>
 </applications>
