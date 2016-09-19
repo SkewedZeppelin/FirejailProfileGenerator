@@ -70,7 +70,7 @@ public class Main {
       //Static
       Scanner s = new Scanner(new File("overlay/disable-programs.inc"));
       while(s.hasNext()) {
-        out.println("blacklist " + s.nextLine());
+        out.println(s.nextLine());
       }
       out.close();
       out = null;

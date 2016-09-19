@@ -175,13 +175,13 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
-blacklist blacklist ${HOME}/.*coin
-blacklist blacklist ${HOME}/.electrum*
-blacklist blacklist ${HOME}/.gitconfig
-blacklist blacklist ${HOME}/.git-credential-cache
-blacklist blacklist ${HOME}/.retroshare
-blacklist blacklist ${HOME}/.subversion
-blacklist blacklist ${HOME}/.sylpheed-2.0
-blacklist blacklist ${HOME}/.tconn
-blacklist blacklist ${HOME}/wallet.dat
-blacklist blacklist /tmp/ssh-*
+blacklist ${HOME}/.*coin
+blacklist ${HOME}/.electrum*
+blacklist ${HOME}/.gitconfig
+blacklist ${HOME}/.git-credential-cache
+blacklist ${HOME}/.retroshare
+blacklist ${HOME}/.subversion
+blacklist ${HOME}/.sylpheed-2.0
+blacklist ${HOME}/.tconn
+blacklist ${HOME}/wallet.dat
+blacklist /tmp/ssh-*
