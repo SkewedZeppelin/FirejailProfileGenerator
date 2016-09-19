@@ -29,3 +29,4 @@ Testing
 - sudo cp *.profiles /etc/firejail/
 - sudo chmod 644 /etc/firejail/disable-programs.inc /etc/firejail/*.profiles
 - Launch and test!
+- Report [here](https://github.com/SpotComms/FirejailProfileGenerator/issues/1)
