@@ -14,6 +14,6 @@ End Goal
 
 Credits
 -------
-- Most profiles by netblue30/Firejail contributors from https://github.com/netblue30/firejail/tree/master/etc
+- Most profiles by [netblue30](https://github.com/netblue30/)/[Firejail contributors](https://github.com/netblue30/firejail/graphs/contributors) from https://github.com/netblue30/firejail/tree/master/etc
 - TeamSpeak profile by melvinvermeeren from https://aur.archlinux.org/packages/firejail-profiles
 - Mumble, MultiMC5, eog by SpotComms
