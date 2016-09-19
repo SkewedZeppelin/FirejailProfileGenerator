@@ -8,7 +8,6 @@ noblacklist /usr/bin/python3*
 
 #No Blacklist Paths
 noblacklist ${HOME}/.config/cherrytree
-noblacklist ${HOME}/.local/share/
 noblacklist ${HOME}/cherrytree
 
 #Blacklist Paths
@@ -20,8 +19,6 @@ include /etc/firejail/disable-devel.inc
 #Whitelist Paths
 mkdir ${HOME}/.config/cherrytree
 whitelist ${HOME}/.config/cherrytree
-mkdir ${HOME}/.local/share/
-whitelist ${HOME}/.local/share/
 mkdir ${HOME}/cherrytree
 whitelist ${HOME}/cherrytree
 include /etc/firejail/whitelist-common.inc

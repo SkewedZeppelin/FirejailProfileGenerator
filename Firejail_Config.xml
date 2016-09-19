@@ -57,7 +57,7 @@
 		<name>atril</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin atril, atril-previewer, atril-thumbnailer # private-dev # private-tmp</options>
-		<paths>${HOME}/.config/atril # ${HOME}/.local/share</paths>
+		<paths>${HOME}/.config/atril</paths>
 	</application>
 
 	<application>
@@ -94,7 +94,7 @@
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # seccomp # protocol unix,inet,inet6,netlink # tracelog</options>
 		<noblacklistexplicit>/usr/bin/python2* # /usr/bin/python3*</noblacklistexplicit>
-		<paths>${HOME}/cherrytree # ${HOME}/.config/cherrytree # ${HOME}/.local/share/</paths>
+		<paths>${HOME}/cherrytree # ${HOME}/.config/cherrytree</paths>
 	</application>
 
 	<application>

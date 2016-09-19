@@ -4,7 +4,6 @@
 
 #No Blacklist Paths
 noblacklist ${HOME}/.config/atril
-noblacklist ${HOME}/.local/share
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
