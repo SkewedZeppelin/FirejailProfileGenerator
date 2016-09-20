@@ -6,6 +6,7 @@ blacklist ${HOME}/.Skype
 blacklist ${HOME}/.TelegramDesktop
 blacklist ${HOME}/.VirtualBox
 blacklist ${HOME}/.Wolfram Research
+blacklist ${HOME}/.arduino15
 blacklist ${HOME}/.atom
 blacklist ${HOME}/.audacity-data
 blacklist ${HOME}/.cache/0ad
@@ -53,6 +54,7 @@ blacklist ${HOME}/.config/atril
 blacklist ${HOME}/.config/autostart
 blacklist ${HOME}/.config/autostart/dropbox.desktop
 blacklist ${HOME}/.config/aweather
+blacklist ${HOME}/.config/bless
 blacklist ${HOME}/.config/brave
 blacklist ${HOME}/.config/cherrytree
 blacklist ${HOME}/.config/chromium
@@ -69,6 +71,7 @@ blacklist ${HOME}/.config/google-chrome-unstable
 blacklist ${HOME}/.config/gthumb
 blacklist ${HOME}/.config/hexchat
 blacklist ${HOME}/.config/inox
+blacklist ${HOME}/.config/jd-gui.cfg
 blacklist ${HOME}/.config/libreoffice
 blacklist ${HOME}/.config/mate/eom
 blacklist ${HOME}/.config/midori
@@ -114,6 +117,7 @@ blacklist ${HOME}/.kde/share/config/okularrc
 blacklist ${HOME}/.killingfloor
 blacklist ${HOME}/.linphone-history.db
 blacklist ${HOME}/.linphonerc
+blacklist ${HOME}/.local/.share/maps-places.json
 blacklist ${HOME}/.local/lib/python2.7/site-packages
 blacklist ${HOME}/.local/share/0ad
 blacklist ${HOME}/.local/share/Empathy
@@ -168,6 +172,8 @@ blacklist ${HOME}/.warzone2100-3.1
 blacklist ${HOME}/.weechat
 blacklist ${HOME}/.wine
 blacklist ${HOME}/.wine64
+blacklist ${HOME}/.xonotic
+blacklist ${HOME}/Arduino
 blacklist ${HOME}/Documents/Wolfram Mathematica
 blacklist ${HOME}/Dropbox
 blacklist ${HOME}/My Games

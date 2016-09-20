@@ -1,5 +1,5 @@
 #
-#Profile for generic-6w:gnome-contacts
+#Profile for defaultw:gnome-contacts
 #
 
-include /etc/firejail/generic-6w.profile
+include /etc/firejail/defaultw.profile

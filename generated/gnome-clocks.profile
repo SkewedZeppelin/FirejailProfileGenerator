@@ -1,5 +1,5 @@
 #
-#Profile for generic-6w:gnome-clocks
+#Profile for defaultw:gnome-clocks
 #
 
-include /etc/firejail/generic-6w.profile
+include /etc/firejail/defaultw.profile

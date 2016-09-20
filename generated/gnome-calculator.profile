@@ -1,5 +1,5 @@
 #
-#Profile for generic-6w:gnome-calculator
+#Profile for defaultw:gnome-calculator
 #
 
-include /etc/firejail/generic-6w.profile
+include /etc/firejail/defaultw.profile

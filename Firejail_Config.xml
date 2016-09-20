@@ -17,9 +17,17 @@
 
 	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
 	<application>
-		<name>generic-6w</name>
-		<aliases>gnome-contacts # gnome-clocks # gnome-calendar # gnome-calculator</aliases>
+		<name>defaultw</name>
+		<aliases>gnome-contacts # gnome-clocks # gnome-calendar # gnome-calculator # pithos</aliases>
 		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+	</application>
+
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>defaultnd</name>
+		<aliases>pdfsam</aliases>
+		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
 	</application>
 
@@ -809,6 +817,7 @@
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
 		<paths>${HOME}/.cache/champlain</paths>
+		<files>${HOME}/.local/.share/maps-places.json</files>
 	</application>
 
 	<application>
@@ -823,6 +832,35 @@
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
 		<paths>${HOME}/.cache/libgweather</paths>
+	</application>
+
+	<application>
+		<name>xonotic</name>
+		<aliases>xonotic-sdl # xonotic-glx</aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.xonotic</paths>
+	</application>
+
+	<application>
+		<name>arduino</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/Arduino # ${HOME}/.arduino15</paths>
+	</application>
+
+	<application>
+		<name>bless</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.config/bless</paths>
+	</application>
+
+	<application>
+		<name>jd-gui</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<files>${HOME}/.config/jd-gui.cfg</files>
 	</application>
 
 </applications>

@@ -1,10 +1,8 @@
 #
-#Profile for gnome-maps
+#Profile for jd-gui
 #
 
-#No Blacklist Paths
-noblacklist ${HOME}/.cache/champlain
-noblacklist ${HOME}/.local/.share/maps-places.json
+noblacklist ${HOME}/.config/jd-gui.cfg
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
