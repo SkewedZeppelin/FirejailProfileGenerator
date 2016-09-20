@@ -628,7 +628,7 @@
 	<application>
 		<name>ssh</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # quiet</options>
 		<paths>${HOME}/.ssh # /tmp/ssh-*</paths>
 	</application>
 
