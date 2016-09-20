@@ -4,6 +4,7 @@
 
 #No Blacklist Paths
 noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.cache/champlain
 noblacklist ${HOME}/.cache/telepathy
 noblacklist ${HOME}/.config/telepathy-account-widgets
 noblacklist ${HOME}/.local/share/Empathy
@@ -19,6 +20,8 @@ include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
 whitelist ${DOWNLOADS}
+mkdir ${HOME}/.cache/champlain
+whitelist ${HOME}/.cache/champlain
 mkdir ${HOME}/.cache/telepathy
 whitelist ${HOME}/.cache/telepathy
 mkdir ${HOME}/.config/telepathy-account-widgets

@@ -176,7 +176,7 @@
 		<name>eog</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # nonewprivs # noroot # netfilter # protocol unix,inet,inet6 # seccomp</options>
-		<paths>${HOME}/.config/eog</paths>
+		<paths>${HOME}/.config/eog # ${HOME}/.cache/champlain</paths>
 	</application>
 
 	<application>
@@ -521,7 +521,7 @@
 		<name>empathy</name>
 		<mode>whitelist</mode>
 		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
-		<paths>${DOWNLOADS} # ${HOME}/.local/share/Empathy # ${HOME}/.local/share/telepathy # ${HOME}/.local/share/TpLogger # ${HOME}/.config/telepathy-account-widgets # ${HOME}/.cache/telepathy # ${HOME}/.purple</paths>
+		<paths>${DOWNLOADS} # ${HOME}/.cache/champlain # ${HOME}/.local/share/Empathy # ${HOME}/.local/share/telepathy # ${HOME}/.local/share/TpLogger # ${HOME}/.config/telepathy-account-widgets # ${HOME}/.cache/telepathy # ${HOME}/.purple</paths>
 	</application>
 
 	<application>

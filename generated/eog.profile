@@ -3,6 +3,7 @@
 #
 
 #No Blacklist Paths
+noblacklist ${HOME}/.cache/champlain
 noblacklist ${HOME}/.config/eog
 
 #Blacklist Paths
