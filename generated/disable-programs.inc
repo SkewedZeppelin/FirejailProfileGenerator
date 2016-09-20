@@ -83,6 +83,7 @@ blacklist ${HOME}/.config/opera-beta
 blacklist ${HOME}/.config/pix
 blacklist ${HOME}/.config/psi+
 blacklist ${HOME}/.config/qutebrowser
+blacklist ${HOME}/.config/redshift.conf
 blacklist ${HOME}/.config/skypeforlinux
 blacklist ${HOME}/.config/slimjet
 blacklist ${HOME}/.config/spotify
