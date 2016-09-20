@@ -15,6 +15,14 @@
 		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
 	</application>
 
+	<!--TODO ADD PATHS (EVEN IN BLACKLIST, IT PREVENTS OTHER FIREJAILED APPS FROM ACCESSING)-->
+	<application>
+		<name>generic-6w</name>
+		<aliases>gnome-contacts # gnome-clocks # gnome-calendar # gnome-calculator</aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+	</application>
+
 	<application>
 		<name>server</name>
 		<mode>blacklist</mode>
@@ -787,6 +795,34 @@
 		<mode>blacklist</mode>
 		<options>caps.drop all</options>
 		<paths>${HOME}/.config/VirtualBox # ${HOME}/.VirtualBox # ${HOME}/VirtualBox VMs # /dev/vboxdrv # /dev/vboxdrvu # /dev/vboxnetctl</paths>
+	</application>
+
+	<application>
+		<name>gnome-2048</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.local/share/gnome-2048</paths>
+	</application>
+
+	<application>
+		<name>gnome-maps</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.cache/champlain</paths>
+	</application>
+
+	<application>
+		<name>gnome-music</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.local/share/gnome-music</paths>
+	</application>
+
+	<application>
+		<name>gnome-weather</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.cache/libgweather</paths>
 	</application>
 
 </applications>

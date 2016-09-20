@@ -12,6 +12,7 @@ blacklist ${HOME}/.cache/0ad
 blacklist ${HOME}/.cache/8pecxstudios
 blacklist ${HOME}/.cache/Franz
 blacklist ${HOME}/.cache/QuiteRss
+blacklist ${HOME}/.cache/champlain
 blacklist ${HOME}/.cache/chromium
 blacklist ${HOME}/.cache/chromium-dev
 blacklist ${HOME}/.cache/epiphany
@@ -21,6 +22,7 @@ blacklist ${HOME}/.cache/google-chrome-beta
 blacklist ${HOME}/.cache/google-chrome-unstable
 blacklist ${HOME}/.cache/icedove
 blacklist ${HOME}/.cache/inox
+blacklist ${HOME}/.cache/libgweather
 blacklist ${HOME}/.cache/midori
 blacklist ${HOME}/.cache/moonchild productions
 blacklist ${HOME}/.cache/mozilla
@@ -126,7 +128,9 @@ blacklist ${HOME}/.local/share/data/Mumble
 blacklist ${HOME}/.local/share/epiphany
 blacklist ${HOME}/.local/share/feral-interactive
 blacklist ${HOME}/.local/share/gajim
+blacklist ${HOME}/.local/share/gnome-2048
 blacklist ${HOME}/.local/share/gnome-chess
+blacklist ${HOME}/.local/share/gnome-music
 blacklist ${HOME}/.local/share/multimc5
 blacklist ${HOME}/.local/share/mupen64plus
 blacklist ${HOME}/.local/share/pix
