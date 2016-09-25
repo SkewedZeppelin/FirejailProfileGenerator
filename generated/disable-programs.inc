@@ -136,6 +136,7 @@ blacklist ${HOME}/.local/share/gajim
 blacklist ${HOME}/.local/share/gnome-2048
 blacklist ${HOME}/.local/share/gnome-chess
 blacklist ${HOME}/.local/share/gnome-music
+blacklist ${HOME}/.local/share/lollypop
 blacklist ${HOME}/.local/share/multimc5
 blacklist ${HOME}/.local/share/mupen64plus
 blacklist ${HOME}/.local/share/pix

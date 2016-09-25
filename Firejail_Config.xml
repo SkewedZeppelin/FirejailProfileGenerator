@@ -828,6 +828,13 @@
 	</application>
 
 	<application>
+		<name>lollypop</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<paths>${HOME}/.local/share/lollypop</paths>
+	</application>
+
+	<application>
 		<name>gnome-weather</name>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
