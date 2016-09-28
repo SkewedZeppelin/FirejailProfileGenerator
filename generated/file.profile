@@ -13,11 +13,13 @@ caps.drop all
 hostname file
 net none
 netfilter
+no3d
 nonewprivs
 nosound
 private-bin file
 private-dev
 private-etc magic.mgc,magic,localtime
+private-tmp
 protocol unix,inet,inet6
 quiet
 seccomp

@@ -12,6 +12,7 @@ include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
 
 #Options
+no3d
 nosound
 private
 private-dev

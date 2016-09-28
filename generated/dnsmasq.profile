@@ -15,6 +15,7 @@ include /etc/firejail/disable-devel.inc
 #Options
 caps
 netfilter
+no3d
 nonewprivs
 nosound
 private

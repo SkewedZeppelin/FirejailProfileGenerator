@@ -17,6 +17,7 @@ caps.drop all
 hostname tar
 net none
 netfilter
+no3d
 nonewprivs
 nosound
 private-bin sh,tar,gtar,compress,gzip,lzma,xz,bzip2,lbzip2,lzip,lzop,unrar,unzip,xzdec

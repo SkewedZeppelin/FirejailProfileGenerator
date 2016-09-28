@@ -13,6 +13,7 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Options
+no3d
 nosound
 private
 private-dev
