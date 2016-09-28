@@ -14,12 +14,17 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
+ipc-namespace
+net none
+noexec ${HOME}
+noexec /tmp
 nogroups
 nonewprivs
 noroot
 nosound
 private-bin qpdfview
 private-dev
+private-etc fonts,X11,alternatives
 private-tmp
 protocol unix
 seccomp

@@ -1,9 +1,9 @@
 #
-#Profile for openshot
+#Profile for synfigstudio
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.openshot
+noblacklist ${HOME}/.synfig
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -13,9 +13,13 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
+ipc-namespace
+net none
+noexec ${HOME}
+noexec /tmp
 noroot
-private-bin openshot,python
+private-bin synfigstudio
 private-dev
-protocol unix
+private-etc fonts,X11,synfig
 seccomp
 shell none

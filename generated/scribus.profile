@@ -14,7 +14,7 @@ include /etc/firejail/disable-devel.inc
 #Options
 caps.drop all
 noroot
-private-bin scribus,dbus-launch,gs
+private-bin scribus,gs
 private-dev
 protocol unix
 seccomp

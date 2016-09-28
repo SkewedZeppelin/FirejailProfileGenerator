@@ -1,6 +1,7 @@
 blacklist ${DOWNLOADS}
 blacklist ${HOME}/.8pecxstudios
 blacklist ${HOME}/.FBReader
+blacklist ${HOME}/.LuminanceHDR
 blacklist ${HOME}/.Mathematica
 blacklist ${HOME}/.Skype
 blacklist ${HOME}/.TelegramDesktop
@@ -45,6 +46,7 @@ blacklist ${HOME}/.config/Franz
 blacklist ${HOME}/.config/Gitter
 blacklist ${HOME}/.config/Google Play Music Desktop Player
 blacklist ${HOME}/.config/Gpredict
+blacklist ${HOME}/.config/Luminance
 blacklist ${HOME}/.config/Mumble
 blacklist ${HOME}/.config/QuiteRss
 blacklist ${HOME}/.config/QuiteRssrc
@@ -170,6 +172,7 @@ blacklist ${HOME}/.steam
 blacklist ${HOME}/.steampath
 blacklist ${HOME}/.steampid
 blacklist ${HOME}/.stellarium
+blacklist ${HOME}/.synfig
 blacklist ${HOME}/.thunderbird
 blacklist ${HOME}/.ts3client
 blacklist ${HOME}/.warzone2100-3.1

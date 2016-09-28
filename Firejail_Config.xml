@@ -787,14 +787,14 @@
 	<application>
 		<name>openshot</name>
 		<mode>blacklist</mode>
-		<options>private-bin openshot,python,dbus-launch # private-dev # noroot # protocol unix # shell none # seccomp # caps.drop all</options>
+		<options>private-bin openshot,python # private-dev # noroot # protocol unix # shell none # seccomp # caps.drop all</options>
 		<paths>${HOME}/.openshot</paths>
 	</application>
 
 	<application>
 		<name>scribus</name>
 		<mode>blacklist</mode>
-		<options>private-bin scribus,dbus-launch,gs # private-dev # noroot # protocol unix # shell none # seccomp # caps.drop all</options>
+		<options>private-bin scribus,gs # private-dev # noroot # protocol unix # shell none # seccomp # caps.drop all</options>
 		<paths>${HOME}/.scribus</paths>
 	</application>
 
@@ -887,8 +887,23 @@
 	<application>
 		<name>qpdfview</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin qpdfview # private-tmp # private-dev</options>
+		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # nogroups # nonewprivs # noroot # nosound # private-bin qpdfview # private-dev # private-etc fonts,X11,alternatives # private-tmp # protocol unix # seccomp # shell none # tracelog</options>
 		<paths>${HOME}/.config/qpdfview # ${HOME}/.local/share/qpdfview</paths>
+	</application>
+
+	<application>
+		<name>luminance-hdr</name>
+		<aliases>luminance-hdr-cli</aliases>
+		<mode>blacklist</mode>
+		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # nogroups # noroot # nosound # private-bin luminance-hdr,luminance-hdr-cli,align_image_stack # private-dev # private-etc fonts,X11,alternatives # seccomp # shell none</options>
+		<paths>${HOME}/.LuminanceHDR # ${HOME}/.config/Luminance</paths>
+	</application>
+
+	<application>
+		<name>synfigstudio</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # noroot # private-bin synfigstudio # private-dev # private-etc fonts,X11,synfig # seccomp # shell none</options>
+		<paths>${HOME}/.synfig</paths>
 	</application>
 
 </applications>
