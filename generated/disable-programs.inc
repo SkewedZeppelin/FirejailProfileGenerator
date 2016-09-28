@@ -82,6 +82,7 @@ blacklist ${HOME}/.config/opera
 blacklist ${HOME}/.config/opera-beta
 blacklist ${HOME}/.config/pix
 blacklist ${HOME}/.config/psi+
+blacklist ${HOME}/.config/qpdfview
 blacklist ${HOME}/.config/qutebrowser
 blacklist ${HOME}/.config/redshift.conf
 blacklist ${HOME}/.config/skypeforlinux
@@ -141,6 +142,7 @@ blacklist ${HOME}/.local/share/multimc5
 blacklist ${HOME}/.local/share/mupen64plus
 blacklist ${HOME}/.local/share/pix
 blacklist ${HOME}/.local/share/psi+
+blacklist ${HOME}/.local/share/qpdfview
 blacklist ${HOME}/.local/share/spotify
 blacklist ${HOME}/.local/share/steam
 blacklist ${HOME}/.local/share/telepathy
@@ -187,8 +189,6 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
-blacklist noblacklist ${HOME}/.config/qpdfview
-blacklist noblacklist ${HOME}/.local/share/qpdfview
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig

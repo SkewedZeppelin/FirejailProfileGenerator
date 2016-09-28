@@ -887,8 +887,8 @@
 	<application>
 		<name>qpdfview</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog #  # private-bin qpdfview # private-tmp # private-dev</options>
-		<paths>noblacklist ${HOME}/.config/qpdfview # noblacklist ${HOME}/.local/share/qpdfview</paths>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin qpdfview # private-tmp # private-dev</options>
+		<paths>${HOME}/.config/qpdfview # ${HOME}/.local/share/qpdfview</paths>
 	</application>
 
 </applications>

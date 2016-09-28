@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist noblacklist ${HOME}/.config/qpdfview
-noblacklist noblacklist ${HOME}/.local/share/qpdfview
+noblacklist ${HOME}/.config/qpdfview
+noblacklist ${HOME}/.local/share/qpdfview
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -13,7 +13,6 @@ include /etc/firejail/disable-passwdmgr.inc
 include /etc/firejail/disable-devel.inc
 
 #Options
-
 caps.drop all
 nogroups
 nonewprivs
