@@ -244,7 +244,7 @@
 	<application>
 		<name>evince</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # private-bin evince,evince-previewer,evince-thumbnailer # private-dev</options>
+		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # private-bin evince,evince-previewer,evince-thumbnailer # private-dev # tracelog</options>
 	</application>
 
 	<application>
@@ -876,6 +876,19 @@
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
 		<files>${HOME}/.config/redshift.conf</files>
+	</application>
+
+	<application>
+		<name>mupdf</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-tmp # private-dev</options>
+	</application>
+
+	<application>
+		<name>qpdfview</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog #  # private-bin qpdfview # private-tmp # private-dev</options>
+		<paths>noblacklist ${HOME}/.config/qpdfview # noblacklist ${HOME}/.local/share/qpdfview</paths>
 	</application>
 
 </applications>

@@ -187,6 +187,8 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
+blacklist noblacklist ${HOME}/.config/qpdfview
+blacklist noblacklist ${HOME}/.local/share/qpdfview
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig

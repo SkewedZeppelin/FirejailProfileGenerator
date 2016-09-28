@@ -1,5 +1,5 @@
 #
-#Profile for evince
+#Profile for mupdf
 #
 
 #Blacklist Paths
@@ -14,8 +14,8 @@ nogroups
 nonewprivs
 noroot
 nosound
-private-bin evince,evince-previewer,evince-thumbnailer
 private-dev
+private-tmp
 protocol unix
 seccomp
 shell none
