@@ -42,6 +42,7 @@ blacklist ${HOME}/.cache/wesnoth
 blacklist ${HOME}/.cache/xreader
 blacklist ${HOME}/.config/0ad
 blacklist ${HOME}/.config/Atom
+blacklist ${HOME}/.config/Brackets
 blacklist ${HOME}/.config/Franz
 blacklist ${HOME}/.config/Gitter
 blacklist ${HOME}/.config/Google Play Music Desktop Player

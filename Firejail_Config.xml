@@ -922,4 +922,12 @@
 		<paths>${HOME}/.synfig</paths>
 	</application>
 
+	<application>
+		<name>brackets</name>
+		<mode>blacklist</mode>
+		<options>private-bin bash,brackets,readlink,dirname,google-chrome,cat # private-dev</options>
+		<noblacklistexplicit>/opt/brackets # /opt/google</noblacklistexplicit>
+		<paths>${HOME}/.config/Brackets</paths>
+	</application>
+
 </applications>
