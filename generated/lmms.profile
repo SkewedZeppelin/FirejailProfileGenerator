@@ -1,27 +1,24 @@
 #
-#Profile for luminance-hdr
+#Profile for lmms
 #
 
-#No Blacklist Paths
-noblacklist ${HOME}/.LuminanceHDR
-noblacklist ${HOME}/.config/Luminance
+noblacklist ${HOME}/.lmmsrc.xml
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
 include /etc/firejail/disable-programs.inc
 include /etc/firejail/disable-passwdmgr.inc
+include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
 ipc-namespace
 net none
-noexec ${HOME}
+noexec /home
 noexec /tmp
 nogroups
 noroot
-nosound
-private-bin luminance-hdr,luminance-hdr-cli,align_image_stack
 private-dev
-private-etc fonts,X11,alternatives
+private-etc fonts
 seccomp
 shell none

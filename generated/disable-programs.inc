@@ -110,9 +110,11 @@ blacklist ${HOME}/.dosbox
 blacklist ${HOME}/.dropbox-dist
 blacklist ${HOME}/.filezilla
 blacklist ${HOME}/.fltk
+blacklist ${HOME}/.gimp*
 blacklist ${HOME}/.gnupg
 blacklist ${HOME}/.hedgewars
 blacklist ${HOME}/.icedove
+blacklist ${HOME}/.inkscape
 blacklist ${HOME}/.jitsi
 blacklist ${HOME}/.kde/share/apps/gwenview
 blacklist ${HOME}/.kde/share/apps/okular
@@ -122,6 +124,7 @@ blacklist ${HOME}/.kde/share/config/okularrc
 blacklist ${HOME}/.killingfloor
 blacklist ${HOME}/.linphone-history.db
 blacklist ${HOME}/.linphonerc
+blacklist ${HOME}/.lmmsrc.xml
 blacklist ${HOME}/.local/.share/maps-places.json
 blacklist ${HOME}/.local/lib/python2.7/site-packages
 blacklist ${HOME}/.local/share/0ad

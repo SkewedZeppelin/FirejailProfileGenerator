@@ -651,6 +651,7 @@
 	<!-- TODO ADD MORE GAMES AND CONVERT TO WHITELIST -->
 	<application>
 		<name>steam</name>
+		<aliases>steam-native</aliases>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp</options>
 		<paths>${HOME}/.steampath # ${HOME}/.steampid # ${HOME}/.steam # ${HOME}/.local/share/Steam # ${HOME}/.local/share/steam # ${HOME}/My Games # ${HOME}/.killingfloor # ${HOME}/.local/share/aspyr-media # ${HOME}/.local/share/feral-interactive # ${HOME}/.local/share/SuperHexagon # ${HOME}/.local/share/vulkan # ${HOME}/.local/share/vpltd # ${HOME}/.nv # ${HOME}/.local/share/Terraria</paths>
@@ -911,6 +912,7 @@
 		<name>luminance-hdr</name>
 		<aliases>luminance-hdr-cli</aliases>
 		<mode>blacklist</mode>
+		<genoptions>nodevel</genoptions>
 		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # nogroups # noroot # nosound # private-bin luminance-hdr,luminance-hdr-cli,align_image_stack # private-dev # private-etc fonts,X11,alternatives # seccomp # shell none</options>
 		<paths>${HOME}/.LuminanceHDR # ${HOME}/.config/Luminance</paths>
 	</application>
@@ -928,6 +930,29 @@
 		<options>private-bin bash,brackets,readlink,dirname,google-chrome,cat # private-dev</options>
 		<noblacklistexplicit>/opt/brackets # /opt/google</noblacklistexplicit>
 		<paths>${HOME}/.config/Brackets</paths>
+	</application>
+
+	<application>
+		<name>gimp</name>
+		<mode>blacklist</mode>
+		<genoptions>nodevel</genoptions>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix # seccomp # private-dev # private-tmp # noexec ${HOME} # noexec /tmp # nogroups # nosound</options>
+		<paths>${HOME}/.gimp*</paths>
+	</application>
+
+	<application>
+		<name>inkscape</name>
+		<mode>blacklist</mode>
+		<genoptions>nodevel</genoptions>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix # seccomp # private-dev # private-tmp # noexec ${HOME} # noexec /tmp # nogroups # nosound</options>
+		<paths>${HOME}/.inkscape</paths>
+	</application>
+
+	<application>
+		<name>lmms</name>
+		<mode>blacklist</mode>
+		<options>private-dev # private-etc fonts # noexec /home # noexec /tmp # shell none # seccomp # caps.drop all # net none # noroot # nogroups # ipc-namespace</options>
+		<files>${HOME}/.lmmsrc.xml</files>
 	</application>
 
 </applications>
