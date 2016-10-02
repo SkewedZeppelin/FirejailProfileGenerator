@@ -920,7 +920,7 @@
 	<application>
 		<name>synfigstudio</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # noroot # private-bin synfigstudio # private-dev # private-etc fonts,X11,synfig # seccomp # shell none</options>
+		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # noroot # private-bin synfigstudio # private-dev # private-etc fonts,X11,synfig,synfig_modules.cfg # seccomp # shell none</options>
 		<paths>${HOME}/.synfig</paths>
 	</application>
 
@@ -951,8 +951,15 @@
 	<application>
 		<name>lmms</name>
 		<mode>blacklist</mode>
-		<options>private-dev # private-etc fonts # noexec /home # noexec /tmp # shell none # seccomp # caps.drop all # net none # noroot # nogroups # ipc-namespace</options>
+		<options>private-dev # private-etc fonts,pulse # noexec /home # noexec /tmp # shell none # seccomp # caps.drop all # net none # noroot # nogroups # ipc-namespace</options>
 		<files>${HOME}/.lmmsrc.xml</files>
+	</application>
+
+	<application>
+		<name>cin</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # ipc-namespace # net none # noexec /home # noexec /tmp # nogroups # noroot # private-bin cin # private-dev # private-etc fonts,pulse # seccomp # shell none</options>
+		<paths>${HOME}/.bcast5</paths>
 	</application>
 
 </applications>

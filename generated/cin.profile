@@ -1,9 +1,9 @@
 #
-#Profile for synfigstudio
+#Profile for cin
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.synfig
+noblacklist ${HOME}/.bcast5
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -15,11 +15,12 @@ include /etc/firejail/disable-devel.inc
 caps.drop all
 ipc-namespace
 net none
-noexec ${HOME}
+noexec /home
 noexec /tmp
+nogroups
 noroot
-private-bin synfigstudio
+private-bin cin
 private-dev
-private-etc fonts,X11,synfig,synfig_modules.cfg
+private-etc fonts,pulse
 seccomp
 shell none

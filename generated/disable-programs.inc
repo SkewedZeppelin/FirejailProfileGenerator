@@ -10,6 +10,7 @@ blacklist ${HOME}/.Wolfram Research
 blacklist ${HOME}/.arduino15
 blacklist ${HOME}/.atom
 blacklist ${HOME}/.audacity-data
+blacklist ${HOME}/.bcast5
 blacklist ${HOME}/.cache/0ad
 blacklist ${HOME}/.cache/8pecxstudios
 blacklist ${HOME}/.cache/Franz

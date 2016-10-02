@@ -19,6 +19,6 @@ noexec /tmp
 nogroups
 noroot
 private-dev
-private-etc fonts
+private-etc fonts,pulse
 seccomp
 shell none
