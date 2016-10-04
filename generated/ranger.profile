@@ -3,12 +3,9 @@
 #
 
 #No Blacklist Explicit Paths
-noblacklist noblacklist /usr/bin/perl
-noblacklist noblacklist /usr/lib/perl*
-noblacklist noblacklist /usr/share/perl*
-
-#No Blacklist Paths
-noblacklist 
+noblacklist /usr/bin/perl
+noblacklist /usr/lib/perl*
+noblacklist /usr/share/perl*
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc

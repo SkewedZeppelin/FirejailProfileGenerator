@@ -1,4 +1,3 @@
-blacklist 
 blacklist ${DOWNLOADS}
 blacklist ${HOME}/.8pecxstudios
 blacklist ${HOME}/.FBReader
