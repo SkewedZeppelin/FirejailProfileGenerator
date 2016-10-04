@@ -4,6 +4,7 @@
 
 #No Blacklist Paths
 noblacklist ${HOME}/.killingfloor
+noblacklist ${HOME}/.local/share/3909/PapersPlease
 noblacklist ${HOME}/.local/share/Steam
 noblacklist ${HOME}/.local/share/SuperHexagon
 noblacklist ${HOME}/.local/share/Terraria

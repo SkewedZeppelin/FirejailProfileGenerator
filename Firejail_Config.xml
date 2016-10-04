@@ -654,7 +654,7 @@
 		<aliases>steam-native</aliases>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp</options>
-		<paths>${HOME}/.steampath # ${HOME}/.steampid # ${HOME}/.steam # ${HOME}/.local/share/Steam # ${HOME}/.local/share/steam # ${HOME}/My Games # ${HOME}/.killingfloor # ${HOME}/.local/share/aspyr-media # ${HOME}/.local/share/feral-interactive # ${HOME}/.local/share/SuperHexagon # ${HOME}/.local/share/vulkan # ${HOME}/.local/share/vpltd # ${HOME}/.nv # ${HOME}/.local/share/Terraria</paths>
+		<paths>${HOME}/.steampath # ${HOME}/.steampid # ${HOME}/.steam # ${HOME}/.local/share/Steam # ${HOME}/.local/share/steam # ${HOME}/My Games # ${HOME}/.killingfloor # ${HOME}/.local/share/aspyr-media # ${HOME}/.local/share/feral-interactive # ${HOME}/.local/share/3909/PapersPlease # ${HOME}/.local/share/SuperHexagon # ${HOME}/.local/share/vulkan # ${HOME}/.local/share/vpltd # ${HOME}/.nv # ${HOME}/.local/share/Terraria</paths>
 	</application>
 
 	<application>

@@ -135,6 +135,7 @@ blacklist ${HOME}/.lmmsrc.xml
 blacklist ${HOME}/.local/.share/maps-places.json
 blacklist ${HOME}/.local/lib/python2.7/site-packages
 blacklist ${HOME}/.local/share/0ad
+blacklist ${HOME}/.local/share/3909/PapersPlease
 blacklist ${HOME}/.local/share/Empathy
 blacklist ${HOME}/.local/share/Mumble
 blacklist ${HOME}/.local/share/QuiteRss
