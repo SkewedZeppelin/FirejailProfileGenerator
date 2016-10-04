@@ -1,13 +1,6 @@
 #
-#Profile for cherrytree
+#Profile for feh
 #
-
-#No Blacklist Explicit Paths
-noblacklist /usr/bin/python2*
-noblacklist /usr/bin/python3*
-
-#No Blacklist Paths
-noblacklist ${HOME}/.config/cherrytree
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -17,10 +10,15 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
+net none
 netfilter
+nogroups
 nonewprivs
 noroot
 nosound
-protocol unix,inet,inet6,netlink
+private-bin feh
+private-dev
+private-etc feh
+protocol unix
 seccomp
-tracelog
+shell none

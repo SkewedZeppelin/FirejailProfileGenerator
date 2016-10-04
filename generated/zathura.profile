@@ -1,13 +1,10 @@
 #
-#Profile for cherrytree
+#Profile for zathura
 #
 
-#No Blacklist Explicit Paths
-noblacklist /usr/bin/python2*
-noblacklist /usr/bin/python3*
-
 #No Blacklist Paths
-noblacklist ${HOME}/.config/cherrytree
+noblacklist ~/.config/zathura
+noblacklist ~/.local/share/zathura
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -18,9 +15,12 @@ include /etc/firejail/disable-devel.inc
 #Options
 caps.drop all
 netfilter
+nogroups
 nonewprivs
 noroot
 nosound
-protocol unix,inet,inet6,netlink
+private-bin zathura
+private-dev
+protocol unix
 seccomp
-tracelog
+shell none

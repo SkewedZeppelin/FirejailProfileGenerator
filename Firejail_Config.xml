@@ -67,14 +67,14 @@
 		<name>generic-13</name>
 		<aliases>less # strings</aliases>
 		<mode>blacklist</mode>
-		<options>quiet # tracelog # net none # shell none # private-dev # private-tmp # nosound # caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<options>quiet # tracelog # net none # shell none # private-dev # nosound # caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
 	</application>
 
 	<application>
 		<name>generic-compression</name>
-		<aliases>tar # gtar # unrar # gzip # unzip # xz # xzdec</aliases>
+		<aliases>tar # gtar # unrar # gzip # unzip # xz # xzdec # 7z</aliases>
 		<mode>blacklist</mode>
-		<options>quiet # tracelog # net none # shell none # private-bin sh,tar,gtar,compress,gzip,lzma,xz,bzip2,lbzip2,lzip,lzop,unrar,unzip,xzdec # private-dev # private-etc passwd,group,localtime # hostname tar # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp # no3d</options>
+		<options>quiet # tracelog # net none # shell none # private-bin sh,tar,gtar,compress,gzip,lzma,xz,bzip2,lbzip2,lzip,lzop,unrar,unzip,xzdec,7z # private-dev # private-etc passwd,group,localtime # hostname tar # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp # no3d</options>
 		<noblacklistexplicit>/sbin # /usr/sbin</noblacklistexplicit>
 	</application>
 
@@ -123,10 +123,10 @@
 
 	<application>
 		<name>cherrytree</name>
-		<mode>whitelist</mode>
+		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # seccomp # protocol unix,inet,inet6,netlink # tracelog</options>
 		<noblacklistexplicit>/usr/bin/python2* # /usr/bin/python3*</noblacklistexplicit>
-		<paths>${HOME}/cherrytree # ${HOME}/.config/cherrytree</paths>
+		<paths>${HOME}/.config/cherrytree</paths>
 	</application>
 
 	<application>
@@ -776,7 +776,7 @@
 	<application>
 		<name>uudeview</name>
 		<mode>blacklist</mode>
-		<options>quiet # tracelog # net none # shell none # private-bin uudeview # private-dev # private-tmp # private-etc nonexisting_fakefile_for_empty_etc # hostname uudeview # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
+		<options>quiet # tracelog # net none # shell none # private-bin uudeview # private-dev # private-etc nonexisting_fakefile_for_empty_etc # hostname uudeview # nosound # caps.drop all # netfilter # nonewprivs # protocol unix,inet,inet6 # seccomp</options>
 	</application>
 
 	<application>
@@ -898,7 +898,7 @@
 	<application>
 		<name>mupdf</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-tmp # private-dev</options>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # netfilter # shell none # tracelog # private-bin mupdf # private-tmp # private-dev # read-only ${HOME}</options>
 	</application>
 
 	<application>
@@ -960,6 +960,41 @@
 		<mode>blacklist</mode>
 		<options>caps.drop all # ipc-namespace # net none # noexec /home # noexec /tmp # nogroups # noroot # private-bin cin # private-dev # private-etc fonts,pulse # seccomp # shell none</options>
 		<paths>${HOME}/.bcast5</paths>
+	</application>
+
+	<application>
+		<name>feh</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # seccomp # protocol unix # netfilter # net none # nonewprivs # noroot # nogroups # nosound # shell none # private-bin feh # private-dev # private-etc feh</options>
+	</application>
+
+	<application>
+		<name>zathura</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # seccomp # protocol unix # netfilter # nonewprivs # noroot # nogroups # nosound # shell none # private-bin zathura # private-dev</options>
+		<paths>~/.config/zathura # ~/.local/share/zathura</paths>
+	</application>
+
+	<application>
+		<name>ranger</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # net none # nonewprivs # noroot # nogroups # protocol unix # seccomp # nosound # private-tmp # private-dev</options>
+		<noblacklistexplicit>noblacklist /usr/bin/perl # noblacklist /usr/share/perl* # noblacklist /usr/lib/perl*</noblacklistexplicit>
+		<paths></paths>
+	</application>
+
+	<application>
+		<name>keepass</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # netfilter # shell none # private-tmp # private-dev</options>
+		<paths>${HOME}/.config/keepass # ${HOME}/.keepass</paths>
+	</application>
+
+	<application>
+		<name>keepassx</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # netfilter # shell none # private-tmp # private-dev </options>
+		<paths>${HOME}/.config/keepassx # ${HOME}/.keepassx</paths>
 	</application>
 
 </applications>

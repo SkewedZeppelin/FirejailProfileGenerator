@@ -1,3 +1,4 @@
+blacklist 
 blacklist ${DOWNLOADS}
 blacklist ${HOME}/.8pecxstudios
 blacklist ${HOME}/.FBReader
@@ -76,6 +77,8 @@ blacklist ${HOME}/.config/gthumb
 blacklist ${HOME}/.config/hexchat
 blacklist ${HOME}/.config/inox
 blacklist ${HOME}/.config/jd-gui.cfg
+blacklist ${HOME}/.config/keepass
+blacklist ${HOME}/.config/keepassx
 blacklist ${HOME}/.config/libreoffice
 blacklist ${HOME}/.config/mate/eom
 blacklist ${HOME}/.config/midori
@@ -122,6 +125,8 @@ blacklist ${HOME}/.kde/share/apps/okular
 blacklist ${HOME}/.kde/share/config/gwenviewrc
 blacklist ${HOME}/.kde/share/config/okularpartrc
 blacklist ${HOME}/.kde/share/config/okularrc
+blacklist ${HOME}/.keepass
+blacklist ${HOME}/.keepassx
 blacklist ${HOME}/.killingfloor
 blacklist ${HOME}/.linphone-history.db
 blacklist ${HOME}/.linphonerc
@@ -190,17 +195,21 @@ blacklist ${HOME}/Documents/Wolfram Mathematica
 blacklist ${HOME}/Dropbox
 blacklist ${HOME}/My Games
 blacklist ${HOME}/VirtualBox VMs
-blacklist ${HOME}/cherrytree
 blacklist ${HOME}/quiterssfeeds.opml
 blacklist ${HOME}/snap
 blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
+blacklist ~/.config/zathura
+blacklist ~/.local/share/zathura
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig
 blacklist ${HOME}/.git-credential-cache
+blacklist ${HOME}/.msmtprc
+blacklist ${HOME}/.mutt/muttrc
+blacklist ${HOME}/.muttrc
 blacklist ${HOME}/.retroshare
 blacklist ${HOME}/.subversion
 blacklist ${HOME}/.sylpheed-2.0

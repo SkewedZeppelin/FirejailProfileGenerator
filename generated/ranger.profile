@@ -1,13 +1,14 @@
 #
-#Profile for cherrytree
+#Profile for ranger
 #
 
 #No Blacklist Explicit Paths
-noblacklist /usr/bin/python2*
-noblacklist /usr/bin/python3*
+noblacklist noblacklist /usr/bin/perl
+noblacklist noblacklist /usr/lib/perl*
+noblacklist noblacklist /usr/share/perl*
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/cherrytree
+noblacklist 
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -17,10 +18,13 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
+net none
 netfilter
+nogroups
 nonewprivs
 noroot
 nosound
-protocol unix,inet,inet6,netlink
+private-dev
+private-tmp
+protocol unix
 seccomp
-tracelog

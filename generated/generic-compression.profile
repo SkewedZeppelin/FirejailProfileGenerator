@@ -20,7 +20,7 @@ netfilter
 no3d
 nonewprivs
 nosound
-private-bin sh,tar,gtar,compress,gzip,lzma,xz,bzip2,lbzip2,lzip,lzop,unrar,unzip,xzdec
+private-bin sh,tar,gtar,compress,gzip,lzma,xz,bzip2,lbzip2,lzip,lzop,unrar,unzip,xzdec,7z
 private-dev
 private-etc passwd,group,localtime
 protocol unix,inet,inet6

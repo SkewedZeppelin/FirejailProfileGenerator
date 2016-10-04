@@ -2,6 +2,9 @@ blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig
 blacklist ${HOME}/.git-credential-cache
+blacklist ${HOME}/.msmtprc
+blacklist ${HOME}/.mutt/muttrc
+blacklist ${HOME}/.muttrc
 blacklist ${HOME}/.retroshare
 blacklist ${HOME}/.subversion
 blacklist ${HOME}/.sylpheed-2.0

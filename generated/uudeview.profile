@@ -18,7 +18,6 @@ nosound
 private-bin uudeview
 private-dev
 private-etc nonexisting_fakefile_for_empty_etc
-private-tmp
 protocol unix,inet,inet6
 quiet
 seccomp

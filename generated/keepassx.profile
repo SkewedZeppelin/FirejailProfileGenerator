@@ -1,13 +1,10 @@
 #
-#Profile for cherrytree
+#Profile for keepassx
 #
 
-#No Blacklist Explicit Paths
-noblacklist /usr/bin/python2*
-noblacklist /usr/bin/python3*
-
 #No Blacklist Paths
-noblacklist ${HOME}/.config/cherrytree
+noblacklist ${HOME}/.config/keepassx
+noblacklist ${HOME}/.keepassx
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -18,9 +15,12 @@ include /etc/firejail/disable-devel.inc
 #Options
 caps.drop all
 netfilter
+nogroups
 nonewprivs
 noroot
 nosound
-protocol unix,inet,inet6,netlink
+private-dev 
+private-tmp
+protocol unix
 seccomp
-tracelog
+shell none
