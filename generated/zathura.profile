@@ -3,8 +3,8 @@
 #
 
 #No Blacklist Paths
-noblacklist ~/.config/zathura
-noblacklist ~/.local/share/zathura
+noblacklist ${HOME}/.config/zathura
+noblacklist ${HOME}/.local/share/zathura
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc

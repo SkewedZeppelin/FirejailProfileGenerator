@@ -108,6 +108,7 @@ blacklist ${HOME}/.config/xchat
 blacklist ${HOME}/.config/xplayer
 blacklist ${HOME}/.config/xreader
 blacklist ${HOME}/.config/xviewer
+blacklist ${HOME}/.config/zathura
 blacklist ${HOME}/.conkeror.mozdev.org 
 blacklist ${HOME}/.dillo
 blacklist ${HOME}/.dosbox
@@ -164,6 +165,7 @@ blacklist ${HOME}/.local/share/vulkan
 blacklist ${HOME}/.local/share/wesnoth
 blacklist ${HOME}/.local/share/xplayer
 blacklist ${HOME}/.local/share/xreader
+blacklist ${HOME}/.local/share/zathura
 blacklist ${HOME}/.mcabber
 blacklist ${HOME}/.mcabberrc
 blacklist ${HOME}/.moonchild productions
@@ -201,8 +203,6 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
-blacklist ~/.config/zathura
-blacklist ~/.local/share/zathura
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig

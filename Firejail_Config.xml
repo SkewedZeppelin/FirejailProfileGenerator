@@ -972,7 +972,7 @@
 		<name>zathura</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # seccomp # protocol unix # netfilter # nonewprivs # noroot # nogroups # nosound # shell none # private-bin zathura # private-dev</options>
-		<paths>~/.config/zathura # ~/.local/share/zathura</paths>
+		<paths>${HOME}/.config/zathura # ${HOME}/.local/share/zathura</paths>
 	</application>
 
 	<application>
