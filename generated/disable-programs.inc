@@ -58,6 +58,7 @@ blacklist ${HOME}/.config/atril
 blacklist ${HOME}/.config/autostart
 blacklist ${HOME}/.config/autostart/dropbox.desktop
 blacklist ${HOME}/.config/aweather
+blacklist ${HOME}/.config/blender
 blacklist ${HOME}/.config/bless
 blacklist ${HOME}/.config/brave
 blacklist ${HOME}/.config/cherrytree
