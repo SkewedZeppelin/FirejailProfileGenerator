@@ -985,12 +985,13 @@
 	<application>
 		<name>keepass</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # netfilter # shell none # private-tmp # private-dev</options>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # seccomp # netfilter # shell none # private-tmp # private-dev</options>
 		<paths>${HOME}/.config/keepass # ${HOME}/.keepass</paths>
 	</application>
 
 	<application>
 		<name>keepassx</name>
+		<aliases>keepassx2</aliases>
 		<mode>blacklist</mode>
 		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # netfilter # shell none # private-tmp # private-dev </options>
 		<paths>${HOME}/.config/keepassx # ${HOME}/.keepassx</paths>

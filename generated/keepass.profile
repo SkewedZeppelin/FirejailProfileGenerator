@@ -21,6 +21,5 @@ noroot
 nosound
 private-dev
 private-tmp
-protocol unix
 seccomp
 shell none
