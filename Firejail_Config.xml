@@ -979,8 +979,7 @@
 		<name>ranger</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # net none # nonewprivs # noroot # nogroups # protocol unix # seccomp # nosound # private-tmp # private-dev</options>
-		<noblacklistexplicit>noblacklist /usr/bin/perl # noblacklist /usr/share/perl* # noblacklist /usr/lib/perl*</noblacklistexplicit>
-		<paths></paths>
+		<noblacklistexplicit>/usr/bin/perl # /usr/share/perl* # /usr/lib/perl*</noblacklistexplicit>
 	</application>
 
 	<application>
