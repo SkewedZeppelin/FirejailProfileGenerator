@@ -46,6 +46,7 @@ blacklist ${HOME}/.config/Atom
 blacklist ${HOME}/.config/Brackets
 blacklist ${HOME}/.config/Franz
 blacklist ${HOME}/.config/Gitter
+blacklist ${HOME}/.config/Google
 blacklist ${HOME}/.config/Google Play Music Desktop Player
 blacklist ${HOME}/.config/Gpredict
 blacklist ${HOME}/.config/Luminance
@@ -117,6 +118,10 @@ blacklist ${HOME}/.filezilla
 blacklist ${HOME}/.fltk
 blacklist ${HOME}/.gimp*
 blacklist ${HOME}/.gnupg
+blacklist ${HOME}/.googleearth/Cache/
+blacklist ${HOME}/.googleearth/Temp/
+blacklist ${HOME}/.googleearth/myplaces.backup.kml
+blacklist ${HOME}/.googleearth/myplaces.kml
 blacklist ${HOME}/.hedgewars
 blacklist ${HOME}/.icedove
 blacklist ${HOME}/.inkscape

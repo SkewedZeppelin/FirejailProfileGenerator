@@ -1012,4 +1012,12 @@
 		<paths>${HOME}/.config/blender</paths>
 	</application>
 
+	<application>
+		<name>google-earth</name>
+		<mode>whitelist</mode>
+		<options>private-bin google-earth,sh,grep,sed,ls,dirname # private-dev # private-etc fonts,resolv.conf,X11,alternatives,pulse # noexec /home # noexec /tmp # shell none # seccomp # caps.drop all # noroot # nogroups # ipc-namespace</options>
+		<paths>${HOME}/.googleearth/Cache/ # ${HOME}/.googleearth/Temp/ # ${HOME}/.config/Google</paths>
+		<files>${HOME}/.googleearth/myplaces.kml # ${HOME}/.googleearth/myplaces.backup.kml</files>
+	</application>
+
 </applications>
