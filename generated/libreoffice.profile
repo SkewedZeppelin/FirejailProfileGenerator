@@ -2,6 +2,9 @@
 #Profile for libreoffice
 #
 
+#No Blacklist Explicit Paths
+noblacklist /usr/local/sbin
+
 #No Blacklist Paths
 noblacklist ${HOME}/.config/libreoffice
 
@@ -13,11 +16,11 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-netfilter
+net none
 nogroups
 nonewprivs
 noroot
 private-dev
-protocol unix,inet,inet6,netlink
+protocol unix,inet,inet6
 seccomp
 tracelog

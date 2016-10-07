@@ -216,8 +216,9 @@
 		<name>libreoffice</name>
 		<aliases>localc # lodraw # loffice # lofromtemplate # loimpress # lomath # loweb # lowriter # soffice</aliases>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog # private-dev</options>
+		<options>caps.drop all # net none # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # tracelog # private-dev</options>
 		<paths>${HOME}/.config/libreoffice</paths>
+		<noblacklistexplicit>/usr/local/sbin</noblacklistexplicit>
 	</application>
 
 	<application>
