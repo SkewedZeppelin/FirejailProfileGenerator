@@ -986,7 +986,7 @@
 	<application>
 		<name>keepass</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # seccomp # netfilter # shell none # private-tmp # private-dev</options>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # netfilter # shell none # private-tmp # private-dev</options>
 		<paths>${HOME}/.config/keepass # ${HOME}/.keepass</paths>
 	</application>
 
