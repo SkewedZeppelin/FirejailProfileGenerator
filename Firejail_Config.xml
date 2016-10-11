@@ -713,7 +713,7 @@
 	<application>
 		<name>vlc</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin vlc,cvlc,nvlc,rvlc,qvlc,svlc # private-dev # private-tmp</options>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-bin vlc,cvlc,nvlc,rvlc,qvlc,svlc # private-dev # private-tmp</options>
 		<paths>${HOME}/.config/vlc</paths>
 	</application>
 
