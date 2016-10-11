@@ -3,6 +3,7 @@ blacklist ${HOME}/.8pecxstudios
 blacklist ${HOME}/.FBReader
 blacklist ${HOME}/.LuminanceHDR
 blacklist ${HOME}/.Mathematica
+blacklist ${HOME}/.Natron
 blacklist ${HOME}/.Skype
 blacklist ${HOME}/.TelegramDesktop
 blacklist ${HOME}/.VirtualBox
@@ -14,10 +15,12 @@ blacklist ${HOME}/.bcast5
 blacklist ${HOME}/.cache/0ad
 blacklist ${HOME}/.cache/8pecxstudios
 blacklist ${HOME}/.cache/Franz
+blacklist ${HOME}/.cache/INRIA
 blacklist ${HOME}/.cache/QuiteRss
 blacklist ${HOME}/.cache/champlain
 blacklist ${HOME}/.cache/chromium
 blacklist ${HOME}/.cache/chromium-dev
+blacklist ${HOME}/.cache/darktable
 blacklist ${HOME}/.cache/epiphany
 blacklist ${HOME}/.cache/gajim
 blacklist ${HOME}/.cache/google-chrome
@@ -49,7 +52,9 @@ blacklist ${HOME}/.config/Gitter
 blacklist ${HOME}/.config/Google
 blacklist ${HOME}/.config/Google Play Music Desktop Player
 blacklist ${HOME}/.config/Gpredict
+blacklist ${HOME}/.config/INRIA
 blacklist ${HOME}/.config/Luminance
+blacklist ${HOME}/.config/Meltytech
 blacklist ${HOME}/.config/Mumble
 blacklist ${HOME}/.config/QuiteRss
 blacklist ${HOME}/.config/QuiteRssrc
@@ -66,10 +71,12 @@ blacklist ${HOME}/.config/cherrytree
 blacklist ${HOME}/.config/chromium
 blacklist ${HOME}/.config/chromium-dev
 blacklist ${HOME}/.config/cmus
+blacklist ${HOME}/.config/darktable
 blacklist ${HOME}/.config/deadbeef
 blacklist ${HOME}/.config/eog
 blacklist ${HOME}/.config/epiphany
 blacklist ${HOME}/.config/filezilla
+blacklist ${HOME}/.config/flowblade
 blacklist ${HOME}/.config/gajim
 blacklist ${HOME}/.config/google-chrome
 blacklist ${HOME}/.config/google-chrome-beta
@@ -115,6 +122,7 @@ blacklist ${HOME}/.dillo
 blacklist ${HOME}/.dosbox
 blacklist ${HOME}/.dropbox-dist
 blacklist ${HOME}/.filezilla
+blacklist ${HOME}/.flowblade
 blacklist ${HOME}/.fltk
 blacklist ${HOME}/.gimp*
 blacklist ${HOME}/.gnupg

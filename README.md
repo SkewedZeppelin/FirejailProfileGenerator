@@ -15,8 +15,9 @@ End Goal
 Profile Credits
 -------
 - Most profiles by [netblue30](https://github.com/netblue30/)/[Firejail contributors](https://github.com/netblue30/firejail/graphs/contributors) from https://github.com/netblue30/firejail/tree/master/etc
-- Blender, Brackets, Calligra, Cinelerra, Gimp, Google Earth, InkScape, LinPhone, LMMS, Luminance, mpd, OpenShot, Scribus, Skype, Synfig Studio, VirtualBox by chiraag-nataraj from https://github.com/chiraag-nataraj/firejail-profiles
+- Blender, Brackets, Calligra, Cinelerra, Darktable, Flowblade, Gimp, Google Earth, InkScape, Kdenlive, LinPhone, LMMS, Luminance, mpd, OpenShot, Scribus, Shotcut, Skype, Synfig Studio, VirtualBox by chiraag-nataraj from https://github.com/chiraag-nataraj/firejail-profiles
 - TeamSpeak profile by melvinvermeeren from https://aur.archlinux.org/packages/firejail-profiles
+- Natron, Zart profile by [triceratops1](https://github.com/triceratops1)
 - Arduino, Bless, eog, Gnome 2048, Gnome Calculator, Gnome Calendar, Gnome Characters, Gnome Clocks, Gnome Contacts, Gnome Maps, Gnome Music, Gnome Weather, JD-GUI, Lollypop, MultiMC5, Mumble, PDFSam, Pithos, Redshift, Xonotic by SpotComms
 
 Testing
