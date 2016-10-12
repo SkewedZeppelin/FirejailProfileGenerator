@@ -1063,4 +1063,28 @@
 		<paths>${HOME}/.config/Meltytech</paths>
 	</application>
 
+	<application>
+		<name>mutt</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-dev</options>
+		<paths>${HOME}/.cache/mutt</paths>
+		<files>${HOME}/.mutt # ${HOME}/.muttrc</files>
+		<noblacklistexplicit>${HOME}/.mail # ${HOME}/.mailcap # ${HOME}/.gnupg</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>claws-mail</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nogroups # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-dev # private-tmp</options>
+		<paths>${HOME}/.claws-mail</paths>
+		<noblacklistexplicit>${HOME}/.signature # ${HOME}/.gnupg</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>git</name>
+		<mode>blacklist</mode>
+		<options>quiet # caps.drop all # netfilter # nonewprivs # noroot # nogroups # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-dev</options>
+		<noblacklistexplicit>${HOME}/.gitconfig # ${HOME}/.ssh # ${HOME}/.gnupg</noblacklistexplicit>
+	</application>
+
 </applications>

@@ -32,6 +32,7 @@ blacklist ${HOME}/.cache/libgweather
 blacklist ${HOME}/.cache/midori
 blacklist ${HOME}/.cache/moonchild productions
 blacklist ${HOME}/.cache/mozilla
+blacklist ${HOME}/.cache/mutt
 blacklist ${HOME}/.cache/netsurf
 blacklist ${HOME}/.cache/opera
 blacklist ${HOME}/.cache/opera-beta
@@ -44,6 +45,7 @@ blacklist ${HOME}/.cache/transmission
 blacklist ${HOME}/.cache/vivaldi
 blacklist ${HOME}/.cache/wesnoth
 blacklist ${HOME}/.cache/xreader
+blacklist ${HOME}/.claws-mail
 blacklist ${HOME}/.config/0ad
 blacklist ${HOME}/.config/Atom
 blacklist ${HOME}/.config/Brackets
@@ -186,6 +188,8 @@ blacklist ${HOME}/.moonchild productions
 blacklist ${HOME}/.mozilla
 blacklist ${HOME}/.mpdconf
 blacklist ${HOME}/.multimc5
+blacklist ${HOME}/.mutt
+blacklist ${HOME}/.muttrc
 blacklist ${HOME}/.nv
 blacklist ${HOME}/.openshot
 blacklist ${HOME}/.opera
