@@ -7,6 +7,7 @@ noblacklist ${HOME}/.gnupg
 noblacklist ${HOME}/.signature
 
 #No Blacklist Paths
+noblacklist ${DOWNLOADS}
 noblacklist ${HOME}/.claws-mail
 
 #Blacklist Paths

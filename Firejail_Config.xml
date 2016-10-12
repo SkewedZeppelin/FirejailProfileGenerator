@@ -1068,7 +1068,7 @@
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-dev</options>
 		<paths>${HOME}/.cache/mutt</paths>
-		<files>${HOME}/.mutt # ${HOME}/.muttrc</files>
+		<files>${HOME}/.mutt # ${HOME}/.muttrc # ${DOWNLOADS}</files>
 		<noblacklistexplicit>${HOME}/.mail # ${HOME}/.mailcap # ${HOME}/.gnupg</noblacklistexplicit>
 	</application>
 
@@ -1076,7 +1076,7 @@
 		<name>claws-mail</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # nogroups # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-dev # private-tmp</options>
-		<paths>${HOME}/.claws-mail</paths>
+		<paths>${HOME}/.claws-mail # ${DOWNLOADS}</paths>
 		<noblacklistexplicit>${HOME}/.signature # ${HOME}/.gnupg</noblacklistexplicit>
 	</application>
 
@@ -1085,6 +1085,13 @@
 		<mode>blacklist</mode>
 		<options>quiet # caps.drop all # netfilter # nonewprivs # noroot # nogroups # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-dev</options>
 		<noblacklistexplicit>${HOME}/.gitconfig # ${HOME}/.ssh # ${HOME}/.gnupg</noblacklistexplicit>
+	</application>
+
+	<application>
+		<name>ricochet</name>
+		<mode>whitelist</mode>
+		<options>private-bin ricochet,tor # private-dev # private-etc fonts,tor,X11,alternatives # noexec /home # noexec /tmp # shell none # seccomp # caps.drop all # noroot # nogroups # ipc-namespace</options>
+		<paths>${HOME}/.local/share/Ricochet # ${DOWNLOADS}</paths>
 	</application>
 
 </applications>

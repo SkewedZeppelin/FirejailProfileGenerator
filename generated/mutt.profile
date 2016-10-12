@@ -9,6 +9,7 @@ noblacklist ${HOME}/.mailcap
 
 #No Blacklist Paths
 noblacklist ${HOME}/.cache/mutt
+noblacklist ${DOWNLOADS}
 noblacklist ${HOME}/.mutt
 noblacklist ${HOME}/.muttrc
 
