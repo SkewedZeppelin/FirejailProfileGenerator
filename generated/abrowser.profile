@@ -4,8 +4,8 @@
 
 #No Blacklist Paths
 noblacklist ${DOWNLOADS}
-noblacklist ${HOME}/.cache/mozilla/abrowser
-noblacklist ${HOME}/.mozilla/abrowser
+noblacklist ${HOME}/.cache/mozilla
+noblacklist ${HOME}/.mozilla
 noblacklist ${HOME}/.pki
 
 #Blacklist Paths
@@ -16,10 +16,10 @@ include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
 whitelist ${DOWNLOADS}
-mkdir ${HOME}/.cache/mozilla/abrowser
-whitelist ${HOME}/.cache/mozilla/abrowser
-mkdir ${HOME}/.mozilla/abrowser
-whitelist ${HOME}/.mozilla/abrowser
+mkdir ${HOME}/.cache/mozilla
+whitelist ${HOME}/.cache/mozilla
+mkdir ${HOME}/.mozilla
+whitelist ${HOME}/.mozilla
 mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc

@@ -4,7 +4,7 @@
 
 #No Blacklist Paths
 noblacklist ${DOWNLOADS}
-noblacklist ${HOME}/.cache/mozilla/seamonkey
+noblacklist ${HOME}/.cache/mozilla
 noblacklist ${HOME}/.mozilla/seamonkey
 noblacklist ${HOME}/.pki
 
@@ -16,8 +16,8 @@ include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
 whitelist ${DOWNLOADS}
-mkdir ${HOME}/.cache/mozilla/seamonkey
-whitelist ${HOME}/.cache/mozilla/seamonkey
+mkdir ${HOME}/.cache/mozilla
+whitelist ${HOME}/.cache/mozilla
 mkdir ${HOME}/.mozilla/seamonkey
 whitelist ${HOME}/.mozilla/seamonkey
 mkdir ${HOME}/.pki

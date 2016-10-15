@@ -32,10 +32,6 @@ blacklist ${HOME}/.cache/libgweather
 blacklist ${HOME}/.cache/midori
 blacklist ${HOME}/.cache/moonchild productions
 blacklist ${HOME}/.cache/mozilla
-blacklist ${HOME}/.cache/mozilla/abrowser
-blacklist ${HOME}/.cache/mozilla/firefox
-blacklist ${HOME}/.cache/mozilla/icecat
-blacklist ${HOME}/.cache/mozilla/seamonkey
 blacklist ${HOME}/.cache/mutt
 blacklist ${HOME}/.cache/netsurf
 blacklist ${HOME}/.cache/opera
@@ -191,9 +187,6 @@ blacklist ${HOME}/.mcabber
 blacklist ${HOME}/.mcabberrc
 blacklist ${HOME}/.moonchild productions
 blacklist ${HOME}/.mozilla
-blacklist ${HOME}/.mozilla/abrowser
-blacklist ${HOME}/.mozilla/firefox
-blacklist ${HOME}/.mozilla/icecat
 blacklist ${HOME}/.mozilla/seamonkey
 blacklist ${HOME}/.mpdconf
 blacklist ${HOME}/.multimc5
@@ -204,6 +197,7 @@ blacklist ${HOME}/.openshot
 blacklist ${HOME}/.opera
 blacklist ${HOME}/.opera-beta
 blacklist ${HOME}/.pki
+blacklist ${HOME}/.pki 
 blacklist ${HOME}/.purple
 blacklist ${HOME}/.scribus
 blacklist ${HOME}/.ssh

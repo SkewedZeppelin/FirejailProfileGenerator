@@ -4,8 +4,8 @@
 
 #No Blacklist Paths
 noblacklist ${DOWNLOADS}
-noblacklist ${HOME}/.cache/mozilla/firefox
-noblacklist ${HOME}/.mozilla/firefox
+noblacklist ${HOME}/.cache/mozilla
+noblacklist ${HOME}/.mozilla
 noblacklist ${HOME}/.pki
 
 #Blacklist Paths
@@ -16,10 +16,10 @@ include /etc/firejail/disable-devel.inc
 
 #Whitelist Paths
 whitelist ${DOWNLOADS}
-mkdir ${HOME}/.cache/mozilla/firefox
-whitelist ${HOME}/.cache/mozilla/firefox
-mkdir ${HOME}/.mozilla/firefox
-whitelist ${HOME}/.mozilla/firefox
+mkdir ${HOME}/.cache/mozilla
+whitelist ${HOME}/.cache/mozilla
+mkdir ${HOME}/.mozilla
+whitelist ${HOME}/.mozilla
 mkdir ${HOME}/.pki
 whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc

@@ -289,7 +289,7 @@
 		<aliases>firefox-esr # iceweasel</aliases>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
-		<paths>${DOWNLOADS} # ${HOME}/.mozilla/firefox # ${HOME}/.cache/mozilla/firefox # ${HOME}/.pki</paths>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki</paths>
 	</application>
 
 	<application>
@@ -297,7 +297,7 @@
 		<aliases>icecat-launcher</aliases>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
-		<paths>${DOWNLOADS} # ${HOME}/.mozilla/icecat # ${HOME}/.cache/mozilla/icecat # ${HOME}/.pki # ${HOME}/.8pecxstudios # ${HOME}/.cache/8pecxstudios # ${HOME}/.moonchild productions # ${HOME}/.cache/moonchild productions # ${HOME}/.conkeror.mozdev.org </paths>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki </paths>
 	</application>
 
 	<application>
@@ -305,7 +305,7 @@
 		<aliases>seamonkey-bin</aliases>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
-		<paths>${DOWNLOADS} # ${HOME}/.mozilla/seamonkey # ${HOME}/.cache/mozilla/seamonkey # ${HOME}/.pki</paths>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla/seamonkey # ${HOME}/.cache/mozilla # ${HOME}/.pki</paths>
 	</application>
 
 	<application>
@@ -313,7 +313,7 @@
 		<aliases></aliases>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
-		<paths>${DOWNLOADS} # ${HOME}/.mozilla/abrowser # ${HOME}/.cache/mozilla/abrowser # ${HOME}/.pki</paths>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki</paths>
 	</application>
 
 	<application>
