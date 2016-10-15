@@ -1139,4 +1139,11 @@
 		<paths>${HOME}/.local/share/Ricochet # ${DOWNLOADS}</paths>
 	</application>
 
+	<application>
+		<name>xpdf</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # shell none # nonewprivs # noroot # protocol unix # seccomp # private-dev # private-tmp # net none</options>
+		<files>${HOME}/.xpdfrc</files>
+	</application>
+
 </applications>

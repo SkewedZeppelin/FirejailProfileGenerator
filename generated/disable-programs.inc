@@ -219,6 +219,7 @@ blacklist ${HOME}/.weechat
 blacklist ${HOME}/.wine
 blacklist ${HOME}/.wine64
 blacklist ${HOME}/.xonotic
+blacklist ${HOME}/.xpdfrc
 blacklist ${HOME}/Arduino
 blacklist ${HOME}/Documents/Wolfram Mathematica
 blacklist ${HOME}/Dropbox
