@@ -284,13 +284,58 @@
 		<paths>${HOME}/.filezilla # ${HOME}/.config/filezilla</paths>
 	</application>
 
-	<!--This might need to be seperated in the future-->
 	<application>
 		<name>firefox</name>
-		<aliases>firefox-esr # iceweasel # icecat # icecat-launcher # seamonkey # seamonkey-bin # abrowser # cyberfox # Cyberfox # palemoon # conkeror</aliases>
+		<aliases>firefox-esr # iceweasel</aliases>
 		<mode>whitelist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
-		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki # ${HOME}/.8pecxstudios # ${HOME}/.cache/8pecxstudios # ${HOME}/.moonchild productions # ${HOME}/.cache/moonchild productions # ${HOME}/.conkeror.mozdev.org </paths>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla/firefox # ${HOME}/.cache/mozilla/firefox # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>icecat</name>
+		<aliases>icecat-launcher</aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla/icecat # ${HOME}/.cache/mozilla/icecat # ${HOME}/.pki # ${HOME}/.8pecxstudios # ${HOME}/.cache/8pecxstudios # ${HOME}/.moonchild productions # ${HOME}/.cache/moonchild productions # ${HOME}/.conkeror.mozdev.org </paths>
+	</application>
+
+	<application>
+		<name>seamonkey</name>
+		<aliases>seamonkey-bin</aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla/seamonkey # ${HOME}/.cache/mozilla/seamonkey # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>abrowser</name>
+		<aliases></aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.mozilla/abrowser # ${HOME}/.cache/mozilla/abrowser # ${HOME}/.pki</paths>
+	</application>
+
+	<application>
+		<name>cyberfox</name>
+		<aliases>Cyberfox</aliases>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.pki # ${HOME}/.8pecxstudios # ${HOME}/.cache/8pecxstudios</paths>
+	</application>
+
+	<application>
+		<name>palemoon</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.pki # ${HOME}/.moonchild productions # ${HOME}/.cache/moonchild productions</paths>
+	</application>
+
+	<application>
+		<name>conkeror</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<paths>${DOWNLOADS} # ${HOME}/.pki # ${HOME}/.conkeror.mozdev.org </paths>
 	</application>
 
 	<application>

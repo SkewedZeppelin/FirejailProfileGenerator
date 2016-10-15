@@ -1,5 +1,5 @@
 #
-#Profile for firefox:Cyberfox
+#Profile for cyberfox:Cyberfox
 #
 
-include /etc/firejail/firefox.profile
+include /etc/firejail/cyberfox.profile

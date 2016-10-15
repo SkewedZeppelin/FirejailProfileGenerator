@@ -1,5 +1,5 @@
 #
-#Profile for firefox:icecat-launcher
+#Profile for icecat:icecat-launcher
 #
 
-include /etc/firejail/firefox.profile
+include /etc/firejail/icecat.profile

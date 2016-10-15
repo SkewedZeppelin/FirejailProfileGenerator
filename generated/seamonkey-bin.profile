@@ -1,5 +1,5 @@
 #
-#Profile for firefox:seamonkey-bin
+#Profile for seamonkey:seamonkey-bin
 #
 
-include /etc/firejail/firefox.profile
+include /etc/firejail/seamonkey.profile
