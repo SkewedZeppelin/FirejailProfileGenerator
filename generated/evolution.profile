@@ -4,11 +4,11 @@
 
 #No Blacklist Paths
 noblacklist ${DOWNLOADS}
-noblacklist ~/.cache/evolution
-noblacklist ~/.config/evolution
-noblacklist ~/.gnupg
-noblacklist ~/.local/share/evolution
-noblacklist ~/.pki
+noblacklist ${HOME}/.cache/evolution
+noblacklist ${HOME}/.config/evolution
+noblacklist ${HOME}/.gnupg
+noblacklist ${HOME}/.local/share/evolution
+noblacklist ${HOME}/.pki
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc

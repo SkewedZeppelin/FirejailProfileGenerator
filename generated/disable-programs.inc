@@ -22,6 +22,7 @@ blacklist ${HOME}/.cache/chromium
 blacklist ${HOME}/.cache/chromium-dev
 blacklist ${HOME}/.cache/darktable
 blacklist ${HOME}/.cache/epiphany
+blacklist ${HOME}/.cache/evolution
 blacklist ${HOME}/.cache/gajim
 blacklist ${HOME}/.cache/google-chrome
 blacklist ${HOME}/.cache/google-chrome-beta
@@ -78,6 +79,7 @@ blacklist ${HOME}/.config/darktable
 blacklist ${HOME}/.config/deadbeef
 blacklist ${HOME}/.config/eog
 blacklist ${HOME}/.config/epiphany
+blacklist ${HOME}/.config/evolution
 blacklist ${HOME}/.config/filezilla
 blacklist ${HOME}/.config/flowblade
 blacklist ${HOME}/.config/gajim
@@ -163,6 +165,7 @@ blacklist ${HOME}/.local/share/TpLogger
 blacklist ${HOME}/.local/share/aspyr-media
 blacklist ${HOME}/.local/share/data/Mumble
 blacklist ${HOME}/.local/share/epiphany
+blacklist ${HOME}/.local/share/evolution
 blacklist ${HOME}/.local/share/feral-interactive
 blacklist ${HOME}/.local/share/gajim
 blacklist ${HOME}/.local/share/gnome-2048
@@ -227,11 +230,6 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
-blacklist ~/.cache/evolution
-blacklist ~/.config/evolution
-blacklist ~/.gnupg
-blacklist ~/.local/share/evolution
-blacklist ~/.pki
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig

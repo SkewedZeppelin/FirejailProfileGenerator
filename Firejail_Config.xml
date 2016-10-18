@@ -1152,7 +1152,7 @@
 		<name>evolution</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # noroot # nogroups # protocol unix,inet,inet6 # seccomp # shell none # private-dev # private-tmp</options>
-		<paths>${DOWNLOADS} # ~/.config/evolution # ~/.local/share/evolution # ~/.cache/evolution # ~/.pki # ~/.gnupg</paths>
+		<paths>${DOWNLOADS} # ${HOME}/.config/evolution # ${HOME}/.local/share/evolution # ${HOME}/.cache/evolution # ${HOME}/.pki # ${HOME}/.gnupg</paths>
 	</application>
 
 </applications>
