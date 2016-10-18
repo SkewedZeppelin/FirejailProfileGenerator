@@ -72,6 +72,7 @@ blacklist ${HOME}/.config/brave
 blacklist ${HOME}/.config/cherrytree
 blacklist ${HOME}/.config/chromium
 blacklist ${HOME}/.config/chromium-dev
+blacklist ${HOME}/.config/chromium-flags.conf
 blacklist ${HOME}/.config/cmus
 blacklist ${HOME}/.config/darktable
 blacklist ${HOME}/.config/deadbeef
@@ -194,6 +195,7 @@ blacklist ${HOME}/.mutt
 blacklist ${HOME}/.muttrc
 blacklist ${HOME}/.nv
 blacklist ${HOME}/.openshot
+blacklist ${HOME}/.openshot_qt
 blacklist ${HOME}/.opera
 blacklist ${HOME}/.opera-beta
 blacklist ${HOME}/.pki
@@ -225,6 +227,11 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
+blacklist ~/.cache/evolution
+blacklist ~/.config/evolution
+blacklist ~/.gnupg
+blacklist ~/.local/share/evolution
+blacklist ~/.pki
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig

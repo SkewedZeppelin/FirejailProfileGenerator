@@ -1,10 +1,14 @@
 #
-#Profile for flowblade
+#Profile for evolution
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/flowblade
-noblacklist ${HOME}/.flowblade
+noblacklist ${DOWNLOADS}
+noblacklist ~/.cache/evolution
+noblacklist ~/.config/evolution
+noblacklist ~/.gnupg
+noblacklist ~/.local/share/evolution
+noblacklist ~/.pki
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,15 +18,12 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-ipc-namespace
-net none
-noexec /home
-noexec /tmp
+netfilter
 nogroups
 nonewprivs
 noroot
-private-bin python,flowblade
 private-dev
-private-etc pulse,fonts,alternatives,X11
+private-tmp
+protocol unix,inet,inet6
 seccomp
 shell none
