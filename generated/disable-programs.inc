@@ -230,6 +230,7 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
+blacklist {$HOME}/.local/share/cdprojektred
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig

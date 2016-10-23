@@ -18,6 +18,7 @@ noblacklist ${HOME}/.steam
 noblacklist ${HOME}/.steampath
 noblacklist ${HOME}/.steampid
 noblacklist ${HOME}/My Games
+noblacklist {$HOME}/.local/share/cdprojektred
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
