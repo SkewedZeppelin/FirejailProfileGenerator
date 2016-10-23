@@ -42,6 +42,7 @@ blacklist ${HOME}/.cache/slimjet
 blacklist ${HOME}/.cache/spotify
 blacklist ${HOME}/.cache/telepathy
 blacklist ${HOME}/.cache/thunderbird
+blacklist ${HOME}/.cache/torbrowser
 blacklist ${HOME}/.cache/transmission
 blacklist ${HOME}/.cache/vivaldi
 blacklist ${HOME}/.cache/wesnoth
@@ -63,6 +64,8 @@ blacklist ${HOME}/.config/QuiteRss
 blacklist ${HOME}/.config/QuiteRssrc
 blacklist ${HOME}/.config/Slack
 blacklist ${HOME}/.config/VirtualBox
+blacklist ${HOME}/.config/ardour4
+blacklist ${HOME}/.config/ardour5
 blacklist ${HOME}/.config/atril
 blacklist ${HOME}/.config/autostart
 blacklist ${HOME}/.config/autostart/dropbox.desktop
@@ -110,6 +113,7 @@ blacklist ${HOME}/.config/slimjet
 blacklist ${HOME}/.config/spotify
 blacklist ${HOME}/.config/stellarium
 blacklist ${HOME}/.config/telepathy-account-widgets
+blacklist ${HOME}/.config/torbrowser
 blacklist ${HOME}/.config/totem
 blacklist ${HOME}/.config/tox
 blacklist ${HOME}/.config/transmission
@@ -180,6 +184,7 @@ blacklist ${HOME}/.local/share/qpdfview
 blacklist ${HOME}/.local/share/spotify
 blacklist ${HOME}/.local/share/steam
 blacklist ${HOME}/.local/share/telepathy
+blacklist ${HOME}/.local/share/torbrowser
 blacklist ${HOME}/.local/share/totem
 blacklist ${HOME}/.local/share/vpltd
 blacklist ${HOME}/.local/share/vulkan
@@ -220,6 +225,7 @@ blacklist ${HOME}/.wine64
 blacklist ${HOME}/.xonotic
 blacklist ${HOME}/.xpdfrc
 blacklist ${HOME}/Arduino
+blacklist ${HOME}/Documents
 blacklist ${HOME}/Documents/Wolfram Mathematica
 blacklist ${HOME}/Dropbox
 blacklist ${HOME}/My Games
