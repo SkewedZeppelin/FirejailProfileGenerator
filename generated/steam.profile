@@ -9,6 +9,7 @@ noblacklist ${HOME}/.local/share/Steam
 noblacklist ${HOME}/.local/share/SuperHexagon
 noblacklist ${HOME}/.local/share/Terraria
 noblacklist ${HOME}/.local/share/aspyr-media
+noblacklist ${HOME}/.local/share/cdprojektred
 noblacklist ${HOME}/.local/share/feral-interactive
 noblacklist ${HOME}/.local/share/steam
 noblacklist ${HOME}/.local/share/vpltd
@@ -18,7 +19,6 @@ noblacklist ${HOME}/.steam
 noblacklist ${HOME}/.steampath
 noblacklist ${HOME}/.steampid
 noblacklist ${HOME}/My Games
-noblacklist {$HOME}/.local/share/cdprojektred
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc

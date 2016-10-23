@@ -167,6 +167,7 @@ blacklist ${HOME}/.local/share/SuperHexagon
 blacklist ${HOME}/.local/share/Terraria
 blacklist ${HOME}/.local/share/TpLogger
 blacklist ${HOME}/.local/share/aspyr-media
+blacklist ${HOME}/.local/share/cdprojektred
 blacklist ${HOME}/.local/share/data/Mumble
 blacklist ${HOME}/.local/share/epiphany
 blacklist ${HOME}/.local/share/evolution
@@ -236,7 +237,6 @@ blacklist /dev/vboxdrv
 blacklist /dev/vboxdrvu
 blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
-blacklist {$HOME}/.local/share/cdprojektred
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*
 blacklist ${HOME}/.gitconfig
