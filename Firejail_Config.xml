@@ -425,7 +425,7 @@
 	<application>
 		<name>gpredict</name>
 		<mode>whitelist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin gpredict # private-dev # private-tmp</options>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin gpredict # private-etc fonts,resolv.conf # private-dev # private-tmp</options>
 		<paths>${HOME}/.config/Gpredict</paths>
 	</application>
 
@@ -685,7 +685,7 @@
 	<application>
 		<name>spotify</name>
 		<mode>whitelist</mode>
-		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # shell none # private-dev</options>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # shell none # private-bin spotify # private-etc fonts,machine-id,pulse,resolv.conf # private-dev # private-tmp # blacklist ${HOME}/.Xauthority # blacklist ${HOME}/.bashrc # blacklist /boot # blacklist /lost+found # blacklist /media # blacklist /mnt # blacklist /opt # blacklist /root # blacklist /sbin # blacklist /srv # blacklist /sys # blacklist /var</options>
 		<paths>${HOME}/.config/spotify # ${HOME}/.cache/spotify # ${HOME}/.local/share/spotify</paths>
 	</application>
 
@@ -1165,9 +1165,17 @@
 
 	<application>
 		<name>torbrowser-launcher</name>
+		<aliases>start-tor-browser</aliases>
 		<mode>whitelist</mode>
 		<options>blacklist /usr/local/bin # blacklist /boot # blacklist /media # blacklist /mnt # blacklist /opt # private-bin bash,grep,sed,tail,torbrowser-launcher,python,env,gpg,id,readlink,dirname,test,mkdir,ln,sed,cp,rm,zenity,kdialog,xmessage,gxmessage,getconf,file,expr # whitelist /dev/dri # whitelist /dev/full # whitelist /dev/null # whitelist /dev/ptmx # whitelist /dev/pts # whitelist /dev/random # whitelist /dev/shm # whitelist /dev/snd # whitelist /dev/tty # whitelist /dev/urandom # whitelist /dev/video0 # whitelist /dev/zero # private-etc X11,alternatives,pulse,resolv.conf,fonts,ssl # private-tmp # noexec /tmp # shell none # seccomp # noroot # caps.drop all</options>
 		<paths>${DOWNLOADS} # ${HOME}/.local/share/torbrowser # ${HOME}/.config/torbrowser # ${HOME}/.cache/torbrowser</paths>
+	</application>
+
+	<application>
+		<name>xiphos</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin xiphos # private-etc fonts,resolv.conf,sword # private-dev # private-tmp</options>
+		<paths>${HOME}/.sword # ${HOME}/.xiphos</paths>
 	</application>
 
 </applications>

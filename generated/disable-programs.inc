@@ -216,6 +216,7 @@ blacklist ${HOME}/.steam
 blacklist ${HOME}/.steampath
 blacklist ${HOME}/.steampid
 blacklist ${HOME}/.stellarium
+blacklist ${HOME}/.sword
 blacklist ${HOME}/.synfig
 blacklist ${HOME}/.thunderbird
 blacklist ${HOME}/.ts3client
@@ -223,6 +224,7 @@ blacklist ${HOME}/.warzone2100-3.1
 blacklist ${HOME}/.weechat
 blacklist ${HOME}/.wine
 blacklist ${HOME}/.wine64
+blacklist ${HOME}/.xiphos
 blacklist ${HOME}/.xonotic
 blacklist ${HOME}/.xpdfrc
 blacklist ${HOME}/Arduino
