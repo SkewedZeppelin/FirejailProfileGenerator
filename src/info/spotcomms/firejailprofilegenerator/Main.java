@@ -1,18 +1,18 @@
 /*This file is part of FirejailProfileGenerator.
-  
+
   FirejailProfileGenerator is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 2 of the License, or
   (at your option) any later version.
-  
+
   FirejailProfileGenerator is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
-  
+
   You should have received a copy of the GNU General Public License
   along with FirejailProfileGenerator.  If not, see <http://www.gnu.org/licenses/>.
-*/
+ */
 
 package info.spotcomms.firejailprofilegenerator;
 
@@ -81,7 +81,9 @@ public class Main {
       PrintWriter out = new PrintWriter("generated/disable-programs.inc", "UTF-8");
       //Dynamic
       for(String path : getAllPaths()) {
-        out.println("blacklist " + path);
+        if(!path.equals("${DOWNLOADS}") && !path.equals("${HOME}/Documents")) {
+          out.println("blacklist " + path);
+        }
       }
       //Static
       Scanner s = new Scanner(new File("overlay/disable-programs.inc"));

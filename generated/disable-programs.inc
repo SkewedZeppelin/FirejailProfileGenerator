@@ -1,4 +1,3 @@
-blacklist ${DOWNLOADS}
 blacklist ${HOME}/.8pecxstudios
 blacklist ${HOME}/.FBReader
 blacklist ${HOME}/.LuminanceHDR
@@ -228,7 +227,6 @@ blacklist ${HOME}/.xiphos
 blacklist ${HOME}/.xonotic
 blacklist ${HOME}/.xpdfrc
 blacklist ${HOME}/Arduino
-blacklist ${HOME}/Documents
 blacklist ${HOME}/Documents/Wolfram Mathematica
 blacklist ${HOME}/Dropbox
 blacklist ${HOME}/My Games
