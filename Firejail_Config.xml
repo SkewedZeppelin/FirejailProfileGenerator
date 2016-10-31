@@ -1178,4 +1178,17 @@
 		<paths>${HOME}/.sword # ${HOME}/.xiphos</paths>
 	</application>
 
+	<application>
+		<name>display</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # seccomp # protocol unix # netfilter # net none # nonewprivs # noroot # nogroups # nosound # shell none # x11 xorg # private-bin display  # private-tmp # private-dev # private-etc none # </options>
+	</application>
+
+	<application>
+		<name>Wire</name>
+		<mode>blacklist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6,netlink # seccomp # shell none # private-tmp # private-dev</options>
+		<paths>${DOWNLOADS} # ${HOME}/.config/Wire</paths>
+	</application>
+
 </applications>

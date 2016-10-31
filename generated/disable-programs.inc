@@ -63,6 +63,7 @@ blacklist ${HOME}/.config/QuiteRss
 blacklist ${HOME}/.config/QuiteRssrc
 blacklist ${HOME}/.config/Slack
 blacklist ${HOME}/.config/VirtualBox
+blacklist ${HOME}/.config/Wire
 blacklist ${HOME}/.config/ardour4
 blacklist ${HOME}/.config/ardour5
 blacklist ${HOME}/.config/atril
