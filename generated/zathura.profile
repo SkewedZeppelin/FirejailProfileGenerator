@@ -21,6 +21,10 @@ noroot
 nosound
 private-bin zathura
 private-dev
+private-etc fonts
 protocol unix
+read-only ~/
+read-write ~/.local/share/zathura/
 seccomp
 shell none
+whitelist /tmp/.X11-unix

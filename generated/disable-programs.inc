@@ -193,6 +193,7 @@ blacklist ${HOME}/.local/share/wesnoth
 blacklist ${HOME}/.local/share/xplayer
 blacklist ${HOME}/.local/share/xreader
 blacklist ${HOME}/.local/share/zathura
+blacklist ${HOME}/.lv2
 blacklist ${HOME}/.mcabber
 blacklist ${HOME}/.mcabberrc
 blacklist ${HOME}/.moonchild productions
@@ -220,6 +221,7 @@ blacklist ${HOME}/.sword
 blacklist ${HOME}/.synfig
 blacklist ${HOME}/.thunderbird
 blacklist ${HOME}/.ts3client
+blacklist ${HOME}/.vst
 blacklist ${HOME}/.warzone2100-3.1
 blacklist ${HOME}/.weechat
 blacklist ${HOME}/.wine

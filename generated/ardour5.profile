@@ -6,6 +6,8 @@
 noblacklist ${DOWNLOADS}
 noblacklist ${HOME}/.config/ardour4
 noblacklist ${HOME}/.config/ardour5
+noblacklist ${HOME}/.lv2
+noblacklist ${HOME}/.vst
 noblacklist ${HOME}/Documents
 
 #Blacklist Paths
@@ -20,6 +22,10 @@ mkdir ${HOME}/.config/ardour4
 whitelist ${HOME}/.config/ardour4
 mkdir ${HOME}/.config/ardour5
 whitelist ${HOME}/.config/ardour5
+mkdir ${HOME}/.lv2
+whitelist ${HOME}/.lv2
+mkdir ${HOME}/.vst
+whitelist ${HOME}/.vst
 mkdir ${HOME}/Documents
 whitelist ${HOME}/Documents
 include /etc/firejail/whitelist-common.inc
