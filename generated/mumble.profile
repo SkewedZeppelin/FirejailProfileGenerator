@@ -25,7 +25,12 @@ include /etc/firejail/whitelist-common.inc
 #Options
 caps.drop all
 netfilter
+nogroups
 nonewprivs
 noroot
+private-bin mumble
+private-tmp
 protocol unix,inet,inet6
 seccomp
+shell none
+tracelog

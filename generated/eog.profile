@@ -18,6 +18,7 @@ netfilter
 nogroups
 nonewprivs
 noroot
+nosound
 private-bin eog
 private-dev
 private-etc fonts

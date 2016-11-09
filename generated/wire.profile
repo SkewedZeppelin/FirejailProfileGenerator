@@ -1,10 +1,11 @@
 #
-#Profile for zathura
+#Profile for wire
 #
 
 #No Blacklist Paths
-noblacklist ${HOME}/.config/zathura
-noblacklist ${HOME}/.local/share/zathura
+noblacklist ${DOWNLOADS}
+noblacklist ${HOME}/.config/Wire
+noblacklist ${HOME}/.config/wire
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
@@ -14,19 +15,12 @@ include /etc/firejail/disable-devel.inc
 
 #Options
 caps.drop all
-net none
 netfilter
 nogroups
 nonewprivs
 noroot
-nosound
-private-bin zathura
 private-dev
-private-etc fonts
 private-tmp
-protocol unix
-read-only ~/
-read-write ~/.local/share/zathura/
+protocol unix,inet,inet6,netlink
 seccomp
 shell none
-whitelist /tmp/.X11-unix

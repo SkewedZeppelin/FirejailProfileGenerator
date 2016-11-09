@@ -17,9 +17,9 @@ netfilter
 nonewprivs
 noroot
 nosound
-nosound
 private-bin fbreader,FBReader
 private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none

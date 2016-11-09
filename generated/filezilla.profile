@@ -21,6 +21,7 @@ nosound
 nosound
 private-bin filezilla,uname,sh,python,lsb_release,fzputtygen,fzsftp
 private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none

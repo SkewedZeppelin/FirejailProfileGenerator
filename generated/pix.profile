@@ -20,6 +20,7 @@ noroot
 nosound
 private-bin pix
 private-dev
+private-tmp
 protocol unix
 seccomp
 shell none

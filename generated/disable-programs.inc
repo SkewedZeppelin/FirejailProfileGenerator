@@ -121,11 +121,13 @@ blacklist ${HOME}/.config/uGet
 blacklist ${HOME}/.config/vivaldi
 blacklist ${HOME}/.config/vlc
 blacklist ${HOME}/.config/wesnoth
+blacklist ${HOME}/.config/wire
 blacklist ${HOME}/.config/xchat
 blacklist ${HOME}/.config/xplayer
 blacklist ${HOME}/.config/xreader
 blacklist ${HOME}/.config/xviewer
 blacklist ${HOME}/.config/zathura
+blacklist ${HOME}/.config/zoomus.conf
 blacklist ${HOME}/.conkeror.mozdev.org 
 blacklist ${HOME}/.dillo
 blacklist ${HOME}/.dosbox
@@ -229,6 +231,7 @@ blacklist ${HOME}/.wine64
 blacklist ${HOME}/.xiphos
 blacklist ${HOME}/.xonotic
 blacklist ${HOME}/.xpdfrc
+blacklist ${HOME}/.zoom
 blacklist ${HOME}/Arduino
 blacklist ${HOME}/Documents/Wolfram Mathematica
 blacklist ${HOME}/Dropbox
@@ -236,9 +239,6 @@ blacklist ${HOME}/My Games
 blacklist ${HOME}/VirtualBox VMs
 blacklist ${HOME}/quiterssfeeds.opml
 blacklist ${HOME}/snap
-blacklist /dev/vboxdrv
-blacklist /dev/vboxdrvu
-blacklist /dev/vboxnetctl
 blacklist /tmp/ssh-*
 blacklist ${HOME}/.*coin
 blacklist ${HOME}/.electrum*

@@ -166,7 +166,7 @@
 	<application>
 		<name>deluge</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin deluge,sh,python,uname # private-dev # nosound</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # private-tmp # protocol unix,inet,inet6 # seccomp # shell none # private-bin deluge,sh,python,uname # private-dev # nosound</options>
 		<genoptions>nodevel</genoptions>
 	</application>
 
@@ -187,7 +187,7 @@
 	<application>
 		<name>mumble</name>
 		<mode>whitelist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-bin mumble # private-tmp</options>
 		<paths>${HOME}/.config/Mumble # ${HOME}/.local/share/data/Mumble # ${HOME}/.local/share/Mumble</paths>
 	</application>
 
@@ -201,7 +201,7 @@
 	<application>
 		<name>eog</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nogroups # protocol unix # seccomp # shell none # private-bin eog # private-dev # private-etc fonts # private-tmp</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nogroups # protocol unix # seccomp # shell none # private-bin eog # private-dev # private-etc fonts # private-tmp # nosound</options>
 		<paths>${HOME}/.config/eog # ${HOME}/.cache/champlain</paths>
 	</application>
 
@@ -263,13 +263,13 @@
 	<application>
 		<name>evince</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # private-bin evince,evince-previewer,evince-thumbnailer # private-dev # tracelog</options>
+		<options>netfilter # caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # private-etc fonts # private-tmp # private-bin evince,evince-previewer,evince-thumbnailer # private-dev # tracelog</options>
 	</application>
 
 	<application>
 		<name>fbreader</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin fbreader,FBReader # private-dev # nosound</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-tmp # private-bin fbreader,FBReader # private-dev # nosound</options>
 		<paths>${HOME}/.FBReader</paths>
 	</application>
 
@@ -282,7 +282,7 @@
 	<application>
 		<name>filezilla</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin filezilla,uname,sh,python,lsb_release,fzputtygen,fzsftp # private-dev # nosound</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-tmp # private-bin filezilla,uname,sh,python,lsb_release,fzputtygen,fzsftp # private-dev # nosound</options>
 		<paths>${HOME}/.filezilla # ${HOME}/.config/filezilla</paths>
 	</application>
 
@@ -290,7 +290,7 @@
 		<name>firefox</name>
 		<aliases>firefox-esr # iceweasel</aliases>
 		<mode>whitelist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog # private-dev # private-tmp</options>
 		<paths>${DOWNLOADS} # ${HOME}/.mozilla # ${HOME}/.cache/mozilla # ${HOME}/.pki</paths>
 	</application>
 
@@ -432,7 +432,7 @@
 	<application>
 		<name>gthumb</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin gthumb # private-dev</options>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin gthumb # private-dev # private-tmp</options>
 		<paths>${HOME}/.config/gthumb</paths>
 	</application>
 
@@ -585,7 +585,7 @@
 	<application>
 		<name>pix</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin pix # private-dev</options>
+		<options>caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # tracelog # private-bin pix # private-dev # private-tmp</options>
 		<paths>${HOME}/.config/pix # ${HOME}/.local/share/pix</paths>
 	</application>
 
@@ -614,7 +614,7 @@
 	<application>
 		<name>qbittorrent</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # private-dev # nosound</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # private-dev # nosound # private-tmp</options>
 	</application>
 
 	<application>
@@ -657,7 +657,7 @@
 	<application>
 		<name>rtorrent</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin rtorrent # private-dev # nosound</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # private-bin rtorrent # private-dev # nosound # private-tmp</options>
 	</application>
 
 	<application>
@@ -731,14 +731,14 @@
 		<name>transmission-cli</name>
 		<aliases>transmission-qt # transmission-gtk</aliases>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-dev</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nosound # protocol unix,inet,inet6 # seccomp # shell none # tracelog # private-dev # private-tmp</options>
 		<paths>${HOME}/.config/transmission # ${HOME}/.cache/transmission</paths>
 	</application>
 
 	<application>
 		<name>uget-gtk</name>
 		<mode>whitelist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-bin uget-gtk # private-dev # nosound</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-bin uget-gtk # private-dev # nosound # private-tmp</options>
 		<paths>${HOME}/.config/uGet # ${DOWNLOADS}</paths>
 	</application>
 
@@ -867,7 +867,8 @@
 		<name>virtualbox</name>
 		<mode>blacklist</mode>
 		<options>caps.drop all</options>
-		<paths>${HOME}/.config/VirtualBox # ${HOME}/.VirtualBox # ${HOME}/VirtualBox VMs # /dev/vboxdrv # /dev/vboxdrvu # /dev/vboxnetctl</paths>
+		<paths>${HOME}/.config/VirtualBox # ${HOME}/.VirtualBox # ${HOME}/VirtualBox VMs</paths>
+		<noblacklistexplicit>/dev/vboxdrv # /dev/vboxdrvu # /dev/vboxnetctl # /usr/bin/virtualbox</noblacklistexplicit>
 	</application>
 
 	<application>
@@ -952,7 +953,7 @@
 	<application>
 		<name>qpdfview</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # nogroups # nonewprivs # noroot # nosound # private-bin qpdfview # private-dev # private-etc fonts,X11,alternatives # private-tmp # protocol unix # seccomp # shell none # tracelog</options>
+		<options>caps.drop all # ipc-namespace # net none # noexec ${HOME} # noexec /tmp # nogroups # nonewprivs # noroot # nosound # private-bin qpdfview # private-dev # private-etc fonts,X11,alternatives # private-tmp # protocol unix # </options>
 		<paths>${HOME}/.config/qpdfview # ${HOME}/.local/share/qpdfview</paths>
 	</application>
 
@@ -1013,13 +1014,13 @@
 	<application>
 		<name>feh</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # seccomp # protocol unix # netfilter # net none # nonewprivs # noroot # nogroups # nosound # shell none # private-bin feh # private-dev # private-etc feh</options>
+		<options>caps.drop all # seccomp # protocol unix # netfilter # net none # nonewprivs # noroot # nogroups # nosound # shell none # private-bin feh # private-dev # private-etc feh # private-tmp</options>
 	</application>
 
 	<application>
 		<name>zathura</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # seccomp # protocol unix # netfilter # nonewprivs # noroot # nogroups # nosound # shell none # private-bin zathura # private-dev # private-etc fonts # whitelist /tmp/.X11-unix # read-only ~/ # read-write ~/.local/share/zathura/</options>
+		<options>caps.drop all # seccomp # protocol unix # netfilter # nonewprivs # noroot # nogroups # nosound # net none # private-tmp # shell none # private-bin zathura # private-dev # private-etc fonts # whitelist /tmp/.X11-unix # read-only ~/ # read-write ~/.local/share/zathura/</options>
 		<paths>${HOME}/.config/zathura # ${HOME}/.local/share/zathura</paths>
 	</application>
 
@@ -1151,7 +1152,7 @@
 	<application>
 		<name>evolution</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # nogroups # protocol unix,inet,inet6 # seccomp # shell none # private-dev # private-tmp</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # nogroups # protocol unix,inet,inet6 # seccomp # shell none # private-dev # private-tmp # nosound</options>
 		<paths>${DOWNLOADS} # ${HOME}/.config/evolution # ${HOME}/.local/share/evolution # ${HOME}/.cache/evolution # ${HOME}/.pki # ${HOME}/.gnupg</paths>
 	</application>
 
@@ -1185,10 +1186,19 @@
 	</application>
 
 	<application>
-		<name>Wire</name>
+		<name>wire</name>
+		<aliases>Wire</aliases>
 		<mode>blacklist</mode>
 		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6,netlink # seccomp # shell none # private-tmp # private-dev</options>
-		<paths>${DOWNLOADS} # ${HOME}/.config/Wire</paths>
+		<paths>${DOWNLOADS} # ${HOME}/.config/Wire # ${HOME}/.config/wire</paths>
+	</application>
+
+	<application>
+		<name>zoom</name>
+		<mode>whitelist</mode>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # private-tmp</options>
+		<paths>${HOME}/.zoom</paths>
+		<files>${HOME}/.config/zoomus.conf</files>
 	</application>
 
 </applications>

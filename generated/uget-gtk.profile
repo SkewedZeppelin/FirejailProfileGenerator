@@ -26,6 +26,7 @@ noroot
 nosound
 private-bin uget-gtk
 private-dev
+private-tmp
 protocol unix,inet,inet6
 seccomp
 shell none

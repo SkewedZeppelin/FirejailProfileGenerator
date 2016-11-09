@@ -27,6 +27,3 @@ private-dev
 private-etc fonts,X11,alternatives
 private-tmp
 protocol unix
-seccomp
-shell none
-tracelog

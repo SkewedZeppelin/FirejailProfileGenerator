@@ -19,6 +19,7 @@ noroot
 nosound
 private-bin gthumb
 private-dev
+private-tmp
 protocol unix
 seccomp
 shell none

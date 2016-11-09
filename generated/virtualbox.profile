@@ -2,13 +2,16 @@
 #Profile for virtualbox
 #
 
+#No Blacklist Explicit Paths
+noblacklist /dev/vboxdrv
+noblacklist /dev/vboxdrvu
+noblacklist /dev/vboxnetctl
+noblacklist /usr/bin/virtualbox
+
 #No Blacklist Paths
 noblacklist ${HOME}/.VirtualBox
 noblacklist ${HOME}/.config/VirtualBox
 noblacklist ${HOME}/VirtualBox VMs
-noblacklist /dev/vboxdrv
-noblacklist /dev/vboxdrvu
-noblacklist /dev/vboxnetctl
 
 #Blacklist Paths
 include /etc/firejail/disable-common.inc
