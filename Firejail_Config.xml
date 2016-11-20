@@ -166,7 +166,7 @@
 	<application>
 		<name>deluge</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # noroot # private-tmp # protocol unix,inet,inet6 # seccomp # shell none # private-bin deluge,sh,python,uname # private-dev # nosound</options>
+		<options>caps.drop all # netfilter # nonewprivs # noroot # private-tmp # protocol unix,inet,inet6 # seccomp # shell none # private-dev # nosound</options>
 		<genoptions>nodevel</genoptions>
 	</application>
 
@@ -263,7 +263,7 @@
 	<application>
 		<name>evince</name>
 		<mode>blacklist</mode>
-		<options>netfilter # caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # private-etc fonts # private-tmp # private-bin evince,evince-previewer,evince-thumbnailer # private-dev # tracelog</options>
+		<options>netfilter # caps.drop all # nonewprivs # nogroups # noroot # nosound # protocol unix # seccomp # shell none # private-etc fonts # private-bin evince,evince-previewer,evince-thumbnailer # private-dev # tracelog</options>
 	</application>
 
 	<application>
@@ -484,7 +484,7 @@
 	<application>
 		<name>kmail</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog # private-dev # private-tmp</options>
+		<options>caps.drop all # netfilter # nonewprivs # nogroups # noroot # protocol unix,inet,inet6,netlink # seccomp # tracelog # private-dev</options>
 		<paths>${HOME}/.gnupg</paths>
 	</application>
 
@@ -592,7 +592,7 @@
 	<application>
 		<name>empathy</name>
 		<mode>whitelist</mode>
-		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp</options>
+		<options>caps.drop all # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # nogroups</options>
 		<paths>${DOWNLOADS} # ${HOME}/.cache/champlain # ${HOME}/.local/share/Empathy # ${HOME}/.local/share/telepathy # ${HOME}/.local/share/TpLogger # ${HOME}/.config/telepathy-account-widgets # ${HOME}/.cache/telepathy # ${HOME}/.purple</paths>
 	</application>
 
@@ -753,14 +753,14 @@
 		<name>vivaldi</name>
 		<aliases>vivaldi-beta</aliases>
 		<mode>whitelist</mode>
-		<options>netfilter nonewprivs</options>
+		<options>netfilter</options>
 		<paths>${DOWNLOADS} # ${HOME}/.config/vivaldi # ${HOME}/.cache/vivaldi # ${HOME}/.pki</paths>
 	</application>
 
 	<application>
 		<name>vlc</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6 # seccomp # shell none # private-bin vlc,cvlc,nvlc,rvlc,qvlc,svlc # private-dev # private-tmp</options>
+		<options>caps.drop all # netfilter # nogroups # nonewprivs # noroot # protocol unix,inet,inet6,netlink # seccomp # shell none # private-bin vlc,cvlc,nvlc,rvlc,qvlc,svlc # private-dev # private-tmp</options>
 		<paths>${HOME}/.config/vlc</paths>
 	</application>
 
@@ -947,7 +947,7 @@
 	<application>
 		<name>mupdf</name>
 		<mode>blacklist</mode>
-		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # netfilter # shell none # tracelog # private-bin mupdf # private-tmp # private-dev # read-only ${HOME}</options>
+		<options>caps.drop all # nogroups # nonewprivs # noroot # nosound # protocol unix # seccomp # netfilter # shell none # tracelog # private-bin mupdf,sh,tempfile,rm # private-tmp # private-dev # read-only ${HOME}</options>
 	</application>
 
 	<application>

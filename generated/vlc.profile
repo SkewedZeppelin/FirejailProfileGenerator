@@ -20,6 +20,6 @@ noroot
 private-bin vlc,cvlc,nvlc,rvlc,qvlc,svlc
 private-dev
 private-tmp
-protocol unix,inet,inet6
+protocol unix,inet,inet6,netlink
 seccomp
 shell none

@@ -38,6 +38,7 @@ include /etc/firejail/whitelist-common.inc
 
 #Options
 caps.drop all
+nogroups
 nonewprivs
 noroot
 protocol unix,inet,inet6

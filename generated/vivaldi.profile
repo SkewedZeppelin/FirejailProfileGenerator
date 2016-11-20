@@ -25,4 +25,4 @@ whitelist ${HOME}/.pki
 include /etc/firejail/whitelist-common.inc
 
 #Options
-netfilter nonewprivs
+netfilter

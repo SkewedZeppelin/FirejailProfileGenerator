@@ -18,7 +18,6 @@ nogroups
 nonewprivs
 noroot
 private-dev
-private-tmp
 protocol unix,inet,inet6,netlink
 seccomp
 tracelog

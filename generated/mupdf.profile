@@ -15,7 +15,7 @@ nogroups
 nonewprivs
 noroot
 nosound
-private-bin mupdf
+private-bin mupdf,sh,tempfile,rm
 private-dev
 private-tmp
 protocol unix

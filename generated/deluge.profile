@@ -13,7 +13,6 @@ netfilter
 nonewprivs
 noroot
 nosound
-private-bin deluge,sh,python,uname
 private-dev
 private-tmp
 protocol unix,inet,inet6
