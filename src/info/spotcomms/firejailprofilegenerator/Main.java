@@ -29,8 +29,7 @@ import java.util.*;
 
 public class Main {
 
-    private static ArrayList<Application> applications = new ArrayList<Application>();
-    private static Application curApplication;
+    private static final ArrayList<Application> applications = new ArrayList<>();
 
     public static void main(String[] args) {
         try {
@@ -45,8 +44,8 @@ public class Main {
                 Node curNode = nodes.item(c);
                 if (curNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element element = (Element) curNode;
-                    curApplication = new Application(element.getElementsByTagName("name").item(0).getTextContent());
-                    curApplication.setMode(element.getElementsByTagName("mode").item(0).getTextContent().equals("whitelist") ? true : false);
+                    Application curApplication = new Application(element.getElementsByTagName("name").item(0).getTextContent());
+                    curApplication.setMode(element.getElementsByTagName("mode").item(0).getTextContent().equals("whitelist"));
                     if (element.getElementsByTagName("aliases").item(0) != null) {
                         curApplication.setAliases(convertToArray(element.getElementsByTagName("aliases").item(0).getTextContent()));
                     }
@@ -85,7 +84,6 @@ public class Main {
                 out.println(s.nextLine());
             }
             out.close();
-            out = null;
             //END OF disable-programs.inc GENERATION
 
             //START OF .profiles GENERATION
@@ -176,26 +174,22 @@ public class Main {
     }
 
     private static ArrayList<String> convertToArray(String input) {
-        ArrayList<String> output = new ArrayList<String>(Arrays.asList(input.split(" # ")));
+        ArrayList<String> output = new ArrayList<>(Arrays.asList(input.split(" # ")));
         Collections.sort(output);
         return output;
     }
 
     private static ArrayList<String> getAllPaths() {
-        Set<String> paths = new HashSet<String>();
+        Set<String> paths = new HashSet<>();
         for (Application app : applications) {
             if (app.getPaths() != null) {
-                for (String path : app.getPaths()) {
-                    paths.add(path);
-                }
+                paths.addAll(app.getPaths());
             }
             if (app.getFiles() != null) {
-                for (String file : app.getFiles()) {
-                    paths.add(file);
-                }
+                paths.addAll(app.getFiles());
             }
         }
-        ArrayList<String> pathsNew = new ArrayList<String>();
+        ArrayList<String> pathsNew = new ArrayList<>();
         pathsNew.addAll(paths);
         Collections.sort(pathsNew);
         return pathsNew;

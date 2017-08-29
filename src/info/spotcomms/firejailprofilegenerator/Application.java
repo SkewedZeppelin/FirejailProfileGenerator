@@ -18,9 +18,9 @@ package info.spotcomms.firejailprofilegenerator;
 
 import java.util.ArrayList;
 
-public class Application {
+class Application {
 
-    private String name;
+    private final String name;
     private ArrayList<String> aliases;
     private boolean mode;//false == blacklist, true == whitelist
     private ArrayList<String> options;
