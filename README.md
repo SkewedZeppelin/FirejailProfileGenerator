@@ -19,7 +19,3 @@ Profile Credits
 - TeamSpeak profile by melvinvermeeren from https://aur.archlinux.org/packages/firejail-profiles
 - Natron, Zart profile by [triceratops1](https://github.com/triceratops1)
 - Arduino, Bless, eog, Gnome 2048, Gnome Calculator, Gnome Calendar, Gnome Characters, Gnome Clocks, Gnome Contacts, Gnome Maps, Gnome Music, Gnome Weather, JD-GUI, Lollypop, MultiMC5, Mumble, PDFSam, Pithos, Redshift, Xonotic by SpotComms
-
-Testing
--------
-- See https://github.com/SpotComms/FirejailProfileGenerator/issues/1
